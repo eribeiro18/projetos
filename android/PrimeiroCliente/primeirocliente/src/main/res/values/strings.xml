@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PrimeiroCliente</string>
+    <string name="app_name_fantasia">Cliente Empreendedor</string>
+    <string name="app_todo">TODO</string>
+    <string name="versao">Versão 1.0</string>
+    <string name="texto_destaque">\t\t\t\tEstamos com 30% de desconto para este produtos apenas para pedidos via nosso aplicativo. Ligue e fale diretamente com nossa equipe para descobrir a lista de produtos em promoção. Telefone exclusivo para esta oferta, ligue: </string>
+    <string name="telefone_destaque">(99) 99999-9999</string>
+</resources>

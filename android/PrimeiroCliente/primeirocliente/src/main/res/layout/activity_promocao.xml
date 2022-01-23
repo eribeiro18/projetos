@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0F504A"
+    tools:context=".PromocaoActivity" >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:layout_height="300dp"
+        app:srcCompat="@drawable/desconto"
+        android:contentDescription="@string/app_todo" />
+
+    <TextView
+        android:id="@+id/txtNomeApp"
+        android:layout_gravity="center"
+        android:layout_marginTop="110dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#FFC107"
+        android:layout_width="wrap_content"
+        android:textSize="22sp"
+        android:layout_height="wrap_content"
+        android:text="@string/texto_destaque" />
+
+    <TextView
+        android:id="@+id/txtVersionApp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:textColor="#FFC107"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="@string/telefone_destaque" />
+</androidx.appcompat.widget.LinearLayoutCompat>
