@@ -18,27 +18,25 @@ public class ProdutoController extends AppDataBase implements ICrud<Produto>{
     }
 
     @Override
-    public boolean incluir(Produto obj) {
+    public boolean incluir(Produto obj) throws Exception {
         value = new ContentValues();
         value.put(ProdutoDataModel.NOME, obj.getNome());
         value.put(ProdutoDataModel.FORNECEDOR, obj.getFornecedor());
-        return true;
+        return insert(ProdutoDataModel.TABELA, value);
     }
 
     @Override
-    public boolean alterar(Produto obj) {
+    public boolean alterar(Produto obj) throws Exception {
         value = new ContentValues();
         value.put(ProdutoDataModel.ID, obj.getId());
         value.put(ProdutoDataModel.NOME, obj.getNome());
         value.put(ProdutoDataModel.FORNECEDOR, obj.getFornecedor());
-        return true;
+        return update(ProdutoDataModel.TABELA, value);
     }
 
     @Override
-    public boolean deletar(Produto obj) {
-        value = new ContentValues();
-        value.put(ProdutoDataModel.ID, obj.getId());
-        return true;
+    public boolean deletar(int id) throws Exception {
+        return delete(ProdutoDataModel.TABELA, id);
     }
 
     @Override

@@ -16,7 +16,7 @@ public class ClienteDataModel {
     //metodo que cria o script para criar a tabela
     public static String criarTabela(){
         queryCriarTabela += " CREATE TABLE "+TABELA+"(";
-        queryCriarTabela += ID+" integer primary key autoincremet, ";
+        queryCriarTabela += ID+" integer primary key autoincrement, ";
         queryCriarTabela += NOME + " text, ";
         queryCriarTabela += EMAIL + " text ";
         queryCriarTabela += ") ";
