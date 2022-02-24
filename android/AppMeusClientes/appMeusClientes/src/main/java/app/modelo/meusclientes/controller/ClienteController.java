@@ -24,6 +24,14 @@ public class ClienteController extends AppDataBase implements ICrud<Cliente> {
         value = new ContentValues();
         value.put(ClienteDataModel.NOME, obj.getNome());
         value.put(ClienteDataModel.EMAIL, obj.getEmail());
+        value.put(ClienteDataModel.TELEFONE, obj.getTelefone());
+        value.put(ClienteDataModel.CEP, obj.getCep());
+        value.put(ClienteDataModel.LOGRADOURO, obj.getLogradouro());
+        value.put(ClienteDataModel.NUMERO, obj.getNumero());
+        value.put(ClienteDataModel.BAIRRO, obj.getBairro());
+        value.put(ClienteDataModel.CIDADE, obj.getCidade());
+        value.put(ClienteDataModel.ESTADO, obj.getEstado());
+        value.put(ClienteDataModel.TERMO_USO, obj.getTermoUso());
         return insert(ClienteDataModel.TABELA, value);
     }
 
@@ -33,6 +41,14 @@ public class ClienteController extends AppDataBase implements ICrud<Cliente> {
         value.put(ClienteDataModel.ID, obj.getId());
         value.put(ClienteDataModel.NOME, obj.getNome());
         value.put(ClienteDataModel.EMAIL, obj.getEmail());
+        value.put(ClienteDataModel.TELEFONE, obj.getTelefone());
+        value.put(ClienteDataModel.CEP, obj.getCep());
+        value.put(ClienteDataModel.LOGRADOURO, obj.getLogradouro());
+        value.put(ClienteDataModel.NUMERO, obj.getNumero());
+        value.put(ClienteDataModel.BAIRRO, obj.getBairro());
+        value.put(ClienteDataModel.CIDADE, obj.getCidade());
+        value.put(ClienteDataModel.ESTADO, obj.getEstado());
+        value.put(ClienteDataModel.TERMO_USO, obj.getTermoUso());
         return update(ClienteDataModel.TABELA, value);
     }
 
@@ -57,8 +73,38 @@ public class ClienteController extends AppDataBase implements ICrud<Cliente> {
                 if (e.getKey().equals("email")) {
                     c.setEmail(e.getValue());
                 }
+                if(e.getKey().equals("telefone")){
+                    c.setTelefone(e.getValue());
+                }
+                if(e.getKey().equals("cep")){
+                    c.setCep(Integer.parseInt(e.getValue()));
+                }
+                if(e.getKey().equals("logradouro")){
+                    c.setLogradouro(e.getValue());
+                }
+                if(e.getKey().equals("numero")){
+                    c.setNumero(Integer.parseInt(e.getValue()));
+                }
+                if(e.getKey().equals("bairro")){
+                    c.setBairro(e.getValue());
+                }
+                if(e.getKey().equals("cidade")){
+                    c.setCidade(e.getValue());
+                }
+                if(e.getKey().equals("estado")){
+                    c.setEstado(e.getValue());
+                }
             }
             clientes.add(c);
+        }
+        return clientes;
+    }
+
+    public List<String> listarClintesView() throws Exception {
+        List<String> clientes = new ArrayList<>();
+        List<Cliente> result = listar();
+        for (Cliente c: result) {
+            clientes.add(c.getId() + " - " + c.getNome());
         }
         return clientes;
     }

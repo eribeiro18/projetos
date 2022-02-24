@@ -10,6 +10,9 @@
     <string name="modelo_fragment">Cliente VIP DEMO</string>
 
     <!-- Opções do Menu Lateral Drawer -->
+    <string name="fragmento_adicionar_cliente">Adicionar Cliente</string>
+    <string name="fragmento_lista_clientes">Listar Cliente</string>
+    <string name="fragmento_lista_clientes_cad">Listar Cliente CadView</string>
     <string name="fragmento_preto">Fragmento Preto</string>
     <string name="titulo_preto">Preto</string>
     <string name="fragmento_vermelho">Fragmento Vermelho</string>
@@ -17,7 +20,20 @@
     <string name="fragmento_azul">Fragmento Azul</string>
     <string name="titulo_azul">Azul</string>
 
-    <!-- Opções do Menu Principal -->
+    <!-- Label adcionar clientes-->
+    <string name="novoCliente">Adicionar Novo Cliente</string>
+
+        <!-- Opções do Menu Principal -->
     <string name="meu_perfil">Meu Perfil</string>
+    <string name="nome_completo_cli">Nome Completo</string>
+    <string name="termos_de_uso_cli">Termos de Uso</string>
+    <string name="estado_cli">Estado</string>
+    <string name="cidade_cli">Cidade</string>
+    <string name="bairro_cli">Bairro</string>
+    <string name="numero_cli">Numero</string>
+    <string name="logradouro_cli">Logradouro</string>
+    <string name="cep_cli">Cep</string>
+    <string name="e_mail_cli">E-mail</string>
+    <string name="telefone_cli">Telefone</string>
 
 </resources>

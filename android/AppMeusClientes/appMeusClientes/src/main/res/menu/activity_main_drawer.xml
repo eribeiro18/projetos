@@ -5,6 +5,18 @@
 
     <group android:checkableBehavior="single">
 
+        <item android:id="@+id/nav_adicionar_cliente"
+            android:icon="@drawable/ic_item_menu_padrao"
+            android:title="@string/fragmento_adicionar_cliente" />
+
+        <item android:id="@+id/nav_listar_cliente"
+            android:icon="@drawable/ic_item_menu_padrao"
+            android:title="@string/fragmento_lista_clientes" />
+
+        <item android:id="@+id/nav_listar_cliente_cad"
+            android:icon="@drawable/ic_item_menu_padrao"
+            android:title="@string/fragmento_lista_clientes_cad" />
+
         <item android:id="@+id/nav_preto"
             android:icon="@drawable/ic_item_menu_padrao"
             android:title="@string/fragmento_preto" />
