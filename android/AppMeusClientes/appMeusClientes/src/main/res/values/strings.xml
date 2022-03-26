@@ -11,8 +11,9 @@
 
     <!-- Opções do Menu Lateral Drawer -->
     <string name="fragmento_adicionar_cliente">Adicionar Cliente</string>
+    <string name="fragmento_adicionar_cliente_card">Adicionar Cliente CadView</string>
     <string name="fragmento_lista_clientes">Listar Cliente</string>
-    <string name="fragmento_lista_clientes_cad">Listar Cliente CadView</string>
+    <string name="fragmento_lista_clientes_cad">Listar Cliente CardView</string>
     <string name="fragmento_preto">Fragmento Preto</string>
     <string name="titulo_preto">Preto</string>
     <string name="fragmento_vermelho">Fragmento Vermelho</string>
@@ -22,7 +23,8 @@
 
     <!-- Label adcionar clientes-->
     <string name="novoCliente">Adicionar Novo Cliente</string>
-
+    <string name="perfilNovoClienteCards">Perfil e Contato</string>
+    <string name="enderecoClienteCards">Endereço</string>
         <!-- Opções do Menu Principal -->
     <string name="meu_perfil">Meu Perfil</string>
     <string name="nome_completo_cli">Nome Completo</string>
@@ -35,5 +37,7 @@
     <string name="cep_cli">Cep</string>
     <string name="e_mail_cli">E-mail</string>
     <string name="telefone_cli">Telefone</string>
+    <string name="btnCancelar">CANCELAR</string>
+    <string name="btnSalvar">SALVAR</string>
 
 </resources>

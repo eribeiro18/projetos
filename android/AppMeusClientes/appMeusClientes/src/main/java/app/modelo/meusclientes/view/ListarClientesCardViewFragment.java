@@ -15,7 +15,6 @@ import android.widget.Toast;
 import androidx.fragment.app.Fragment;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 import app.modelo.meusclientes.R;
@@ -34,7 +33,6 @@ public class ListarClientesCardViewFragment extends Fragment {
     ClienteController clienteController;
     Cliente objCliente;
     ArrayAdapter clienteAdapter;
-    ArrayList<HashMap<String, String>> filtroClientes;
 
     public ListarClientesCardViewFragment() {
     }
@@ -48,7 +46,7 @@ public class ListarClientesCardViewFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        view =  inflater.inflate(R.layout.fragment_listar_clientes_cad_view, container, false);
+        view =  inflater.inflate(R.layout.fragment_listar_clientes_card_view, container, false);
         iniciarComponenteDeLayouts();
         popularListas();
         actions();

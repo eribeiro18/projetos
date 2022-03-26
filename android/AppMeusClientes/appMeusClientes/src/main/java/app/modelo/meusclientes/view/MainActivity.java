@@ -5,7 +5,6 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
@@ -46,14 +45,8 @@ public class MainActivity extends AppCompatActivity
         setSupportActionBar(toolbar);
 
         FloatingActionButton fab =   findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Action Button Clicado", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-
-            }
-        });
+        fab.setOnClickListener(view -> Snackbar.make(view, "Action Button Clicado", Snackbar.LENGTH_LONG)
+                .setAction("Action", null).show());
 
         // drawer_Layout é o layout padrão do aplicativo
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
@@ -164,17 +157,19 @@ public class MainActivity extends AppCompatActivity
 
             fragmentManager.beginTransaction().replace(R.id.content_fragment, new ModeloAzulFragment()).commit();
 
-        }else if(id == R.id.nav_adicionar_cliente){
+        }else if(id == R.id.nav_adicionar_cliente) {
             setTitle("Novo Cliente");
             fragmentManager.beginTransaction().replace(R.id.content_fragment, new AdicionarClienteFragment()).commit();
+        }else if(id == R.id.nav_adicionar_cliente_card){
+                setTitle("Novo Cliente CardView");
+                fragmentManager.beginTransaction().replace(R.id.content_fragment, new AdicionarClienteCardFragment()).commit();
         }else if(id == R.id.nav_listar_cliente){
             setTitle("Listar Clientes");
             fragmentManager.beginTransaction().replace(R.id.content_fragment, new ListarClientesFragment()).commit();
-        }else if(id == R.id.nav_listar_cliente_cad){
-            setTitle("Listar Clientes CadView");
+        }else if(id == R.id.nav_listar_cliente_card){
+            setTitle("Listar Clientes CardView");
             fragmentManager.beginTransaction().replace(R.id.content_fragment, new ListarClientesCardViewFragment()).commit();
         }
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
