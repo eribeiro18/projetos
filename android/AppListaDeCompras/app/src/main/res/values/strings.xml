@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Lista de Compras</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Cliente</string>
+    <string name="nav_header_subtitle">Profº Marco Maddo</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_sair">Sair</string>
+    <string name="modelo_fragment">Fragmento Modelo</string>
+    <string name="txt_meus_produtos">Meus Produtos</string>
+    <string name="txt_minhas_compras">Minhas Compras</string>
+    <string name="txt_compartilhar">Compartilhar</string>
+    <string name="txt_sair_do_app">Sair do App</string>
+</resources>

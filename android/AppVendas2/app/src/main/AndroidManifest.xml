@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.appvendas">
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".Activitity.AppVendasSignUpActivity" />
+        <activity android:name=".Activitity.AppVendasLoginActivity"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".Activitity.AppVendasFilteredProductsActivity" />
+        <activity android:name=".Activitity.AppVendasOrderDetailsActivity" />
+        <activity android:name=".Activitity.AppVendasProductEdit" />
+        <activity android:name=".Activitity.AppVendasMainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activitity.AppVendasAddProducts"
+            android:parentActivityName=".Activitity.AppVendasProductDetailsCrud" />
+        <activity
+            android:name=".Activitity.AppVendasShoppingCart"
+            android:parentActivityName=".Activitity.AppVendasMainActivity" />
+        <activity
+            android:name=".Activitity.AppVendasProductGroup"
+            android:parentActivityName=".Activitity.AppVendasAddProducts" />
+        <activity
+            android:name=".Activitity.AppVendasProductDescription"
+            android:parentActivityName=".Activitity.AppVendasAddProducts" />
+        <activity
+            android:name=".Activitity.AppVendasProductDetailsCrud"
+            android:parentActivityName=".Activitity.AppVendasMainActivity"
+            android:theme="@style/ToolBarStyle" />
+        <activity
+            android:name=".Activitity.AppVendasProductDetailsActivity"
+            android:parentActivityName=".Activitity.AppVendasMainActivity" />
+    </application>
+
+</manifest>

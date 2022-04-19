@@ -3,7 +3,7 @@ apply plugin: 'realm-android'
 android {
     compileSdkVersion 30
     defaultConfig {
-        applicationId "app.modelo.meusclientes"
+        applicationId "app.modelo.meusclientesrealm"
         minSdkVersion 19
         targetSdkVersion 30
         versionCode 1

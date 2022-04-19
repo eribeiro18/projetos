@@ -1,0 +1,125 @@
+<resources>
+    <string name="app_name">AppVendas</string>
+    <string name="product_unavailable">Indisponível no momento</string>
+    <string name="favorite_icon">Favorite icon</string>
+    <string name="favorite_selected_icon">Favorite selected icon</string>
+
+    <!--  Login  -->
+    <string name="email_hint">E-mail</string>
+    <string name="password_hint">Senha</string>
+    <string name="full_name_hint">Nome completo</string>
+    <string name="cpf_hint">CPF (opcional)</string>
+    <string name="birth_date_hint">Data de nascimento (opcional)</string>
+    <string name="phone_number_hint">Telefone (opcional)</string>
+    <string name="gender">Gênero</string>
+    <string name="customize_gender">Personalizar</string>
+    <string name="what_is_your_gender_hint">Qual é seu sexo?</string>
+    <string name="refer_to_me_as_hint">Refira-se a mim como</string>
+    <string name="sign_up">Criar minha conta</string>
+    <string name="log_in">Log in</string>
+    <string name="divider">ou</string>
+    <string-array name="genderSpinner">
+        <item>Masculino</item>
+        <item>Feminino</item>
+        <item>Prefiro não dizer</item>
+        <item>Personalizar</item>
+    </string-array>
+    <string-array name="referToMeAsGender">
+        <item>Masculino</item>
+        <item>Feminino</item>
+        <item>Outro</item>
+    </string-array>
+
+    <!--  Menu  -->
+    <string name="search_icon">Search</string>
+    <string name="add_products_icon">Add Products</string>
+    <string name="confirm_icon">Confirm Button</string>
+    <string name="back_icon">Back Button</string>
+    <string name="delete_icon">Delete Button</string>
+    <string name="share_icon">Share Button</string>
+
+    <!-- Popup Menu ShoppingCart-->
+    <string name="unity1">1 unidade</string>
+    <string name="unity2">2 unidades</string>
+    <string name="unity3">3 unidades</string>
+    <string name="unity4">4 unidades</string>
+    <string name="unity5">5 unidades</string>
+    <string name="unity6">6 unidades</string>
+    <string name="more_unities">mais de 6..</string>
+    <string name="quantidade">Digite a quantidade</string>
+
+    <!-- Popup Menu Order -->
+    <string name="product_order_detail">Detalhes do pedido</string>
+    <string name="order_detail">Detalhes do produto</string>
+
+    <!-- Bottom Navigation -->
+    <string name="bottom_navigation_home">Home</string>
+    <string name="bottom_navigation_favorites">Favorites</string>
+    <string name="bottom_navigation_shopping_cart">Shopping cart</string>
+    <string name="bottom_navigation_search">Search</string>
+    <string name="bottom_navigation_user">User</string>
+
+    <!--  User Fragment  -->
+    <string name="login_user_fragment">Faça seu login</string>
+    <string name="signup_user_fragment">ou cadastre-se</string>
+    <string name="favorite_user_fragment">Favoritos</string>
+    <string name="user_favorite_products">Meus produtos favoritos</string>
+    <string name="adress_user_fragment">Endereço</string>
+    <string name="user_name">User Name</string>
+    <string name="edit_profile">Editar perfil</string>
+    <string name="user_photo">User photo</string>
+
+    <!--  Acivity Shopping Cart  -->
+    <string name="shopping_cart">carrinho</string>
+    <string name="product_quantity">1un.</string>
+    <string name="total_compra">total do pedido</string>
+    <string name="botao_compra">continuar</string>
+    <string name="empty_shopping_cart">Carrinho vazio</string>
+    <string name="empty_shopping_cart_message">Continue com a sua busca por um produto,
+        voltando para a página inicial ou saiba mais sobre os itens em destaque</string>
+    <string name="initial_page_btn">página inicial</string>
+
+    <!--  Activity Add Products  -->
+    <string name="add_products">Adicionar Produtos</string>
+    <string name="product_title">Título*</string>
+    <string name="product_code">Código*</string>
+    <string name="product_description">Descrição</string>
+    <string name="product_price">Preço*</string>
+    <string name="product_group">Categoria*</string>
+    <string name="add_an_image">Adicionar uma imagem</string>
+    <string name="is_promotion">Produto em destaque</string>
+
+    <!-- Recycler View Product List -->
+    <string name="primary_text">Primary Text</string>
+    <string name="secondary_text">Secondary Text</string>
+    <string name="price_text">Price</string>
+    <string name="group_text">Group</string>
+
+    <!-- Bottom sheet -->
+    <string name="whatsapp">WhatsApp</string>
+    <string name="gmail">Gmail</string>
+    <string name="bottom_sheet_title">compartilhar por:</string>
+
+    <!-- Recycler View Orders -->
+    <string name="product_name">Product</string>
+    <string name="order_date">Date</string>
+
+    <!--  Product details  -->
+    <string name="buy_btn">Comprar</string>
+    <string name="notify_btn">Notificar quando disponível</string>
+
+    <!-- Order Details -->
+    <string name="order_details">Detalhes do pedido</string>
+    <string name="order_items">Itens do pedido</string>
+    <string name="order_date_detail">Data do pedido</string>
+    <string name="total_order_price">Total do pedido</string>
+    <string name="number_of_items">Qtd items</string>
+    <string name="item_name">Item name</string>
+    <string name="item_price">Item price</string>
+    <string name="item_quantity">Qtd:</string>
+    <string name="buy_again">Comprar novamente</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
