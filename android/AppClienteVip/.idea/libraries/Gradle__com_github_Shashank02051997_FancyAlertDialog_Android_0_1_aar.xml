@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.Shashank02051997:FancyAlertDialog-Android:0.1@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/5392da256df25e5c2e52e12917be3f4e/transformed/jetified-FancyAlertDialog-Android-0.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/5392da256df25e5c2e52e12917be3f4e/transformed/jetified-FancyAlertDialog-Android-0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/5392da256df25e5c2e52e12917be3f4e/transformed/jetified-FancyAlertDialog-Android-0.1/res" />
+      <root url="file:///usr/lib/jvm/java-11-openjdk-amd64/caches/transforms-3/5ec3d61c28c476512905d6439aa9b498/transformed/jetified-FancyAlertDialog-Android-0.1/res" />
+      <root url="file:///usr/lib/jvm/java-11-openjdk-amd64/caches/transforms-3/5ec3d61c28c476512905d6439aa9b498/transformed/jetified-FancyAlertDialog-Android-0.1/AndroidManifest.xml" />
+      <root url="jar:///usr/lib/jvm/java-11-openjdk-amd64/caches/transforms-3/5ec3d61c28c476512905d6439aa9b498/transformed/jetified-FancyAlertDialog-Android-0.1/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.Shashank02051997/FancyAlertDialog-Android/0.1/d589d6c389706400c934907bc8655a2a0b512b31/FancyAlertDialog-Android-0.1-sources.jar!/" />
+      <root url="jar:///usr/lib/jvm/java-11-openjdk-amd64/caches/modules-2/files-2.1/com.github.Shashank02051997/FancyAlertDialog-Android/0.1/d589d6c389706400c934907bc8655a2a0b512b31/FancyAlertDialog-Android-0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

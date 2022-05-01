@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">Cliente Vip V1</string>
+    <string name="app_clientes_vip">App Clientes Vip</string>
+    <string name="pessoa_fisica">Pessoa Física</string>
+    <string name="pessoa_juridica">Pessoa Jurídica</string>
+    <string name="cpf">CPF</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="salvar_e_concluir">Salvar e Concluir</string>
+    <string name="nome_completro_igual_do_cpf">Nome Completro igual do CPF...</string>
+    <string name="nome_completo">Nome Completo</string>
+    <string name="digite_seu_cpf">Digite seu CPF...</string>
+    <string name="cnpj">CNPJ</string>
+    <string name="digite_seu_cnpj">Digite seu CNPJ</string>
+    <string name="raz_o_social">Razão Social</string>
+    <string name="razao_social_igual_do_cartao_cnpj">Razão Social igual do Cartão CNPJ</string>
+    <string name="data_da_abertura_da_empresa">Data da Abertura da Empresa</string>
+    <string name="dd_mm_aaaa">dd/mm/aaaa</string>
+    <string name="simples_nacional">Simples Nacional</string>
+    <string name="mei">MEI</string>
+    <string name="recuperar_senha">Recuperar Senha</string>
+    <string name="digite_o_e_mail_cadastrado">Digite o e-mail cadastrado...</string>
+    <string name="recuperar">Recuperar</string>
+    <string name="voltar">Voltar</string>
+
+    <string name="txt_titulo">Aplicativo do Maddo</string>
+    <string name="txtDataAtual">03/01/2020</string>
+    <string name="txtHoraAtual">10:05:00</string>
+    <string name="btnCadastro">CADASTRAR</string>
+    <string name="btnVoltar">Voltar</string>
+
+    <!-- tela de login -->
+
+    <string name="txtLogin">Login</string>
+    <string name="txtLembrar">Lembrar</string>
+    <string name="txtRecurarSenha">Recuperar Senha</string>
+    <string name="btnAcessar">ACESSAR</string>
+    <string name="btnSejaVip">SEJA VIP</string>
+    <string name="txtVersapApp">Versão V1.0</string>
+    <string name="txtLerPolitica">Ler Política de Privacidade - Termos de Uso.</string>
+
+    <!-- tela novo cliente vip -->
+
+    <string name="txtNovoVip">Novo Vip</string>
+    <string name="txtPrimeiroNome">Primeiro Nome</string>
+    <string name="txtSobreNome">Sobre Nome</string>
+    <string name="txtHintSobreNome">Digite seu sobre nome...</string>
+    <string name="txtPessoaFisica">Pessoa Fisica</string>
+    <string name="btnSalvarContinuar">SALVAR E CONTINUAR</string>
+    <string name="btnCancelar">CANCELAR</string>
+
+
+    <!-- formulário de cadastro de usuários -->
+
+    <string name="txtCadastro">Cadastro</string>
+    <string name="txtNome">Nome</string>
+    <string name="txtHintNome">Digite seu primeiro nome...</string>
+    <string name="txtEmail">E-mail</string>
+    <string name="txtHintEmail">Digite o seu melhor e-mail...</string>
+    <string name="txtSenhaA">Senha</string>
+    <string name="txtHintSenhaA">Informe uma senha...</string>
+    <string name="txtSenhaB">Repita a senha</string>
+    <string name="txtHintSenhaB">Confirme a senha digitada...</string>
+    <string name="txtTermo">Li e concordo com os termos de uso e política de privacidade.</string>
+</resources>
