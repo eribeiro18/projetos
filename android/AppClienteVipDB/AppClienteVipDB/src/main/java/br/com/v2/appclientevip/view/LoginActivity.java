@@ -34,6 +34,8 @@ public class LoginActivity extends AppCompatActivity {
     Button btnAcessar, btnSejaVip;
     boolean isFormularioOK, isLembrarSenha;
 
+    private ClienteController controller;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -143,6 +145,7 @@ public class LoginActivity extends AppCompatActivity {
         btnSejaVip = findViewById(R.id.btnSejaVip);
 
         isFormularioOK = false;
+        controller = new ClienteController(getApplicationContext());
         cliente = new Cliente();
 
         restaurarSharedPreferences();
@@ -155,9 +158,7 @@ public class LoginActivity extends AppCompatActivity {
 
     //Cria função para validar nome e senha do usuario na pasta Controller
     public boolean validarDadosDoCliente() {
-        return ClienteController.validarDadosDoCliente(cliente,
-                editEmail.getText().toString(),
-                editSenha.getText().toString());
+        return true;
     }
 
     private void salvarSharedPreferences() {

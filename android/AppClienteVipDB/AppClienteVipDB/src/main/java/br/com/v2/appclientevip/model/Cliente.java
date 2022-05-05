@@ -2,7 +2,7 @@ package br.com.v2.appclientevip.model;
 
 public class Cliente {
 
-    private int id;
+    private Integer id;
     private String primeiroNome;
     private String sobreNome;
     private String email;
@@ -11,11 +11,11 @@ public class Cliente {
     private String dataInc;
     private String dataAlt;
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
