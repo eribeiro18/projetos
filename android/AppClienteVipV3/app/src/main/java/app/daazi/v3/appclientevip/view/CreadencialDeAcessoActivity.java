@@ -114,22 +114,16 @@ public class CreadencialDeAcessoActivity extends AppCompatActivity {
                                     }
                                 })
                                 .build();
-
                     } else {
-
                         cliente.setEmail(editEmail.getText().toString());
-                        cliente.setSenha(editSenhaA.getText().toString());
-
+                        cliente.setSenha(AppUtil.gerarMD5Hash(editSenhaA.getText().toString()));
                         controller.alterar(cliente);
                         salvarSharedPreferences();
-
                         Intent iMenuPrincipal = new Intent(CreadencialDeAcessoActivity.this, LoginActivity.class);
                         startActivity(iMenuPrincipal);
                         finish();
                     }
-
                 }
-
             }
         });
     }
@@ -164,35 +158,23 @@ public class CreadencialDeAcessoActivity extends AppCompatActivity {
     }
 
     public boolean validarSenha() {
-
         boolean retorno;
-
         int senhaA, senhaB;
-
         senhaA = Integer.parseInt(editSenhaA.getText().toString());
         senhaB = Integer.parseInt(editSenhaB.getText().toString());
-
         retorno = (senhaA == senhaB);
-
-
         return retorno;
-
-
     }
 
     private void salvarSharedPreferences() {
-
         preferences = getSharedPreferences(AppUtil.PREF_APP, MODE_PRIVATE);
         SharedPreferences.Editor dados = preferences.edit();
-
         dados.putString("email",editEmail.getText().toString());
-        dados.putString("senha",editSenhaA.getText().toString());
+        dados.putString("senha",AppUtil.gerarMD5Hash(editSenhaA.getText().toString()));
         dados.apply();
-
     }
 
     private void restaurarSharedPreferences() {
-
         preferences = getSharedPreferences(AppUtil.PREF_APP, MODE_PRIVATE);
         ultimoID = preferences.getInt("ultimoID", -1);
         String primeiroNome = preferences.getString("primeiroNome", "");
@@ -207,7 +189,5 @@ public class CreadencialDeAcessoActivity extends AppCompatActivity {
             editNome.setText(preferences.getString("nomeCompleto", "Verifique os dados"));
         else
             editNome.setText(preferences.getString("razaoSocial", "Verifique os dados"));
-
-
     }
 }

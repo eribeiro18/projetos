@@ -54,6 +54,7 @@ public class ClienteVipActivity extends AppCompatActivity {
                     novoVip.setPrimeiroNome(editPrimeiroNome.getText().toString());
                     novoVip.setSobreNome(editSobreNome.getText().toString());
                     novoVip.setPessoaFisica(isPessoaFisica);
+                    clienteController.incluir(novoVip);
                     ultimoID = clienteController.getUltimoID();
                     salvarSharedPreferences();
 
@@ -120,9 +121,7 @@ public class ClienteVipActivity extends AppCompatActivity {
     }
 
     private boolean validarFormulario() {
-
         boolean retorno = true;
-
         if (TextUtils.isEmpty(editPrimeiroNome.getText().toString())) {
             editPrimeiroNome.setError("*");
             editPrimeiroNome.requestFocus();
@@ -134,8 +133,6 @@ public class ClienteVipActivity extends AppCompatActivity {
             editSobreNome.requestFocus();
             retorno = false;
         }
-
-
         return retorno;
     }
 
@@ -155,14 +152,9 @@ public class ClienteVipActivity extends AppCompatActivity {
         dados.putBoolean("pessoaFisica", novoVip.isPessoaFisica());
         dados.putInt("ultimoID", ultimoID);
         dados.apply();
-
-
     }
 
     private void restaurarSharedPreferences() {
-
         preferences = getSharedPreferences(AppUtil.PREF_APP, MODE_PRIVATE);
-
     }
-
 }

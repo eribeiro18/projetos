@@ -13,7 +13,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-
+        <activity
+            android:name=".view.AtualizarMeusDadosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.MeusDadosActivity"
+            android:exported="false" />
         <activity android:name=".view.ConsultarClientesActivity" />
         <activity android:name=".view.RecuperarSenhaActivity" />
         <activity android:name=".view.ClientePessoaJuridicaActivity" />

@@ -8,7 +8,9 @@ import androidx.annotation.Nullable;
 import java.util.List;
 
 import app.daazi.v3.appclientevip.api.AppDataBase;
+import app.daazi.v3.appclientevip.datamodel.ClienteDataModel;
 import app.daazi.v3.appclientevip.datamodel.ClientePJDataModel;
+import app.daazi.v3.appclientevip.model.ClientePF;
 import app.daazi.v3.appclientevip.model.ClientePJ;
 
 public class ClientePJController extends AppDataBase {
@@ -53,5 +55,9 @@ public class ClientePJController extends AppDataBase {
 
     public int getUltimoID(){
         return getLastPk(ClientePJDataModel.TABELA);
+    }
+
+    public ClientePJ getClientePJByIdFK(int fk){
+        return getClientePJByFK(ClienteDataModel.TABELA, fk);
     }
 }

@@ -212,47 +212,32 @@ public class LoginActivity extends AppCompatActivity {
                 .placeholder(R.drawable.carregando_animacao)
                 .into(imgBackground);
 
-
-
         Picasso.with(this).load(AppUtil.URL_IMG_LOGO).placeholder(R.drawable.carregando_animacao).into(imgLogo);
-
     }
 
     public void lembrarSenha(View view) {
-
         isLembrarSenha = chLembrar.isChecked();
-
     }
 
     public boolean validarDadosDoUsuario() {
-
-
-        return true;
-
+        return AppUtil.gerarMD5Hash(editSenha.getText().toString()).equals(cliente.getSenha());
     }
 
     private void salvarSharedPreferences() {
-
         preferences = getSharedPreferences(AppUtil.PREF_APP, MODE_PRIVATE);
         SharedPreferences.Editor dados = preferences.edit();
-
         dados.putBoolean("loginAutomatico", isLembrarSenha);
         dados.putString("emailCliente", editEmail.getText().toString());
         dados.apply();
-
     }
 
     private void restaurarSharedPreferences() {
-
         preferences = getSharedPreferences(AppUtil.PREF_APP, MODE_PRIVATE);
-
         cliente.setEmail(preferences.getString("email", "teste@teste.com"));
         cliente.setSenha(preferences.getString("senha", "12345"));
         cliente.setPrimeiroNome(preferences.getString("primeiroNome", "Cliente"));
         cliente.setSobreNome(preferences.getString("sobreNome", "Fake"));
         cliente.setPessoaFisica(preferences.getBoolean("pessoaFisica", true));
-
         isLembrarSenha = preferences.getBoolean("loginAutomatico", false);
-
     }
 }

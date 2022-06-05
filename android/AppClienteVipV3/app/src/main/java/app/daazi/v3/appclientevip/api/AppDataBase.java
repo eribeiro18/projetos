@@ -255,4 +255,60 @@ public class AppDataBase extends SQLiteOpenHelper {
         }
         return -1;
     }
+
+    public Cliente getClienteById(String tabela, Cliente obj){
+        Cliente c = new Cliente();;
+        String sql = "SELECT * FROM " + tabela + " WHERE id = " + obj.getId();
+        try {
+            cursor = db.rawQuery(sql, null);
+            if(cursor.moveToNext()){
+                c.setId(cursor.getInt(cursor.getColumnIndex(ClienteDataModel.ID)));
+                c.setPrimeiroNome(cursor.getString(cursor.getColumnIndex(ClienteDataModel.PRIMEIRO_NOME)));
+                c.setSobreNome(cursor.getString(cursor.getColumnIndex(ClienteDataModel.SOBRE_NOME)));
+                c.setEmail(cursor.getString(cursor.getColumnIndex(ClienteDataModel.EMAIL)));
+                c.setSenha(cursor.getString(cursor.getColumnIndex(ClienteDataModel.SENHA)));
+                c.setPessoaFisica(cursor.getInt(cursor.getColumnIndex(ClienteDataModel.PESSOA_FISICA)) == 1);
+            }
+        }catch (SQLException e){
+            Log.e(AppUtil.LOG_APP, "erro ao consultar cliente por id(getClienteById) id=> " + obj.getId() +" Erro => " + e.getMessage());
+        }
+        return c;
+    }
+
+    public ClientePF getClientePFByFK(String tabela, int fk){
+        ClientePF cPF = new ClientePF();;
+        String sql = "SELECT * FROM " + tabela + " WHERE clienteID = " + fk;
+        try {
+            cursor = db.rawQuery(sql, null);
+            if(cursor.moveToNext()){
+                cPF.setId(cursor.getInt(cursor.getColumnIndex(ClientePFDataModel.ID)));
+                cPF.setClienteID(cursor.getInt(cursor.getColumnIndex(ClientePJDataModel.FK)));
+                cPF.setNomeCompleto(cursor.getString(cursor.getColumnIndex(ClientePFDataModel.NOME_COMPLETO)));
+                cPF.setCpf(cursor.getString(cursor.getColumnIndex(ClientePFDataModel.CPF)));
+            }
+        }catch (SQLException e){
+            Log.e(AppUtil.LOG_APP, "erro ao consultar clientePF por fk(getClientePFByFK) fk=> " + fk +" Erro => " + e.getMessage());
+        }
+        return cPF;
+    }
+
+    public ClientePJ getClientePJByFK(String tabela, int fk){
+        ClientePJ cPJ = new ClientePJ();;
+        String sql = "SELECT * FROM " + tabela + " WHERE clientePFID = " + fk;
+        try {
+            cursor = db.rawQuery(sql, null);
+            if(cursor.moveToNext()){
+                cPJ.setId(cursor.getInt(cursor.getColumnIndex(ClientePJDataModel.ID)));
+                cPJ.setClientePFID(cursor.getInt(cursor.getColumnIndex(ClientePJDataModel.FK)));
+                cPJ.setRazaoSocial(cursor.getString(cursor.getColumnIndex(ClientePJDataModel.RAZAO_SOCIAL)));
+                cPJ.setCnpj(cursor.getString(cursor.getColumnIndex(ClientePJDataModel.CNPJ)));
+                cPJ.setDataAbertura(cursor.getString(cursor.getColumnIndex(ClientePJDataModel.DATA_ABERTURA)));
+                cPJ.setSimplesNacional(cursor.getInt(cursor.getColumnIndex(ClientePJDataModel.SIMPLES_NACIONAL)) == 1);
+                cPJ.setMei(cursor.getInt(cursor.getColumnIndex(ClientePJDataModel.MEI)) == 1);
+            }
+        }catch (SQLException e){
+            Log.e(AppUtil.LOG_APP, "erro ao consultar clientePJ por fk(getClientePFByFK) fk=> " + fk +" Erro => " + e.getMessage());
+        }
+        return cPJ;
+    }
 }

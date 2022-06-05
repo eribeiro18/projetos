@@ -21,6 +21,8 @@
     <!-- tela novo cliente vip -->
 
     <string name="txtNovoVip">Novo Vip</string>
+    <string name="txtMeusDados">Meus Dados</string>
+    <string name="txtAtualizarMeusDados">Atualizar Meus Dados</string>
     <string name="txtPrimeiroNome">Primeiro Nome</string>
     <string name="txtSobreNome">Sobre Nome</string>
     <string name="txtHintSobreNome">Digite seu sobre nome...</string>
@@ -71,5 +73,7 @@
     <string name="btnExcluirMinhaConta">EXCLUIR MINHA CONTA</string>
     <string name="btnConsultarClientesVip">CONSULTAR CLIENTES VIP</string>
     <string name="txtCliente">Cliente</string>
+    <string name="btnEditar">Editar</string>
+    <string name="btnSalvar">Salvar</string>
 
 </resources>

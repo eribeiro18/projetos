@@ -8,8 +8,8 @@ import androidx.annotation.Nullable;
 import java.util.List;
 
 import app.daazi.v3.appclientevip.api.AppDataBase;
+import app.daazi.v3.appclientevip.datamodel.ClienteDataModel;
 import app.daazi.v3.appclientevip.datamodel.ClientePFDataModel;
-import app.daazi.v3.appclientevip.model.Cliente;
 import app.daazi.v3.appclientevip.model.ClientePF;
 
 public class ClientePFController extends AppDataBase {
@@ -50,4 +50,7 @@ public class ClientePFController extends AppDataBase {
         return getLastPk(ClientePFDataModel.TABELA);
     }
 
+    public ClientePF getClientePFByIdFK(int fk){
+        return getClientePFByFK(ClienteDataModel.TABELA, fk);
+    }
 }
