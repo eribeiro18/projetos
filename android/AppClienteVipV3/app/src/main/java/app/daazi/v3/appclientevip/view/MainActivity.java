@@ -67,11 +67,8 @@ public class MainActivity extends AppCompatActivity {
         cliente = new Cliente();
         clientePF = new ClientePF();
         clientePJ = new ClientePJ();
-
         txtNomeCliente = findViewById(R.id.txtNomeCliente);
-
         restaurarSharedPreferences();
-
         txtNomeCliente.setText("Bem vindo, "+ cliente.getPrimeiroNome());
     }
 
@@ -81,9 +78,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void restaurarSharedPreferences() {
-
         preferences = getSharedPreferences(AppUtil.PREF_APP, MODE_PRIVATE);
-
         cliente.setPrimeiroNome(preferences.getString("primeiroNome", "NULO"));
         cliente.setSobreNome(preferences.getString("sobreNome", "NULO"));
         cliente.setEmail(preferences.getString("email", "NULO"));
@@ -145,7 +140,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void sairDoAplicativo(View view) {
-
         new FancyAlertDialog.Builder(MainActivity.this)
                 .setTitle("SAIR DO APLICATIVO")
                 .setBackgroundColor(Color.parseColor("#303F9F"))
@@ -172,6 +166,5 @@ public class MainActivity extends AppCompatActivity {
                     }
                 })
                 .build();
-
     }
 }
