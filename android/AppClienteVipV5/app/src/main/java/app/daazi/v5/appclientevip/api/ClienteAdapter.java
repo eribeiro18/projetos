@@ -34,7 +34,7 @@ public class ClienteAdapter  extends RecyclerView.Adapter<ClienteAdapter.ViewHol
         Context context = parent.getContext();
         LayoutInflater inflater = LayoutInflater.from(context);
 
-        View linhaView = inflater.inflate(R.layout.linha_detalhe_cliente, parent, false);
+        View linhaView = inflater.inflate(R.layout.linha_detalhe_consultar_clientes, parent, false);
 
         ViewHolder viewHolder = new ViewHolder(linhaView);
 
@@ -51,8 +51,20 @@ public class ClienteAdapter  extends RecyclerView.Adapter<ClienteAdapter.ViewHol
         TextView txtPrimeiroNome = holder.rvPrimeiroNome;
         txtPrimeiroNome.setText(objDaLinha.getPrimeiroNome());
 
+        TextView rvEmail = holder.rvEmail;
+        rvEmail.setText(objDaLinha.getEmail());
+
         Button btnPessoaFisica = holder.rvPessoaFisica;
-        btnPessoaFisica.setText(objDaLinha.isPessoaFisica() ? "CPF" : "CNPJ");
+
+        try {
+
+            btnPessoaFisica.setText(objDaLinha.isPessoaFisica() ? "CPF: " + objDaLinha.getClientePF().getCpf() : "CNPJ: " + objDaLinha.getClientePJ().getCnpj());
+
+        }catch (Exception e){
+
+            btnPessoaFisica.setText(objDaLinha.isPessoaFisica() ? "CPF: "  : "CNPJ: ");
+
+        }
 
 
     }
@@ -64,14 +76,19 @@ public class ClienteAdapter  extends RecyclerView.Adapter<ClienteAdapter.ViewHol
 
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
 
-        public TextView rvPrimeiroNome;
+
         public Button rvPessoaFisica;
+        public TextView rvPrimeiroNome;
+        public TextView rvEmail;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
             rvPrimeiroNome = itemView.findViewById(R.id.rvPrimeiroNome);
             rvPessoaFisica = itemView.findViewById(R.id.rvPessoaFisica);
+            rvEmail = itemView.findViewById(R.id.rvEmail);
+
+            Log.i(AppUtil.LOG_APP,"Nome: "+rvPrimeiroNome.getText().toString());
 
             itemView.setOnClickListener(this);
         }

@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".view.CreadencialDeAcessoActivity">
+    tools:context=".view.CredencialDeAcessoActivity">
 
     <!-- Cabeçalho -->
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_margin="8dp"
+
         app:cardCornerRadius="4dp"
         app:cardElevation="8dp">
 
@@ -72,8 +72,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_margin="8dp"
         app:cardCornerRadius="4dp"
         app:cardElevation="8dp">
 
@@ -174,8 +173,8 @@
                 android:id="@+id/ckTermo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="8dp"
+
+                android:layout_margin="8dp"
                 android:onClick="validarTermo"
                 android:text="@string/txtTermo"
                 android:textAppearance="@android:style/TextAppearance.Holo.Small"
@@ -191,8 +190,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_margin="8dp"
         app:cardCornerRadius="4dp"
         app:cardElevation="8dp">
 
@@ -207,10 +205,9 @@
                 android:id="@+id/btnCadastro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="16dp"
+
+                android:layout_margin="8dp"
+
                 android:text="@string/btnCadastro"
                 android:textAppearance="@android:style/TextAppearance.Holo.Large" />
 

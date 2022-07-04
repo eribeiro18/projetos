@@ -12,6 +12,8 @@ import app.daazi.v5.appclientevip.R;
 import app.daazi.v5.appclientevip.api.ClienteAdapter;
 import app.daazi.v5.appclientevip.controller.ClienteController;
 import app.daazi.v5.appclientevip.model.Cliente;
+import app.daazi.v5.appclientevip.model.ClientePF;
+import app.daazi.v5.appclientevip.model.ClientePJ;
 
 public class ConsultarClientesActivity extends AppCompatActivity {
 
@@ -34,17 +36,6 @@ public class ConsultarClientesActivity extends AppCompatActivity {
         controller = new ClienteController(getApplicationContext());
 
         clientes = controller.listar();
-
-         for (int i = 0; i <  50; i++) {
-
-             obj = new Cliente();
-
-             obj.setPrimeiroNome("Cliente " + i);
-             obj.setPessoaFisica(i % 2 == 0);
-
-             clientes.add(obj);
-
-         }
 
         adapter = new ClienteAdapter(clientes, getApplicationContext());
 

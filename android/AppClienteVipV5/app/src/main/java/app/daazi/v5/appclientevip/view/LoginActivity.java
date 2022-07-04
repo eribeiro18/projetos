@@ -224,10 +224,22 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 
+    // TODO: Implementar Validação senha MD5
     public boolean validarDadosDoUsuario() {
 
+        boolean retorno = false;
 
-        return true;
+        // comparar as senhas
+
+        String senhaDigitadaPura = editSenha.getText().toString();
+        String senhaMD5 = cliente.getSenha();
+
+        if(senhaMD5.equals(AppUtil.gerarMD5Hash(senhaDigitadaPura))){
+            retorno = true;
+        }
+
+
+        return retorno;
 
     }
 

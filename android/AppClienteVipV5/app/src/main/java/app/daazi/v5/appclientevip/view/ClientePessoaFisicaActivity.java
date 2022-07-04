@@ -42,7 +42,6 @@ public class ClientePessoaFisicaActivity extends AppCompatActivity {
     int clienteID;
     int ultimoIDClientePessoaPF;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -71,7 +70,7 @@ public class ClientePessoaFisicaActivity extends AppCompatActivity {
                     if (isPessoaFisica)
 
                         intent = new Intent(ClientePessoaFisicaActivity.this,
-                                CreadencialDeAcessoActivity.class);
+                                CredencialDeAcessoActivity.class);
 
                     else
                         intent = new Intent(ClientePessoaFisicaActivity.this,

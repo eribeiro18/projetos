@@ -3,7 +3,7 @@ package app.daazi.v5.appclientevip.model;
 public class ClientePJ extends ClientePF{
 
     private int id;
-    private int clientePFID;
+    private int clientePFID; // FK
     private String cnpj;
     private String razaoSocial;
     private String dataAbertura;

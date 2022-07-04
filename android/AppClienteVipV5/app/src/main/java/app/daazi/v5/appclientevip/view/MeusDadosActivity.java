@@ -175,7 +175,6 @@ public class MeusDadosActivity extends AppCompatActivity {
 
     }
 
-
     private void restaurarSharedPreferences() {
 
         preferences = getSharedPreferences(AppUtil.PREF_APP, MODE_PRIVATE);

@@ -20,23 +20,25 @@ import java.util.List;
 
 import app.daazi.v3.appclientevip.R;
 import app.daazi.v3.appclientevip.api.AppUtil;
+import app.daazi.v3.appclientevip.controller.ClienteController;
+import app.daazi.v3.appclientevip.controller.ClientePFController;
+import app.daazi.v3.appclientevip.controller.ClientePJController;
 import app.daazi.v3.appclientevip.model.Cliente;
 import app.daazi.v3.appclientevip.model.ClientePF;
 import app.daazi.v3.appclientevip.model.ClientePJ;
 
 public class MainActivity extends AppCompatActivity {
 
-
     Cliente cliente;
-    ClientePF clientePF;
-    ClientePJ clientePJ;
 
     TextView txtNomeCliente;
-
-    private SharedPreferences preferences;
-
     List<Cliente> clientes;
     List<String> cidades;
+    private SharedPreferences preferences;
+
+    private ClienteController clienteController;
+    private ClientePFController clientePFController;
+    private ClientePJController clientePJController;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,26 +57,22 @@ public class MainActivity extends AppCompatActivity {
 
         for (int i = 0; i < 10; i++) {
             cliente = new Cliente();
-            cliente.setPrimeiroNome("Cliente nº "+i);
+            cliente.setPrimeiroNome("Cliente nº " + i);
             clientes.add(cliente);
         }
-        for (String obj: cidades) {
-            Log.i(AppUtil.LOG_APP,"Obj: "+obj);
+        for (String obj : cidades) {
+            Log.i(AppUtil.LOG_APP, "Obj: " + obj);
         }
     }
 
     private void initFormulario() {
         cliente = new Cliente();
-        clientePF = new ClientePF();
-        clientePJ = new ClientePJ();
         txtNomeCliente = findViewById(R.id.txtNomeCliente);
         restaurarSharedPreferences();
-        txtNomeCliente.setText("Bem vindo, "+ cliente.getPrimeiroNome());
-    }
-
-    private void salvarSharedPreferences() {
-        preferences = getSharedPreferences(AppUtil.PREF_APP, MODE_PRIVATE);
-        SharedPreferences.Editor dados = preferences.edit();
+        txtNomeCliente.setText("Bem vindo, " + cliente.getPrimeiroNome());
+        this.clienteController = new ClienteController(this);
+        this.clientePFController = new ClientePFController(this);
+        this.clientePJController = new ClientePJController(this);
     }
 
     private void restaurarSharedPreferences() {
@@ -84,16 +82,7 @@ public class MainActivity extends AppCompatActivity {
         cliente.setEmail(preferences.getString("email", "NULO"));
         cliente.setSenha(preferences.getString("senha", "NULO"));
         cliente.setPessoaFisica(preferences.getBoolean("pessoaFisica", true));
-
-        clientePF.setCpf(preferences.getString("cpf", "NULO"));
-        clientePF.setNomeCompleto(preferences.getString("nomeCompleto", "NULO"));
-
-        clientePJ.setCnpj(preferences.getString("cnpf", "NULO"));
-        clientePJ.setRazaoSocial(preferences.getString("razaoSocial", "NULO"));
-        clientePJ.setSimplesNacional(preferences.getBoolean("simplesNacional", false));
-        clientePJ.setMei(preferences.getBoolean("mei", false));
-        clientePJ.setDataAbertura(preferences.getString("dataAbertura", "NULO"));
-
+        cliente.setId(preferences.getInt("clienteID", -1));
     }
 
     public void meusDados(View view) {
@@ -107,7 +96,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void excluirMinhaConta(View view) {
-
         new FancyAlertDialog.Builder(MainActivity.this)
                 .setTitle("EXCLUIR SUA CONTA")
                 .setBackgroundColor(Color.parseColor("#303F9F"))
@@ -121,6 +109,15 @@ public class MainActivity extends AppCompatActivity {
                 .OnPositiveClicked(new FancyAlertDialogListener() {
                     @Override
                     public void OnClick() {
+                        cliente.setClientePF(clientePFController.getClientePFByIdFK(cliente.getId()));
+                        if(!cliente.isPessoaFisica()){
+                            cliente.setClientePJ(clientePJController.getClientePJByIdFK(cliente.getClientePF().getId()));
+                            if(cliente.getClientePJ() != null && cliente.getClientePJ().getId() != 0){
+                                clientePJController.deletar(cliente.getClientePJ());
+                            }
+                        }
+                        clientePFController.deletar(cliente.getClientePF());
+                        clienteController.deletar(cliente);
                         Toast.makeText(getApplicationContext(), cliente.getPrimeiroNome() + ", sua conta foi excluída, esperamos que retorne em breve...", Toast.LENGTH_SHORT).show();
                     }
                 })

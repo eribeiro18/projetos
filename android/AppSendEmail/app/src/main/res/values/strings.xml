@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AppSendEmail</string>
+    <string name="app_send_email">App Send Email</string>
+    <string name="email_para">Email para</string>
+    <string name="assunto">Assunto</string>
+    <string name="mensagem">Mensagem</string>
+    <string name="enviar_e_mail">ENVIAR E-MAIL</string>
+    <string name="digite_uma_mensagem">Digite uma mensagem</string>
+    <string name="digite_um_assunto">Digite um assunto</string>
+    <string name="digite_um_e_mail_para_destinatario">Digite um e-mail para Destinatario</string>
+</resources>

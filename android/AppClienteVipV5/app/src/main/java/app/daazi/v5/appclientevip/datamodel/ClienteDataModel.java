@@ -2,7 +2,7 @@ package app.daazi.v5.appclientevip.datamodel;
 
 // MOR - Modelo Objeto Relacional - SQLserver, Oracle, Postgress
 
-public class ClienteDataModel {
+public class    ClienteDataModel {
 
     /**
      *     private int id;

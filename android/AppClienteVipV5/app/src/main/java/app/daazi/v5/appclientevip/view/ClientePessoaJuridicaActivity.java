@@ -68,7 +68,7 @@ public class ClientePessoaJuridicaActivity extends AppCompatActivity {
                     salvarSharedPreferences();
 
                     Intent intent = new Intent(ClientePessoaJuridicaActivity.this,
-                            CreadencialDeAcessoActivity.class);
+                            CredencialDeAcessoActivity.class);
                     startActivity(intent);
 
 
@@ -144,7 +144,6 @@ public class ClientePessoaJuridicaActivity extends AppCompatActivity {
         isMEI = chMEI.isChecked();
 
     }
-
 
     private void initFormulario() {
 

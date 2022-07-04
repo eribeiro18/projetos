@@ -13,6 +13,8 @@ import androidx.annotation.Nullable;
 import java.util.ArrayList;
 import java.util.List;
 
+import app.daazi.v5.appclientevip.controller.ClientePFController;
+import app.daazi.v5.appclientevip.controller.ClientePJController;
 import app.daazi.v5.appclientevip.datamodel.ClienteDataModel;
 import app.daazi.v5.appclientevip.datamodel.ClientePFDataModel;
 import app.daazi.v5.appclientevip.datamodel.ClientePJDataModel;
@@ -29,8 +31,12 @@ public class AppDataBase extends SQLiteOpenHelper {
 
     SQLiteDatabase db;
 
+    Context context;
+
     public AppDataBase(@Nullable Context context) {
         super(context, DB_NAME, null, DB_VERSION);
+
+        this.context = context;
 
         db = getWritableDatabase();
 
@@ -168,6 +174,8 @@ public class AppDataBase extends SQLiteOpenHelper {
         List<Cliente> list = new ArrayList<>();
 
         Cliente cliente;
+        ClientePFController controllerPF = new ClientePFController(context);
+        ClientePJController controllerPJ = new ClientePJController(context);
 
         // Select no banco de dados
         // SELECT * FROM tabela
@@ -190,6 +198,13 @@ public class AppDataBase extends SQLiteOpenHelper {
                     cliente.setEmail(cursor.getString(cursor.getColumnIndex(ClienteDataModel.EMAIL)));
                     cliente.setSenha(cursor.getString(cursor.getColumnIndex(ClienteDataModel.SENHA)));
                     cliente.setPessoaFisica(cursor.getInt(cursor.getColumnIndex(ClienteDataModel.PESSOA_FISICA)) == 1);
+
+                    
+                    cliente.setClientePF(controllerPF.getClientePFByFK(cliente.getId()));
+
+                    if(!cliente.isPessoaFisica())
+                        cliente.setClientePJ(controllerPJ.getClientePJByFK(cliente.getClientePF().getId()));
+
 
                     list.add(cliente);
 
@@ -359,7 +374,6 @@ public class AppDataBase extends SQLiteOpenHelper {
 
     }
 
-
     public ClientePF getClientePFByFK(String tabela, int idFK){
 
         ClientePF clientePF = new ClientePF();
@@ -390,9 +404,6 @@ public class AppDataBase extends SQLiteOpenHelper {
         return  clientePF;
 
     }
-
-
-
 
     public ClientePJ getClientePJByFK(String tabela, int idFK){
 
@@ -427,7 +438,6 @@ public class AppDataBase extends SQLiteOpenHelper {
         return  clientePJ;
 
     }
-
 
 
 }

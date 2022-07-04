@@ -1,6 +1,8 @@
 package app.daazi.v5.appclientevip.api;
 
 
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.Calendar;
 import java.util.InputMismatchException;
 
@@ -99,8 +101,11 @@ public class AppUtil {
 
     }
 
-
-
+    /**
+     * Validar CNPJ
+     * @param CNPJ
+     * @return
+     */
     public static boolean isCNPJ(String CNPJ) {
         // considera-se erro CNPJ's formados por uma sequencia de numeros iguais
         if (CNPJ.equals("00000000000000") || CNPJ.equals("11111111111111") ||
@@ -155,6 +160,11 @@ public class AppUtil {
         }
     }
 
+    /**
+     * Validar CPF
+     * @param CPF
+     * @return
+     */
     public static boolean isCPF(String CPF) {
         if (CPF.equals("00000000000") ||
                 CPF.equals("11111111111") ||
@@ -206,6 +216,11 @@ public class AppUtil {
         }
     }
 
+    /**
+     * Adicionar mascára para CNPJ
+     * @param CNPJ
+     * @return
+     */
     public static String mascaraCNPJ(String CNPJ) {
 
         String retorno;
@@ -217,9 +232,51 @@ public class AppUtil {
         return  retorno;
     }
 
+    /**
+     * Adicionar mascára para CPF
+     * @param CPF
+     * @return
+     */
     public static String mascaraCPF(String CPF) {
         return (CPF.substring(0, 3) + "." + CPF.substring(3, 6) + "." +
                 CPF.substring(6, 9) + "-" + CPF.substring(9, 11));
+    }
+
+    /**
+     * Gerar senha criptografada com MD5.
+     * @param password
+     * @return
+     */
+    public static String gerarMD5Hash(String password) {
+
+        String retorno = "";
+
+        if(!password.isEmpty()) {
+
+            retorno = "falhou";
+
+            try {
+                // Create MD5 Hash
+                MessageDigest digest = MessageDigest.getInstance("MD5");
+                digest.update(password.getBytes());
+                byte messageDigest[] = digest.digest();
+
+                StringBuffer MD5Hash = new StringBuffer();
+                for (int i = 0; i < messageDigest.length; i++) {
+                    String h = Integer.toHexString(0xFF & messageDigest[i]);
+                    while (h.length() < 2)
+                        h = "0" + h;
+                    MD5Hash.append(h);
+                }
+
+                return MD5Hash.toString();
+
+            } catch (NoSuchAlgorithmException e) {
+                e.printStackTrace();
+            }
+
+        }
+        return retorno;
     }
 
     

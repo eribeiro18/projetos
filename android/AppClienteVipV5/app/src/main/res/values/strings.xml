@@ -5,7 +5,10 @@
     <string name="txtDataAtual">03/01/2020</string>
     <string name="txtHoraAtual">10:05:00</string>
     <string name="btnCadastro">CADASTRAR</string>
+
     <string name="btnVoltar">VOLTAR</string>
+    <string name="btnEditar">EDITAR</string>
+    <string name="btnSalvar">SALVAR</string>
 
     <!-- tela de login -->
 
@@ -22,6 +25,7 @@
 
     <string name="txtNovoVip">Novo Vip</string>
     <string name="txtMeusDados">Meus Dados</string>
+    <string name="txtAtualizarMeusDados">Atualizar Meus Dados</string>
     <string name="txtPrimeiroNome">Primeiro Nome</string>
     <string name="txtSobreNome">Sobre Nome</string>
     <string name="txtHintSobreNome">Digite seu sobre nome...</string>

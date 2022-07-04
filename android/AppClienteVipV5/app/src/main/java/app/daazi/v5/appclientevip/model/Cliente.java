@@ -60,7 +60,6 @@ public class Cliente {
         this.pessoaFisica = pessoaFisica;
     }
 
-
     public ClientePF getClientePF() {
         return clientePF;
     }

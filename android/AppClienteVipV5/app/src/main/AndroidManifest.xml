@@ -13,7 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".view.MeusDadosActivity"></activity>
+        <activity android:name=".view.AtualizarMeusActivity"></activity>
+        <activity android:name=".view.MeusDadosActivity" />
         <activity android:name=".view.ConsultarClientesActivity" />
         <activity android:name=".view.RecuperarSenhaActivity" />
         <activity android:name=".view.ClientePessoaJuridicaActivity" />
@@ -24,7 +25,7 @@
             android:noHistory="true"
             android:theme="@style/AppTheme" />
         <activity android:name=".view.MainActivity" />
-        <activity android:name=".view.CreadencialDeAcessoActivity" />
+        <activity android:name=".view.CredencialDeAcessoActivity" />
         <activity android:name=".view.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
