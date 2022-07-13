@@ -1,6 +1,6 @@
 # app_frase_do_dia_custom
 
-Projeto que gera frases no dia
+A new Flutter project frases do dia.
 
 ## Getting Started
 

@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="br.com.app.frasedodia.app_frase_do_dia_custom">
+    package="com.example.app_frase_do_dia_custom">
    <application
         android:label="app_frase_do_dia_custom"
         android:name="${applicationName}"

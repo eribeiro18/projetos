@@ -1,88 +1,86 @@
 import 'package:flutter/material.dart';
+import 'dart:math';
 
 void main(){
   runApp(MaterialApp(
-    // abaixo remove o debug
-    /*debugShowCheckedModeBanner: false,*/
-    title: "Frases do dia",
-    home: Container(
-      //margin e padding pode usar o only(top: 50, left: 50),
-      // ou seja aplica o espaçamento somente onde desejar
-      //padding coloca um espaçamento interno no conteiner.
-      // Caso seja igual todos os espaçamentos o fromLTRB pode ser substituido para all(30)
-      padding: EdgeInsets.fromLTRB(30, 30, 30, 30),
-      //margin coloca um espaçamento externo no conteiner.
-      //similar ao padding ou seja pode ser usado o fromLTRB no lugar do all
-      margin: EdgeInsets.all(30),
-      //no conteiner pode colocar a cor conforme abaixo
-      //color: Colors.white,
-      //uma forma de substituir apenas o color acima pode ser incluido igual abaixo
-      //neste contexto inclui uma borda conforme contem no componente abaixo
-      decoration: BoxDecoration(
-        border: Border.all(width: 3, color: Colors.white)
-      ),
-      child: Row(
-        //aplicar o alinhamento no eixo do componente abaixo centraliza
-        //já o MainAxisAlignment.spaceEvenly deixa os filhos organizado uniformes
-        // até ocupar o espaço completo da tela o mesmo ocorre quando rotacionar o cel
-        //o mesmo ocorre quando usa o componente column
-        mainAxisAlignment: MainAxisAlignment.center,
-        //a tag abaixo é similar a de cima, ou seja quando uma trabalha com o eixo na vertical
-        // a outra trabalha com o eixo na horizontal,
-        // caso o componente seja row é do jeito mecionado anterior, caso column as tags são invertidas
-        // a que fica na vertical trabalha na horizontal e a que fica na horizontal trabalha na vertical
-        //teste são interessantes para entendimento
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          Text(
-              "Texto 1",
-              textAlign: TextAlign.justify,
-          ),
-          //neste contexto pode usar o Padding como um filho no formato abaixo cria um espaçamento
-          //entre o texto 1 e o texto 3, já o margin apenas no container
-          Padding(
-              padding: EdgeInsets.all(30),
-              child: Text("Texto 2"),
-          ),
-          Text(
-            "Texto 3",
-            textAlign: TextAlign.justify,
-          )
-          //exemplo de FlatButton ou novo/similar a TextButton
-          /*FlatButton(
-              onPressed: (){
-                print("Botão pressionado!");
-              },
-              child: Text(
-                  "Botão",
-                  style: TextStyle(
-                    fontSize: 20,
-                    color: Colors.black,
-                    decoration: TextDecoration.none
-                  ),
-              )
-          )*/
-          //exemplo de text
-          /*Text(
-              "Testo qualquer...",
-              style: TextStyle(
-                  fontSize: 35,
-                  fontStyle: FontStyle.normal,
-                  fontWeight: FontWeight.normal,
-                  //espaçamento
-                  letterSpacing: 0,
-                  //espaçamento entre as palavras
-                  wordSpacing: 10,
-                  //trabalhar com o sublinhamento none remove
-                  decoration: TextDecoration.lineThrough,
-                  //alterar a cor do sublinhamento
-                  decorationColor: Colors.greenAccent,
-                  //tipos de sublinhamento
-                  decorationStyle: TextDecorationStyle.solid,
-                  color: Colors.black),
-            )*/
-          ],
-      ),
-    )
+    home: Home(),
+    debugShowCheckedModeBanner: false,
   ));
+}
+
+class Home extends StatefulWidget {
+  const Home({Key? key}) : super(key: key);
+
+  @override
+  State<Home> createState() => _HomeState();
+}
+
+class _HomeState extends State<Home> {
+
+  var _frases = [
+    "A vida é uma peça de teatro que não permite ensaios. Por isso, cante, chore, dance, ria e viva intensamente, antes que a cortina se feche e a peça termine sem aplausos.",
+    "Renda-se, como eu me rendi. Mergulhe no que você não conhece como eu mergulhei. Não se preocupe em entender, viver ultrapassa qualquer entendimento.",
+    "Apressa-te a viver bem e pensa que cada dia é, por si só, uma vida.",
+    "Aprenda como se você fosse viver para sempre. Viva como se você fosse morrer amanhã.",
+    "Sonhe como se fosse viver para sempre, viva como se fosse morrer amanhã.",
+    "Gostaria de dizer para você que viva como quem sabe que vai morrer um dia, e que morra como quem soube viver direito.",
+    "Mas onde se deve procurar a liberdade é nos sentimentos. Esses é que são a essência viva da alma.",
+  ];
+
+  var _fraseGerada = "Clique abaixo para gerar uma frase!";
+
+  void _gerarFrase(){
+    var numeroSorteado = Random().nextInt(_frases.length);
+    setState((){
+      _fraseGerada = _frases[numeroSorteado];
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Frases do dia"),
+        backgroundColor: Colors.green,
+      ),
+      body: Center(
+        child: Container(
+          padding: EdgeInsets.all(16),
+          //decoração abaixo apenas pra ver o
+          //contorno na area do conteiner util para teste
+          /*decoration: BoxDecoration(
+              border: Border.all(width: 3, color: Colors.amber)
+          ),*/
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Image.asset("images/logo.png"),
+              Text(
+                _fraseGerada,
+                textAlign: TextAlign.justify,
+                style: TextStyle(
+                    fontSize: 25,
+                    fontStyle: FontStyle.italic,
+                    color: Colors.black
+                ),
+              ),
+              RaisedButton(
+                onPressed: _gerarFrase,
+                child: Text(
+                  "Nova Frase",
+                  style: TextStyle(
+                      fontSize: 25,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold
+                  ),
+                ),
+                color: Colors.green,
+              )
+            ],
+          ),
+        ),
+      )
+    );
+  }
 }
