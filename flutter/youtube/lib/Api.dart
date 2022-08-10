@@ -32,9 +32,8 @@ class Api {
             return Video.fromJson(map);
           }
       ).toList();
-    }else{
     }
-    return videos;
+    return videos.toList();
   }
 
 }

@@ -42,9 +42,9 @@ class _HomeState extends State<Home> {
           IconButton(
               onPressed: () async {
                 String? res = await showSearch(context: context, delegate: CustomSearchDelegate());
-                //setState((){
+                setState((){
                   _resultado = res!;
-                //});
+                });
               },
               icon: Icon(Icons.search)
           ),

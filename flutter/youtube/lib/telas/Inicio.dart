@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:youtube/Api.dart';
 import 'package:youtube/model/Video.dart';
+import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class Inicio extends StatefulWidget {
 
@@ -15,8 +16,15 @@ class Inicio extends StatefulWidget {
 class _InicioState extends State<Inicio> {
 
   _listarVideos(String pesquisa){
-    Api api = Api();
+    Api api =Api();
     return api.pesquisar(pesquisa);
+  }
+
+  _youtubePlayerController(String id){
+    YoutubePlayerController _controller = YoutubePlayerController(
+      initialVideoId: id,
+    );
+    return _controller;
   }
 
   @override
@@ -37,23 +45,36 @@ class _InicioState extends State<Inicio> {
                   itemBuilder: (context, index){
                     List<Video> videos = snapshot.data!;
                     Video video = videos[index];
-                    return Column(
-                      children: [
-                        Container(
-                          height: 200,
-                          decoration: BoxDecoration(
-                            image: DecorationImage(
-                              //tag para qual cobertura a imagem irá ocupar dentro do conteiner
-                              fit: BoxFit.cover,
-                              image: NetworkImage(video.imagem!),
-                            )
+                    return GestureDetector(
+                      onTap: (){
+                        YoutubePlayer(
+                            controller: _youtubePlayerController(video.id!),
+                            liveUIColor: Colors.red,
+                            bottomActions: [
+                              CurrentPosition(),
+                              ProgressBar(isExpanded: true),
+
+                            ],
+                        );
+                      },
+                      child: Column(
+                        children: [
+                          Container(
+                            height: 200,
+                            decoration: BoxDecoration(
+                                image: DecorationImage(
+                                  //tag para qual cobertura a imagem irá ocupar dentro do conteiner
+                                  fit: BoxFit.cover,
+                                  image: NetworkImage(video.imagem!),
+                                )
+                            ),
                           ),
-                        ),
-                        ListTile(
-                          title: Text(video.titulo!),
-                          subtitle: Text(video.canal!),
-                        )
-                      ],
+                          ListTile(
+                            title: Text(video.titulo!),
+                            subtitle: Text(video.canal!),
+                          )
+                        ],
+                      ),
                     );
                   },
                   separatorBuilder: (context, index) => Divider(
