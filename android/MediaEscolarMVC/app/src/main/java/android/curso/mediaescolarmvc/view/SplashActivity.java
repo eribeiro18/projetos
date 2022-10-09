@@ -3,6 +3,7 @@ package android.curso.mediaescolarmvc.view;
 import android.content.Intent;
 import android.curso.mediaescolarmvc.R;
 import android.curso.mediaescolarmvc.controller.MediaEscolarController;
+import android.curso.mediaescolarmvc.model.Materia;
 import android.curso.mediaescolarmvc.model.MediaEscolar;
 import android.os.Bundle;
 import android.os.Handler;
@@ -34,9 +35,16 @@ public class SplashActivity extends AppCompatActivity
                 new MediaEscolarController(getBaseContext());
 
         textToSpeech = new TextToSpeech(this, this);
-
+        Materia materia = this.populaMateria();
         apresentarTelaSplash();
 
+    }
+
+    private Materia populaMateria(){
+        Materia materia = new Materia();
+        materia.setCodigoDaMateria("MA");
+        materia.setNomeDaMateria("Matematica");
+        return materia;
     }
 
     private void apresentarTelaSplash() {

@@ -55,6 +55,7 @@ class _HomeState extends State<Home> {
                           backgroundColor: Colors.white,
                           actions: [
                             TextButton(
+                              style: ,
                                 onPressed: (){
                                   print("Selecionado sim");
                                   Navigator.pop(context);

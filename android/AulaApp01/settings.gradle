@@ -1,0 +1,2 @@
+include ':meusContatos'
+rootProject.name = "App Aula 01"

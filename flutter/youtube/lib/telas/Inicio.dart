@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:youtube/Api.dart';
 import 'package:youtube/model/Video.dart';
-import 'package:youtube_player_flutter/youtube_player_flutter.dart';
+import 'package:youtube/telas/YoutubePlay.dart';
 
 class Inicio extends StatefulWidget {
 
@@ -20,15 +20,40 @@ class _InicioState extends State<Inicio> {
     return api.pesquisar(pesquisa);
   }
 
-  _youtubePlayerController(String id){
-    YoutubePlayerController _controller = YoutubePlayerController(
-      initialVideoId: id,
-    );
-    return _controller;
+  @override
+  void initState() {
+    super.initState();
+    print("chamado 1 - initState");
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    print("chamado 2 - didChangeDependencies");
+  }
+
+  void _abrirTelaVideo(Video video){
+    Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => YoutubePlay(video: video)));
+  }
+
+  @override
+  void didUpdateWidget(covariant Inicio oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    print("chamado 2 - didUpdateWidget");
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+    //descarrega a tela ou quando finaliza a execução da mesma
+    print("chamado 4 - dispose");
   }
 
   @override
   Widget build(BuildContext context) {
+    print("chamado 3 - build");
     return FutureBuilder<List<Video>>(
       future: _listarVideos(widget.pesquisa),
       builder: (context, snapshot){
@@ -47,15 +72,7 @@ class _InicioState extends State<Inicio> {
                     Video video = videos[index];
                     return GestureDetector(
                       onTap: (){
-                        YoutubePlayer(
-                            controller: _youtubePlayerController(video.id!),
-                            liveUIColor: Colors.red,
-                            bottomActions: [
-                              CurrentPosition(),
-                              ProgressBar(isExpanded: true),
-
-                            ],
-                        );
+                        _abrirTelaVideo(video);
                       },
                       child: Column(
                         children: [

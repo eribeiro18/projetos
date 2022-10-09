@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class Resultado extends StatefulWidget {
   //caso não puder ser final somente remover
-  //o cosnt da classe resultado
+  //o const da classe resultado
   final int numero;
 
   const Resultado({Key? key, required this.numero}) : super(key: key);

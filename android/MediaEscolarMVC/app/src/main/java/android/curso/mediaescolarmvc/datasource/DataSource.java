@@ -2,7 +2,9 @@ package android.curso.mediaescolarmvc.datasource;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.curso.mediaescolarmvc.datamodel.MateriaDataModel;
 import android.curso.mediaescolarmvc.datamodel.MediaEscolarDataModel;
+import android.curso.mediaescolarmvc.model.Materia;
 import android.curso.mediaescolarmvc.model.MediaEscolar;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteCantOpenDatabaseException;
@@ -36,17 +38,16 @@ public class DataSource extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-
         try {
-
             db.execSQL(MediaEscolarDataModel.criarTabela());
-
         } catch (Exception e) {
-
             Log.e("Media", "DB---> ERRO: " + e.getMessage());
-
         }
-
+        try {
+            db.execSQL(MateriaDataModel.criarTabela());
+        } catch (Exception e) {
+            Log.e("Materia", "DB---> ERRO: " + e.getMessage());
+        }
     }
 
     @Override
@@ -55,17 +56,12 @@ public class DataSource extends SQLiteOpenHelper {
     }
 
     public boolean insert(String tabela, ContentValues dados) {
-
         boolean sucesso = true;
-
         try {
-            sucesso = db.insert(tabela, null,
-                    dados) > 0;
+            sucesso = db.insert(tabela, null,  dados) > 0;
         } catch (Exception e) {
-
             sucesso = false;
         }
-
         return sucesso;
     }
 
@@ -79,15 +75,20 @@ public class DataSource extends SQLiteOpenHelper {
         return sucesso;
     }
 
-    public boolean alterar(String tabela, ContentValues dados) {
+    public boolean deletar(String tabela, String codigo) {
 
         boolean sucesso = true;
 
+        sucesso = db.delete(tabela, "id=?",
+                new String[]{codigo}) > 0;
+
+        return sucesso;
+    }
+
+    public boolean alterar(String tabela, ContentValues dados) {
+        boolean sucesso = true;
         int id = dados.getAsInteger("id");
-
-        sucesso = db.update(tabela, dados, "id=?",
-                new String[]{Integer.toString(id)}) > 0;
-
+        sucesso = db.update(tabela, dados, "id=?", new String[]{Integer.toString(id)}) > 0;
         return sucesso;
     }
 
@@ -126,6 +127,24 @@ public class DataSource extends SQLiteOpenHelper {
 
         cursor.close();
 
+        return lista;
+    }
+
+    public List<Materia> getAllMateria() {
+        Materia obj;
+        List<Materia> lista = new ArrayList<>();
+        String sql = "SELECT * FROM " + MateriaDataModel.getTABELA() + " ORDER BY " + MateriaDataModel.getCodigoDaMateria();
+        cursor = db.rawQuery(sql, null);
+        if (cursor.moveToFirst()) {
+            do {
+                obj = new Materia();
+                obj.setId(cursor.getInt(cursor.getColumnIndex(MateriaDataModel.getId())));
+                obj.setCodigoDaMateria(cursor.getString(cursor.getColumnIndex(MateriaDataModel.getCodigoDaMateria())));
+                obj.setNomeDaMateria(cursor.getString(cursor.getColumnIndex(MateriaDataModel.getNomeDaMateria())));
+                lista.add(obj);
+            } while (cursor.moveToNext());
+        }
+        cursor.close();
         return lista;
     }
 
