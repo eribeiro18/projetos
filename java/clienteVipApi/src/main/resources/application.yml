@@ -1,9 +1,0 @@
-
-spring:
-  application:
-    name: clientevipapi
-  datasource:
-    driver-class-name: ${driver}
-    username: ${username}
-    password: ${password}
-    url: ${url}

@@ -1,8 +1,15 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:minhas_viagens/SplashScreen.dart';
 
-void main() => runApp(MaterialApp(
-  title: "Minhas viagens",
-  home: SplashScreen(),
-  debugShowCheckedModeBanner: false,
-));
+void main() async {
+
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+
+  runApp(MaterialApp(
+    title: "Minhas viagens",
+    home: SplashScreen(),
+    debugShowCheckedModeBanner: false,
+  ));
+}

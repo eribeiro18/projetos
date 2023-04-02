@@ -40,7 +40,7 @@ class _HomeState extends State<Home> {
                             ],
                           )
                         ),
-                       //o secondaryBackgroundé pra dar uma
+                       //o secondaryBackground é pra dar uma
                        //segunda opção de cor ao arrastar
                        secondaryBackground: Container(
                            color: Colors.red,

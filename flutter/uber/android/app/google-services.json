@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "49526878775",
+    "project_id": "uber-82527",
+    "storage_bucket": "uber-82527.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:49526878775:android:7abede696a86e4860685b2",
+        "android_client_info": {
+          "package_name": "br.com.vanvans.app.uber"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "49526878775-c5l87nloo3m0b45j4kvp3ar80ned53pa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_U5bhjYSm4Yoy3Mz4nFbHLXZCjiB4IHk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "49526878775-c5l87nloo3m0b45j4kvp3ar80ned53pa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

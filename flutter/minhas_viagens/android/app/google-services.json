@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "256240591118",
+    "project_id": "minhas-viagens-82ac0",
+    "storage_bucket": "minhas-viagens-82ac0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:256240591118:android:00c0102abd1b5afdb9f75f",
+        "android_client_info": {
+          "package_name": "com.example.minhas_viagens"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "256240591118-hs29a7o00ck7t8h787tfc30hlp0u4cef.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB69vocCKLqk1mVZsR5hWWic5_OmJjuVfE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "256240591118-hs29a7o00ck7t8h787tfc30hlp0u4cef.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
