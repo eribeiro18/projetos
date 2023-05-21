@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+    <h:head>
+
+    </h:head>
+    <body>
+        <h:form id="formCadUsua" prependId="false">
+            <p:messages id="messages" showDetail="true" autoUpdate="true" closable="true" />
+            <div align="center">
+                <h:inputHidden  />
+                <p:panelGrid id="cadastroUsuario" style="margin-top:20px" columns="2">
+                    <f:facet name="header">
+                        <p:row>
+                            <p:column colspan="7">Cadastro de Usuario</p:column>
+                        </p:row>
+                    </f:facet>
+
+                    Nome:
+                    <p:inputText id="nome" />
+
+                    Login:
+                    <p:inputText id="login" maxlength="15" />
+
+                    Senha:
+                    <p:password id="senha" maxlength="15" redisplay="true" feedback="true"
+                                inline="true" />
+
+                    Confirmar senha:
+                    <p:password id="confSenha" maxlength="15" redisplay="true" feedback="true"
+                                inline="true" />
+
+                    Administrador:
+                    <p:selectBooleanCheckbox />
+                </p:panelGrid>
+                <div align="center">
+                    <p>
+                        <p:commandButton value="Consulta" type="button"
+                                         onclick="PF('produtosLista').show();" />
+                        <p:commandButton value="Novo" update="formCadUsua"/>
+                        <p:commandButton value="Salvar" update="formCadUsua"/>
+                        <p:commandButton value="Cancelar" ajax="cadastroUsuario" />
+                    </p>
+                </div>
+
+                <p:dialog header="Consulta" widgetVar="produtosLista" modal="true" height="350" width="800" id="dialogConsulta">
+
+                    <ui:include src="dataTable/pesquisaProduto.xhtml" />
+
+                </p:dialog>
+            </div>
+        </h:form>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="prontEletrPersistUnity" transaction-type="JTA">
+    <provider>org.hibernate.ejb.HibernatePersistence</provider>
+    <jta-data-source>jdbc/_prontEletr</jta-data-source>
+    <class>br.com.optpronteletronico.entity.Atestado</class>
+    <class>br.com.optpronteletronico.entity.Cid</class>
+    <class>br.com.optpronteletronico.entity.Clinica</class>
+    <class>br.com.optpronteletronico.entity.Consulta</class>
+    <class>br.com.optpronteletronico.entity.Endereco</class>
+    <class>br.com.optpronteletronico.entity.Estado</class>
+    <class>br.com.optpronteletronico.entity.Municipio</class>
+    <class>br.com.optpronteletronico.entity.Pais</class>
+    <class>br.com.optpronteletronico.entity.Pessoa</class>
+    <class>br.com.optpronteletronico.entity.Prontuario</class>
+    <class>br.com.optpronteletronico.entity.Receita</class>
+    <class>br.com.optpronteletronico.entity.Usuario</class>
+    <class>br.com.optpronteletronico.entity.TipoPessoa</class>
+    <class>br.com.optpronteletronico.entity.AgendaConsulta</class>
+    <class>br.com.optpronteletronico.entity.FaturaSalario</class>
+    <class>br.com.optpronteletronico.entity.PagamentoMedico</class>
+    <class>br.com.optpronteletronico.entity.PagamentoMedicosMensal</class>
+    <class>br.com.optpronteletronico.entity.PapelUsuario</class>
+    <class>br.com.optpronteletronico.entity.PessoaCrm</class>
+    <class>br.com.optpronteletronico.entity.PessoaFisica</class>
+    <class>br.com.optpronteletronico.entity.PessoaJuridica</class>
+    <class>br.com.optpronteletronico.entity.PosConsulta</class>
+    <class>br.com.optpronteletronico.entity.PreConsulta</class>
+    <class>br.com.optpronteletronico.entity.UsuarioPapelUsuario</class>
+    <class>br.com.optpronteletronico.entity.Menu</class>
+    <exclude-unlisted-classes>true</exclude-unlisted-classes>
+    <properties>
+      <property name="hibernate.hbm2ddl.auto" value="update"/>
+      <property name="hibernate.show_sql" value="true"/>
+      <property name="hibernate.format_sql" value="true"/>
+      <property name="hibernate.dialect" value="org.hibernate.dialect.Oracle9iDialect"/>
+      <!--      <property name="hibernate.dialect" value="org.hibernate.dialect.Oracle10gDialect"/>-->
+      <property name="hibernate.transaction.jta.platform" value="org.hibernate.service.jta.platform.internal.SunOneJtaPlatform"/>
+    </properties>
+  </persistence-unit>
+</persistence>

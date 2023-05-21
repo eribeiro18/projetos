@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/Button01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="NovaVenda_Click"
+        android:text="Nova Venda" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="ListarVendas_Click"
+        android:text="Listar Vendas" />
+
+    <Button
+        android:id="@+id/btnReplicar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="Replicacao_Click"
+        android:text="Iniciar Replicação" />
+
+    <Button
+        android:id="@+id/Button02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sair" />
+
+    <TextView
+        android:id="@+id/txvStatusConexao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status da conexão: verificando..."
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</LinearLayout>

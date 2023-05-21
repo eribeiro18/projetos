@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+
+    <h:panelGrid columns="7">
+
+        Nome:
+        <p:inputText />
+
+        <p:commandButton value="Pesquisar"  update="idPesquisaProduto"/>
+
+    </h:panelGrid>
+
+    <p:dataTable id="idPesquisaProduto" 
+                 paginator="true" rows="6" lazy="true">
+        <p:column headerText="Codigo">
+<!--            <h:outputText value="#{usuarioList.id}" />-->
+        </p:column>
+        <p:column headerText="Nome">
+<!--            <h:outputText value="#{usuarioList.nome}" />-->
+        </p:column>
+        <p:column headerText="Login">
+<!--            <h:outputText value="#{usuarioList.login}"/>-->
+        </p:column>
+        <p:column headerText="Status">
+<!--            <h:outputText value="#{usuarioList.ativo eq true ? 'Ativo' : 'Inativo'}" />-->
+        </p:column>
+        <p:column headerText="Selecionar">
+            <p:commandLink id="idSelecionar" value="Selecionar"
+                           ajax="formCadUsua" update="cadastroUsuario,dialogConsulta">
+            </p:commandLink>
+        </p:column>
+
+    </p:dataTable>
+</html>

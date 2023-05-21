@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en"
+      xmlns:jsf="http://xmlns.jcp.org/jsf"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <head jsf:id="head">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>FAST FOOD! | </title>
+        <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+        <link href="../vendors/nprogress/nprogress.css" rel="stylesheet" />
+        <link href="../vendors/animate.css/animate.min.css" rel="stylesheet" />
+        <link href="../build/css/custom.min.css" rel="stylesheet" />
+        <link href="../build/css/fastFoodTheme.css" rel="stylesheet" />
+    </head>
+
+    <body jsf:id="bodyLogin" class="login">
+        <a class="hiddenanchor" id="signup"></a>
+        <a class="hiddenanchor" id="signin"></a>
+
+        <div class="login_wrapper">
+            <div class="animate form login_form">
+                <section class="login_content">
+                    <h:form id="formLogin" prependId="false">
+                        <h1>Seja Bem-Vindo</h1>
+                        <div>
+                            <p:inputText id="username" styleClass="form-control" value="#{loginBean.username}"/>
+                            <p:watermark for="username" value="Usuário" id="watermarkUser" />
+                        </div>
+                        <div>
+                            <p:password id="password" styleClass="form-control" value="#{loginBean.password}" />
+                            <p:watermark for="password" value="Senha" id="watermarkPass" />
+                        </div>
+                        <div>
+                            <p:commandButton value="Entrar" id="btnLogin" class="btn btn-default submit" actionListener="#{loginBean.processAction}"/>
+                        </div>
+
+                        <div class="clearfix"></div>
+
+                        <div class="separator">
+                            <p class="change_link">
+                                <a href="#signup" class="to_register"> Esqueceu sua Senha? </a>
+                            </p>
+
+                            <div class="clearfix"></div>
+                            <br />
+
+                            <div>
+                                <h1><i class="fa fa-cutlery"></i> Gestão FAST FOOD!</h1>
+                                <p>©2017 Todos os direitos reservados. Gestão FAST FOOD</p>
+                            </div>
+                        </div>
+                    </h:form>
+                </section>
+            </div>
+
+            <div id="register" class="animate form registration_form">
+                
+                <section class="login_content">
+                    <h:form id="formRedefinirSenha" prependId="false">
+                        <h1>Alterar Senha</h1>
+                        <div class="col-md-12">
+                            <div class="col-md-6">
+                                <p:inputText id="codigoUserRed" class="form-control ffood-textFullLeft" value="#{loginBean.codigo}"/>
+                                <p:watermark for="codigoUserRed" value="Código" id="watermarkCodUserRed" />
+                            </div>
+                            <div class="col-md-6">
+                                <p:inputText id="usernameRed" class="form-control ffood-textFullLeft" value="#{loginBean.username}"/>
+                                <p:watermark for="usernameRed" value="Usuário" id="watermarkUserRed" />
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="col-md-12">
+                                <p:inputText id="emailUserRed" class="form-control ffood-textFullLeft" value="#{loginBean.email}"/>
+                                <p:watermark for="emailUserRed" value="Email" id="watermarkEmailUserRed" />
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="col-md-6">
+                                <p:inputText id="cpfUserRed" class="form-control ffood-textFullLeft" value="#{loginBean.cpf}"/>
+                                <p:watermark for="cpfUserRed" value="CPF" id="watermarkCoCpfdUserRed" />
+                                <p:tooltip id="toolTipGrow" for="cpfUserRed" value="Apenas Números." showEffect="clip" hideEffect="explode" position="left"/>
+                            </div>
+                            <div class="col-md-6">
+                                <p:inputText id="telUseRed" class="form-control ffood-textFullLeft" value="#{loginBean.phone}"/>
+                                <p:watermark for="telUseRed" value="Telefone" id="watermarkTelUserRed" />
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="col-md-6">
+                                <p:password id="passwordRed" class="form-control ffood-textFullLeft" value="#{loginBean.password}" rendered="#{loginBean.habilitaSenha}" />
+                                <p:watermark for="passwordRed" value="Nova Senha" id="watermarkPassRed" />
+                            </div>
+                            <div class="col-md-6">
+                                <p:password id="passwordConfRed" class="form-control ffood-textFullLeft" value="#{loginBean.password}" rendered="#{loginBean.habilitaSenha}"/>
+                                <p:watermark for="passwordConfRed" value="Confirme Nova Senha" id="watermarkConfPassRed" />
+                            </div>
+                        </div>
+                        <div>
+                            <p:commandButton value="Redefinir" id="redefineSenha" class="btn btn-default submit" update="msgValidLog,redefineSenha,passwordRed,passwordConfRed" actionListener="#{loginBean.processAction}" rendered="#{loginBean.habilitaSenha}"/>
+                            <p:commandButton value="Validar" id="validaRedefineSenha" rendered="#{!loginBean.habilitaSenha}" class="btn btn-default submit" update="msgValidLog,redefineSenha,passwordRed,passwordConfRed" actionListener="#{loginBean.processAction}"/>
+                        </div>
+
+                        <div class="clearfix"></div>
+
+                        <div class="separator">
+                            <p class="change_link">Voltar Página Inicial ?
+                                <a href="#signin" class="to_register"> Ir </a>
+                            </p>
+
+                            <div class="clearfix"></div>
+                            <br />
+
+                            <div>
+                                <h1><i class="fa fa-cutlery"></i> FAST FOOD!</h1>
+                                <p>©2017 Todos os direitos reservados. Gestão Fast Food</p>
+                             </div>
+                        </div>
+                        <p:growl id="msgValidLog" widgetVar="growlValidator" sticky="false" life="4000" showDetail="true" showSummary="true" />
+                    </h:form>
+                </section>
+            </div>
+        </div>
+    </body>
+</html>

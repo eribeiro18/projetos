@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <h:outputStylesheet library="css" name="fonte.css" />
+    </h:head>
+    <h:body>
+        <h:form>
+            <div style="background-color: #585858; height: 50px; margin-right: -10px; margin-left: -10px; margin-top: -10px;"></div>
+            <div align="justify"
+                 style="margin-right: -10px; margin-left: -10px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box;">
+                <p:menubar autoDisplay="false"  >
+                    <p:menuitem value="Menu Inicial" url="/pages/menu.xhtml" />
+
+                    <p:submenu label="Cadastros Gerais">
+                        <p:menuitem value="Usuario" url="/pages/usuario/cadastroUsuario.xhtml" />
+                    </p:submenu>
+
+                    <f:facet name="options">
+                        <p:commandButton value="Sair" actionListener="#{initializeBean.logout()}"></p:commandButton>
+                    </f:facet>
+                </p:menubar>
+            </div>
+        </h:form>
+    </h:body>
+</html>
+
