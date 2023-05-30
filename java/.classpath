@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Anotacoes/src"/>
+	<classpathentry kind="src" path="Base64/src"/>
+	<classpathentry kind="src" path="download-api/src/main/java"/>
+	<classpathentry kind="src" path="download-api/src/test/java"/>
+	<classpathentry kind="src" path="exportTable/src/main/java"/>
+	<classpathentry kind="src" path="FactoryMethod/src"/>
+	<classpathentry kind="src" path="FilesJava11/src"/>
+	<classpathentry kind="src" path="Inferencia/src"/>
+	<classpathentry kind="src" path="InferenciaJava10/src"/>
+	<classpathentry kind="src" path="InterfacePrivada/src"/>
+	<classpathentry kind="src" path="JSF/OptProntEletronico/src/main/java"/>
+	<classpathentry kind="src" path="MethodReferences/src"/>
+	<classpathentry kind="src" path="Nashorn/src"/>
+	<classpathentry kind="src" path="Optional/src"/>
+	<classpathentry kind="src" path="ParalleArrays/src"/>
+	<classpathentry kind="src" path="Reflect/src"/>
+	<classpathentry kind="src" path="SaudacaoModular/Saudacao/src"/>
+	<classpathentry kind="src" path="SaudacaoModular/SaudacaoDemo/src"/>
+	<classpathentry kind="src" path="Stream/src"/>
+	<classpathentry kind="src" path="StringJoiner/src"/>
+	<classpathentry kind="src" path="StringsJava11/src"/>
+	<classpathentry kind="src" path="teste-bash/src"/>
+	<classpathentry kind="src" path="teste-ssh/src/main/java"/>
+	<classpathentry kind="src" path="teste-ssh/src/test/java"/>
+	<classpathentry kind="src" path="TryCatch/src"/>
+	<classpathentry kind="src" path="VarParametroLambda/src"/>
+	<classpathentry kind="lib" path="download-api/.mvn/wrapper/maven-wrapper.jar"/>
+	<classpathentry kind="lib" path="exportTable/target/exportaTables.jar"/>
+	<classpathentry kind="output" path="FactoryMethod/bin"/>
+</classpath>
