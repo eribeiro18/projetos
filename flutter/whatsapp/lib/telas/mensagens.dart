@@ -75,7 +75,7 @@ class _MensagensState extends State<Mensagens> {
     cDestinatario.salvar();
   }
 
-  _salvarMensagem(
+    _salvarMensagem(
       String? idRemetente, String? idDestinatario, Mensagem msg) async {
     await db
         .collection("mensagens")

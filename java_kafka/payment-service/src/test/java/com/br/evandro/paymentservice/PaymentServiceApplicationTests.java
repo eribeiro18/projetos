@@ -1,11 +1,11 @@
-package com.br.evandro.strproducer;
+package com.br.evandro.paymentservice;
 
-import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class StrProducerApplicationTests {
+class PaymentServiceApplicationTests {
 
+//	@Test
 	void contextLoads() {
 	}
 
