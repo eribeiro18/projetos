@@ -2,10 +2,16 @@ package br.com.example;
 
 interface Figura2D{}
 
-//não permiti extends em records
+//não permiti extends em records ou estender
 //não permiti records abstratos
 //não pode haver variaveis de instancia na estrutura, ou seja somente variaveis estaticas
+//não permiti modificadores de acesso set, pois as variaveis são final e estaticas
 //permite implementar interfaces
+//permite metodos estaticos
+
+//a partir do java 15 novas regras foram aplicadas
+//metodos nativos não podem ser declarados em records
+//atributos declarados implicitamente são final e não de ser modificados por reflexão = illegalAccessException
 record Retangulo(double largura, double altura) implements Figura2D {
 	
 	static String saudacao = "Olá eu sou um retangulo!";
