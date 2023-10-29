@@ -1,0 +1,6 @@
+Alex egidio|pessoa1@gmail.com|50
+Marcos tadeu|pessoa2@gmail.com|25
+Maria jesus|pessoa3@gmail.com|40
+
+Jose jesus|pessoa4@gmail.com|13
+
