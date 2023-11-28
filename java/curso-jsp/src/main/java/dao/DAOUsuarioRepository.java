@@ -119,6 +119,29 @@ public class DAOUsuarioRepository {
         return model;
     }
     
+    public List<ModelLogin> consultaUsuarioList() throws SQLException {
+        List<ModelLogin> modelList = new ArrayList<>();
+        String sql = " select * from model_login ";
+
+        PreparedStatement pst = con.prepareCall(sql);
+
+        ResultSet rs = pst.executeQuery();
+
+        while (rs.next()) {
+            ModelLogin model = new ModelLogin();
+            model.setLogin(rs.getString("login"));
+            model.setSenha(rs.getString("senha"));
+            model.setId(rs.getLong("id"));
+            model.setNome(rs.getString("nome"));
+            model.setEmail(rs.getString("email"));
+            model.setDescricao(rs.getString("descricao"));
+            modelList.add(model);
+        }
+        pst.close();
+        rs.close();
+        return modelList;
+    }
+    
     public List<ModelLogin> consultaUsuarioList(String nome) throws SQLException {
         List<ModelLogin> modelList = new ArrayList<>();
         String sql = " select login, senha, id, nome, email, descricao from model_login where upper(nome) like ? ";

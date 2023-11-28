@@ -31,6 +31,8 @@ public class ServletUsuarioController extends HttpServlet {
         String acao = request.getParameter("acao");
         String msg = "Operação de exclusão realizada com sucesso!";
         try {
+            List<ModelLogin> modelLogins = this.usuarioRepository.consultaUsuarioList();
+            request.setAttribute("modelLogins", modelLogins);
             if (acao != null && !acao.isBlank() && acao.equalsIgnoreCase("deletar")) {
                 String idUser = request.getParameter("id");
                 if (idUser != null && !idUser.equals("")) {
@@ -57,10 +59,16 @@ public class ServletUsuarioController extends HttpServlet {
             }else if(acao != null && !acao.isBlank() && acao.equalsIgnoreCase("buscarEditar")){
                 String idUser = request.getParameter("id");
                 ModelLogin modelLogin = this.usuarioRepository.consultaUsuarioPorId(idUser);
-                request.setAttribute("msg", "Usuario em edição");
+                request.setAttribute("msg", "Usuário em edição");
                 request.setAttribute("modelLogin", modelLogin);
                 request.getRequestDispatcher("pages/usuario.jsp").forward(request, response);
-            }else {
+            } else if(acao != null && !acao.isBlank() && acao.equalsIgnoreCase("listarUser")){
+                modelLogins = this.usuarioRepository.consultaUsuarioList();
+                request.setAttribute("msg", "Usuários carregados");
+                request.setAttribute("modelLogins", modelLogins);
+                request.getRequestDispatcher("pages/usuario.jsp").forward(request, response);                
+                
+            } else {
                 request.getRequestDispatcher("principal/usuario.jsp").forward(request, response);
             }
         } catch (Exception e) {
