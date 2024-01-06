@@ -30,7 +30,7 @@ public class DAOUsuarioRepository {
             boolean valida = false;
             String sql = """
                      INSERT INTO public.model_login(
-                     	login, senha, nome, email, descricao, perfil, sexo, fotouser, extensaoFotoUser)
+                     	login, senha, nome, email, descricao, perfil, sexo, fotouser, extensaofotouser)
                      	VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);
                      """;
             PreparedStatement pst = con.prepareCall(sql);
@@ -59,9 +59,11 @@ public class DAOUsuarioRepository {
             boolean valida = false;
             String sql = """
                        UPDATE public.model_login
-                     	SET login=?, senha=?, nome=?, email=?, descricao=?, perfil=?, sexo=?, fotouser=?, extensaoFotoUser=?
+                     	SET login=?, senha=?, nome=?, email=?, descricao=?, perfil=?, sexo=? %s
                      	WHERE id=?
                      """;
+            sql = String.format(sql, modelLogin.getFotoUser() != null && !modelLogin.getFotoUser().equals("") ? " , fotouser=?, extensaofotouser=? " : "");
+            int countId = 8;
             PreparedStatement pst = con.prepareCall(sql);
             pst.setString(1, modelLogin.getLogin());
             pst.setString(2, modelLogin.getSenha());
@@ -70,9 +72,13 @@ public class DAOUsuarioRepository {
             pst.setString(5, modelLogin.getDescricao());
             pst.setString(6, modelLogin.getPerfil());
             pst.setString(7, modelLogin.getSexo());
-            pst.setString(8, modelLogin.getFotoUser() != null ? modelLogin.getFotoUser() : "");
-            pst.setString(9, modelLogin.getExtensaoFotoUser() != null ? modelLogin.getExtensaoFotoUser(): "");
-            pst.setLong(10, modelLogin.getId());
+            if(modelLogin.getFotoUser() != null && !modelLogin.getFotoUser().equals("")){
+                pst.setString(8, modelLogin.getFotoUser() != null ? modelLogin.getFotoUser() : "");
+                pst.setString(9, modelLogin.getExtensaoFotoUser() != null ? modelLogin.getExtensaoFotoUser(): "");
+                countId = 10;
+            }
+
+            pst.setLong(countId, modelLogin.getId());
             pst.executeUpdate();
             valida = true;
             con.commit();
@@ -85,7 +91,7 @@ public class DAOUsuarioRepository {
 
     public ModelLogin consultaUsuario(String login) throws SQLException {
         ModelLogin model = new ModelLogin();
-        String sql = " select login, senha, id, nome, email, descricao, perfil, sexo, extensaoFotoUser, fotouser from model_login where upper(login) = upper(?)";
+        String sql = " select login, senha, id, nome, email, descricao, perfil, sexo, extensaofotouser, fotouser from model_login where upper(login) = upper(?)";
 
         PreparedStatement pst = con.prepareCall(sql);
         pst.setString(1, login);
@@ -102,7 +108,7 @@ public class DAOUsuarioRepository {
             model.setPerfil(rs.getString("perfil"));
             model.setSexo(rs.getString("sexo"));
             model.setFotoUser(rs.getString("fotouser"));
-            model.setExtensaoFotoUser(rs.getString("extensaoFotoUser"));
+            model.setExtensaoFotoUser(rs.getString("extensaofotouser"));
         }
         pst.close();
         rs.close();
@@ -111,7 +117,7 @@ public class DAOUsuarioRepository {
     
     public ModelLogin consultaUsuarioPorId(String id) throws SQLException {
         ModelLogin model = new ModelLogin();
-        String sql = " select login, senha, id, nome, email, descricao, perfil, sexo, extensaoFotoUser, fotouser from model_login where id = ?";
+        String sql = " select login, senha, id, nome, email, descricao, perfil, sexo, extensaofotouser, fotouser from model_login where id = ?";
 
         PreparedStatement pst = con.prepareCall(sql);
         pst.setLong(1, Long.parseLong(id));
@@ -128,7 +134,7 @@ public class DAOUsuarioRepository {
             model.setPerfil(rs.getString("perfil"));
             model.setSexo(rs.getString("sexo"));
             model.setFotoUser(rs.getString("fotouser"));
-            model.setExtensaoFotoUser(rs.getString("extensaoFotoUser"));
+            model.setExtensaoFotoUser(rs.getString("extensaofotouser"));
         }
         pst.close();
         rs.close();
@@ -154,7 +160,7 @@ public class DAOUsuarioRepository {
             model.setPerfil(rs.getString("perfil"));
             model.setSexo(rs.getString("sexo"));
             model.setFotoUser(rs.getString("fotouser"));
-            model.setExtensaoFotoUser(rs.getString("extensaoFotoUser"));
+            model.setExtensaoFotoUser(rs.getString("extensaofotouser"));
             modelList.add(model);
         }
         pst.close();
@@ -164,7 +170,7 @@ public class DAOUsuarioRepository {
     
     public List<ModelLogin> consultaUsuarioList(String nome) throws SQLException {
         List<ModelLogin> modelList = new ArrayList<>();
-        String sql = " select login, senha, id, nome, email, descricao, perfil, sexo, extensaoFotoUser, fotouser from model_login where upper(nome) like ? ";
+        String sql = " select login, senha, id, nome, email, descricao, perfil, sexo, extensaofotouser, fotouser from model_login where upper(nome) like ? ";
 
         PreparedStatement pst = con.prepareCall(sql);
         pst.setString(1, "%" + nome.toUpperCase() + "%");
@@ -182,7 +188,7 @@ public class DAOUsuarioRepository {
             model.setPerfil(rs.getString("perfil"));
             model.setSexo(rs.getString("sexo"));
             model.setFotoUser(rs.getString("fotouser"));
-            model.setExtensaoFotoUser(rs.getString("extensaoFotoUser"));
+            model.setExtensaoFotoUser(rs.getString("extensaofotouser"));
             modelList.add(model);
         }
         pst.close();

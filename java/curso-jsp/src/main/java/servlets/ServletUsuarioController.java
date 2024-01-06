@@ -77,7 +77,14 @@ public class ServletUsuarioController extends HttpServlet {
                 request.setAttribute("modelLogins", modelLogins);
                 request.getRequestDispatcher("pages/usuario.jsp").forward(request, response);
 
-            } else {
+            } else if (acao != null && !acao.isBlank() && acao.equalsIgnoreCase("downloadFoto")) {
+                String idUser = request.getParameter("id");
+                ModelLogin modelLogin = this.usuarioRepository.consultaUsuarioPorId(idUser);
+                if(modelLogin.getFotoUser() != null && !modelLogin.getFotoUser().equals("")){
+                    response.setHeader("Content-Disposition", "attachment;filename= arquivo." + modelLogin.getExtensaoFotoUser());
+                    response.getOutputStream().write(Base64.getDecoder().decode(modelLogin.getFotoUser().split("\\,")[1]));
+                }
+            }else {
                 request.getRequestDispatcher("principal/usuario.jsp").forward(request, response);
             }
         } catch (Exception e) {
@@ -104,6 +111,7 @@ public class ServletUsuarioController extends HttpServlet {
             String localidade = request.getParameter("localidade");
             String uf = request.getParameter("uf");
             String numero = request.getParameter("numero");
+            String descricao = request.getParameter("descricao");
             String dataNascimento = request.getParameter("dataNascimento");
             String rendaMensal = request.getParameter("rendamensal");
 
@@ -121,15 +129,19 @@ public class ServletUsuarioController extends HttpServlet {
             modelLogin.setLocalidade(localidade);
             modelLogin.setUf(uf);
             modelLogin.setNumero(numero);
-            modelLogin.setDataNascimento(Date.valueOf(uf).valueOf(LocalDate.MAX).valueOf(new SimpleDateFormat("yyyy-mm-dd").format(new SimpleDateFormat("dd/mm/yyyy").parse(dataNascimento))));
-            modelLogin.setRendamensal(Double.valueOf(rendaMensal));
+            modelLogin.setDescricao(descricao);
+            //modelLogin.setDataNascimento(Date.valueOf(new SimpleDateFormat("yyyy-mm-dd").format(new SimpleDateFormat("dd/mm/yyyy").parse(dataNascimento))));
+            //modelLogin.setRendamensal(Double.valueOf(rendaMensal));
 
             if (JakartaServletFileUpload.isMultipartContent(request)) {
                 Part part = request.getPart("fileFoto"); //pega foto da tela
                 byte[] foto = IOUtils.toByteArray(part.getInputStream()); //converte imagem para byte
-                String imagemBase64 = "data:" + part.getContentType() + ";base64," + Base64.getEncoder().encodeToString(foto);
-                modelLogin.setFotoUser(imagemBase64);
-                modelLogin.setExtensaoFotoUser(part.getContentType().split("\\/")[1]);
+                if(part.getSize() > 0){
+                    //deve ser adicionado o data: + part.getContentType() + ";base64 conforme abaixo para seguir o padrão de exibição do html
+                    String imagemBase64 = "data:" + part.getContentType() + ";base64," + Base64.getEncoder().encodeToString(foto);
+                    modelLogin.setFotoUser(imagemBase64);
+                    modelLogin.setExtensaoFotoUser(part.getContentType().split("\\/")[1]);
+                }
             }
 
             //vaidar login já existe cadastrado
@@ -145,6 +157,8 @@ public class ServletUsuarioController extends HttpServlet {
             } else {
                 msg = "Login já usado em outro cadastro! Escolha outro e tente novamente.";
             }
+            List<ModelLogin> modelLogins = this.usuarioRepository.consultaUsuarioList();
+            request.setAttribute("modelLogins", modelLogins);
             request.setAttribute("msg", msg);
             request.setAttribute("modelLogin", modelLogin);
             request.getRequestDispatcher("pages/usuario.jsp").forward(request, response);
