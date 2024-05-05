@@ -1,0 +1,150 @@
+14-Apr-2024 17:24:59.765 INFORMAÇÕES [http-nio-8001-exec-10] org.apache.catalina.core.ApplicationContext.log Manager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+14-Apr-2024 17:24:59.766 INFORMAÇÕES [http-nio-8001-exec-10] org.apache.catalina.core.ApplicationContext.log Manager: init: Global resources are available
+14-Apr-2024 17:24:59.771 INFORMAÇÕES [http-nio-8001-exec-10] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+14-Apr-2024 17:24:59.779 INFORMAÇÕES [http-nio-8001-exec-1] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+14-Apr-2024 17:24:59.782 INFORMAÇÕES [http-nio-8001-exec-3] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks-backend'
+14-Apr-2024 17:25:00.406 INFORMAÇÕES [http-nio-8001-exec-4] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks-backend'
+14-Apr-2024 17:25:00.406 INFORMAÇÕES [http-nio-8001-exec-4] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks-backend.war
+14-Apr-2024 17:25:16.168 INFORMAÇÕES [http-nio-8001-exec-2] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+14-Apr-2024 17:25:16.170 INFORMAÇÕES [http-nio-8001-exec-14] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+14-Apr-2024 17:25:16.171 INFORMAÇÕES [http-nio-8001-exec-12] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks'
+14-Apr-2024 17:25:16.715 INFORMAÇÕES [http-nio-8001-exec-7] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks'
+14-Apr-2024 17:25:16.715 INFORMAÇÕES [http-nio-8001-exec-7] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks.war
+14-Apr-2024 17:26:34.959 INFORMAÇÕES [http-nio-8001-exec-19] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+14-Apr-2024 17:26:34.961 INFORMAÇÕES [http-nio-8001-exec-16] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+14-Apr-2024 17:26:34.963 INFORMAÇÕES [http-nio-8001-exec-18] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks-backend'
+14-Apr-2024 17:26:35.515 INFORMAÇÕES [http-nio-8001-exec-12] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks-backend'
+14-Apr-2024 17:26:35.515 INFORMAÇÕES [http-nio-8001-exec-12] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks-backend.war
+14-Apr-2024 17:26:57.647 INFORMAÇÕES [http-nio-8001-exec-16] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+14-Apr-2024 17:26:57.648 INFORMAÇÕES [http-nio-8001-exec-21] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+14-Apr-2024 17:26:57.652 INFORMAÇÕES [http-nio-8001-exec-22] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks'
+14-Apr-2024 17:26:58.191 INFORMAÇÕES [http-nio-8001-exec-23] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks'
+14-Apr-2024 17:26:58.191 INFORMAÇÕES [http-nio-8001-exec-23] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks.war
+14-Apr-2024 17:29:26.405 INFORMAÇÕES [http-nio-8001-exec-30] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+14-Apr-2024 17:29:26.406 INFORMAÇÕES [http-nio-8001-exec-27] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+14-Apr-2024 17:29:26.407 INFORMAÇÕES [http-nio-8001-exec-29] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks-backend'
+14-Apr-2024 17:29:26.952 INFORMAÇÕES [http-nio-8001-exec-27] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks-backend'
+14-Apr-2024 17:29:26.952 INFORMAÇÕES [http-nio-8001-exec-27] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks-backend.war
+14-Apr-2024 17:29:43.281 INFORMAÇÕES [http-nio-8001-exec-33] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+14-Apr-2024 17:29:43.283 INFORMAÇÕES [http-nio-8001-exec-35] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+14-Apr-2024 17:29:43.285 INFORMAÇÕES [http-nio-8001-exec-36] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks'
+14-Apr-2024 17:29:43.811 INFORMAÇÕES [http-nio-8001-exec-39] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks'
+14-Apr-2024 17:29:43.812 INFORMAÇÕES [http-nio-8001-exec-39] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks.war
+14-Apr-2024 17:40:03.241 INFORMAÇÕES [http-nio-8001-exec-44] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+14-Apr-2024 17:40:03.242 INFORMAÇÕES [http-nio-8001-exec-43] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+14-Apr-2024 17:40:03.243 INFORMAÇÕES [http-nio-8001-exec-41] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks-backend'
+14-Apr-2024 17:40:03.789 INFORMAÇÕES [http-nio-8001-exec-42] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks-backend'
+14-Apr-2024 17:40:03.789 INFORMAÇÕES [http-nio-8001-exec-42] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks-backend.war
+14-Apr-2024 17:43:09.370 INFORMAÇÕES [http-nio-8001-exec-50] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+14-Apr-2024 17:43:09.371 INFORMAÇÕES [http-nio-8001-exec-51] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+14-Apr-2024 17:43:09.372 INFORMAÇÕES [http-nio-8001-exec-52] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks-backend'
+14-Apr-2024 17:43:09.918 INFORMAÇÕES [http-nio-8001-exec-50] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks-backend'
+14-Apr-2024 17:43:09.918 INFORMAÇÕES [http-nio-8001-exec-50] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks-backend.war
+14-Apr-2024 17:50:14.643 INFORMAÇÕES [http-nio-8001-exec-56] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+14-Apr-2024 17:50:14.645 INFORMAÇÕES [http-nio-8001-exec-57] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+14-Apr-2024 17:50:14.646 INFORMAÇÕES [http-nio-8001-exec-58] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks-backend'
+14-Apr-2024 17:50:15.198 INFORMAÇÕES [http-nio-8001-exec-61] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks-backend'
+14-Apr-2024 17:50:15.198 INFORMAÇÕES [http-nio-8001-exec-61] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks-backend.war
+14-Apr-2024 17:50:43.507 INFORMAÇÕES [http-nio-8001-exec-64] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+14-Apr-2024 17:50:43.510 INFORMAÇÕES [http-nio-8001-exec-66] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+14-Apr-2024 17:50:43.511 INFORMAÇÕES [http-nio-8001-exec-67] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks'
+14-Apr-2024 17:50:44.049 INFORMAÇÕES [http-nio-8001-exec-70] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks'
+14-Apr-2024 17:50:44.049 INFORMAÇÕES [http-nio-8001-exec-70] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks.war
+14-Apr-2024 17:52:05.325 INFORMAÇÕES [http-nio-8001-exec-73] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+14-Apr-2024 17:52:05.328 INFORMAÇÕES [http-nio-8001-exec-75] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+14-Apr-2024 17:52:05.330 INFORMAÇÕES [http-nio-8001-exec-76] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks-backend'
+14-Apr-2024 17:52:05.872 INFORMAÇÕES [http-nio-8001-exec-62] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks-backend'
+14-Apr-2024 17:52:05.872 INFORMAÇÕES [http-nio-8001-exec-62] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks-backend.war
+14-Apr-2024 17:52:29.741 INFORMAÇÕES [http-nio-8001-exec-72] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+14-Apr-2024 17:52:29.742 INFORMAÇÕES [http-nio-8001-exec-79] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+14-Apr-2024 17:52:29.743 INFORMAÇÕES [http-nio-8001-exec-80] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks'
+14-Apr-2024 17:52:30.282 INFORMAÇÕES [http-nio-8001-exec-78] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks'
+14-Apr-2024 17:52:30.282 INFORMAÇÕES [http-nio-8001-exec-78] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks.war
+14-Apr-2024 17:55:57.408 INFORMAÇÕES [http-nio-8001-exec-84] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+14-Apr-2024 17:55:57.409 INFORMAÇÕES [http-nio-8001-exec-86] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+14-Apr-2024 17:55:57.411 INFORMAÇÕES [http-nio-8001-exec-90] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks-backend'
+14-Apr-2024 17:55:57.977 INFORMAÇÕES [http-nio-8001-exec-87] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks-backend'
+14-Apr-2024 17:55:57.977 INFORMAÇÕES [http-nio-8001-exec-87] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks-backend.war
+14-Apr-2024 17:56:26.211 INFORMAÇÕES [http-nio-8001-exec-84] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+14-Apr-2024 17:56:26.213 INFORMAÇÕES [http-nio-8001-exec-94] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+14-Apr-2024 17:56:26.214 INFORMAÇÕES [http-nio-8001-exec-95] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks'
+14-Apr-2024 17:56:26.752 INFORMAÇÕES [http-nio-8001-exec-86] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks'
+14-Apr-2024 17:56:26.752 INFORMAÇÕES [http-nio-8001-exec-86] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks.war
+14-Apr-2024 18:01:53.547 INFORMAÇÕES [http-nio-8001-exec-102] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+14-Apr-2024 18:01:53.548 INFORMAÇÕES [http-nio-8001-exec-101] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+14-Apr-2024 18:01:53.550 INFORMAÇÕES [http-nio-8001-exec-105] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks-backend'
+14-Apr-2024 18:01:54.109 INFORMAÇÕES [http-nio-8001-exec-108] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks-backend'
+14-Apr-2024 18:01:54.109 INFORMAÇÕES [http-nio-8001-exec-108] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks-backend.war
+14-Apr-2024 18:02:15.821 INFORMAÇÕES [http-nio-8001-exec-101] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+14-Apr-2024 18:02:15.822 INFORMAÇÕES [http-nio-8001-exec-109] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+14-Apr-2024 18:02:15.824 INFORMAÇÕES [http-nio-8001-exec-110] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks'
+14-Apr-2024 18:02:16.349 INFORMAÇÕES [http-nio-8001-exec-109] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks'
+14-Apr-2024 18:02:16.349 INFORMAÇÕES [http-nio-8001-exec-109] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks.war
+14-Apr-2024 18:03:52.037 INFORMAÇÕES [http-nio-8001-exec-119] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+14-Apr-2024 18:03:52.040 INFORMAÇÕES [http-nio-8001-exec-120] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+14-Apr-2024 18:03:52.041 INFORMAÇÕES [http-nio-8001-exec-117] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks-backend'
+14-Apr-2024 18:03:52.581 INFORMAÇÕES [http-nio-8001-exec-118] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks-backend'
+14-Apr-2024 18:03:52.581 INFORMAÇÕES [http-nio-8001-exec-118] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks-backend.war
+14-Apr-2024 18:04:18.466 INFORMAÇÕES [http-nio-8001-exec-111] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+14-Apr-2024 18:04:18.469 INFORMAÇÕES [http-nio-8001-exec-122] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+14-Apr-2024 18:04:18.471 INFORMAÇÕES [http-nio-8001-exec-123] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks'
+14-Apr-2024 18:04:18.997 INFORMAÇÕES [http-nio-8001-exec-120] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks'
+14-Apr-2024 18:04:18.998 INFORMAÇÕES [http-nio-8001-exec-120] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks.war
+14-Apr-2024 18:05:37.587 INFORMAÇÕES [http-nio-8001-exec-116] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+14-Apr-2024 18:05:37.588 INFORMAÇÕES [http-nio-8001-exec-114] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+14-Apr-2024 18:05:37.589 INFORMAÇÕES [http-nio-8001-exec-124] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks-backend'
+14-Apr-2024 18:05:38.126 INFORMAÇÕES [http-nio-8001-exec-126] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks-backend'
+14-Apr-2024 18:05:38.126 INFORMAÇÕES [http-nio-8001-exec-126] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks-backend.war
+14-Apr-2024 18:05:53.200 INFORMAÇÕES [http-nio-8001-exec-120] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+14-Apr-2024 18:05:53.202 INFORMAÇÕES [http-nio-8001-exec-131] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks'
+14-Apr-2024 18:05:53.202 INFORMAÇÕES [http-nio-8001-exec-131] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks.war
+14-Apr-2024 18:07:07.407 INFORMAÇÕES [http-nio-8001-exec-133] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+14-Apr-2024 18:07:07.407 INFORMAÇÕES [http-nio-8001-exec-129] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+14-Apr-2024 18:07:07.408 INFORMAÇÕES [http-nio-8001-exec-131] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks-backend'
+14-Apr-2024 18:07:07.941 INFORMAÇÕES [http-nio-8001-exec-135] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks-backend'
+14-Apr-2024 18:07:07.941 INFORMAÇÕES [http-nio-8001-exec-135] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks-backend.war
+14-Apr-2024 18:07:19.957 INFORMAÇÕES [http-nio-8001-exec-129] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+14-Apr-2024 18:07:19.958 INFORMAÇÕES [http-nio-8001-exec-138] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+14-Apr-2024 18:07:19.959 INFORMAÇÕES [http-nio-8001-exec-139] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks'
+14-Apr-2024 18:07:20.478 INFORMAÇÕES [http-nio-8001-exec-138] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks'
+14-Apr-2024 18:07:20.478 INFORMAÇÕES [http-nio-8001-exec-138] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks.war
+14-Apr-2024 18:08:44.690 INFORMAÇÕES [http-nio-8001-exec-144] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+14-Apr-2024 18:08:44.692 INFORMAÇÕES [http-nio-8001-exec-146] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+14-Apr-2024 18:08:44.698 INFORMAÇÕES [http-nio-8001-exec-142] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks-backend'
+14-Apr-2024 18:08:45.252 INFORMAÇÕES [http-nio-8001-exec-144] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks-backend'
+14-Apr-2024 18:08:45.252 INFORMAÇÕES [http-nio-8001-exec-144] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks-backend.war
+14-Apr-2024 18:09:08.277 INFORMAÇÕES [http-nio-8001-exec-148] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+14-Apr-2024 18:09:08.279 INFORMAÇÕES [http-nio-8001-exec-149] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+14-Apr-2024 18:09:08.280 INFORMAÇÕES [http-nio-8001-exec-150] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks'
+14-Apr-2024 18:09:08.822 INFORMAÇÕES [http-nio-8001-exec-152] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks'
+14-Apr-2024 18:09:08.822 INFORMAÇÕES [http-nio-8001-exec-152] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks.war
+14-Apr-2024 18:14:12.661 INFORMAÇÕES [http-nio-8001-exec-158] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+14-Apr-2024 18:14:12.661 INFORMAÇÕES [http-nio-8001-exec-155] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+14-Apr-2024 18:14:12.662 INFORMAÇÕES [http-nio-8001-exec-159] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks-backend'
+14-Apr-2024 18:14:13.240 INFORMAÇÕES [http-nio-8001-exec-163] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks-backend'
+14-Apr-2024 18:14:13.241 INFORMAÇÕES [http-nio-8001-exec-163] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks-backend.war
+14-Apr-2024 18:14:38.742 INFORMAÇÕES [http-nio-8001-exec-162] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+14-Apr-2024 18:14:38.743 INFORMAÇÕES [http-nio-8001-exec-164] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+14-Apr-2024 18:14:38.744 INFORMAÇÕES [http-nio-8001-exec-165] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks'
+14-Apr-2024 18:14:39.288 INFORMAÇÕES [http-nio-8001-exec-167] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks'
+14-Apr-2024 18:14:39.288 INFORMAÇÕES [http-nio-8001-exec-167] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks.war
+14-Apr-2024 18:16:20.563 INFORMAÇÕES [http-nio-8001-exec-173] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+14-Apr-2024 18:16:20.565 INFORMAÇÕES [http-nio-8001-exec-174] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+14-Apr-2024 18:16:20.567 INFORMAÇÕES [http-nio-8001-exec-169] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks-backend'
+14-Apr-2024 18:16:21.161 INFORMAÇÕES [http-nio-8001-exec-172] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks-backend'
+14-Apr-2024 18:16:21.161 INFORMAÇÕES [http-nio-8001-exec-172] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks-backend.war
+14-Apr-2024 18:16:45.358 INFORMAÇÕES [http-nio-8001-exec-174] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+14-Apr-2024 18:16:45.359 INFORMAÇÕES [http-nio-8001-exec-180] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+14-Apr-2024 18:16:45.359 INFORMAÇÕES [http-nio-8001-exec-177] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks'
+14-Apr-2024 18:16:45.892 INFORMAÇÕES [http-nio-8001-exec-176] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks'
+14-Apr-2024 18:16:45.892 INFORMAÇÕES [http-nio-8001-exec-176] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks.war
+14-Apr-2024 18:23:26.591 INFORMAÇÕES [http-nio-8001-exec-183] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+14-Apr-2024 18:23:26.592 INFORMAÇÕES [http-nio-8001-exec-181] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+14-Apr-2024 18:23:26.594 INFORMAÇÕES [http-nio-8001-exec-185] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks-backend'
+14-Apr-2024 18:23:27.143 INFORMAÇÕES [http-nio-8001-exec-190] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks-backend'
+14-Apr-2024 18:23:27.143 INFORMAÇÕES [http-nio-8001-exec-190] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks-backend.war
+14-Apr-2024 18:23:44.319 INFORMAÇÕES [http-nio-8001-exec-189] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+14-Apr-2024 18:23:44.320 INFORMAÇÕES [http-nio-8001-exec-191] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+14-Apr-2024 18:23:44.320 INFORMAÇÕES [http-nio-8001-exec-192] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks'
+14-Apr-2024 18:23:44.841 INFORMAÇÕES [http-nio-8001-exec-181] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks'
+14-Apr-2024 18:23:44.841 INFORMAÇÕES [http-nio-8001-exec-181] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks.war

@@ -1,0 +1,1 @@
+quando houver a necessidade de executar alterar o nome de um dos arquivos com prefixo AppXXX para apenas App assim o index.js irá executar o que esta sendo visto em aula ou no caso o que deseja ser analisado

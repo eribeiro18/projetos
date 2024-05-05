@@ -1,0 +1,463 @@
+06-Apr-2024 11:05:51.941 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.50
+06-Apr-2024 11:05:51.943 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 7 2019 19:19:46 UTC
+06-Apr-2024 11:05:51.943 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.50.0
+06-Apr-2024 11:05:51.943 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+06-Apr-2024 11:05:51.943 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.5.0-26-generic
+06-Apr-2024 11:05:51.943 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+06-Apr-2024 11:05:51.943 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-8-openjdk-amd64/jre
+06-Apr-2024 11:05:51.943 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_402-8u402-ga-2ubuntu1~22.04-b06
+06-Apr-2024 11:05:51.943 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Private Build
+06-Apr-2024 11:05:51.943 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50
+06-Apr-2024 11:05:51.943 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50
+06-Apr-2024 11:05:51.943 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/conf/logging.properties
+06-Apr-2024 11:05:51.943 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Apr-2024 11:05:51.943 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+06-Apr-2024 11:05:51.943 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+06-Apr-2024 11:05:51.943 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+06-Apr-2024 11:05:51.944 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+06-Apr-2024 11:05:51.944 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50
+06-Apr-2024 11:05:51.944 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50
+06-Apr-2024 11:05:51.944 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/temp
+06-Apr-2024 11:05:51.944 INFORMAÇÕES [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+06-Apr-2024 11:05:52.002 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8001"]
+06-Apr-2024 11:05:52.030 INFORMAÇÕES [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+06-Apr-2024 11:05:52.038 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+06-Apr-2024 11:05:52.039 INFORMAÇÕES [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+06-Apr-2024 11:05:52.040 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.load Initialization processed in 400 ms
+06-Apr-2024 11:05:52.063 INFORMAÇÕES [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-Apr-2024 11:05:52.063 INFORMAÇÕES [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.50
+06-Apr-2024 11:05:52.077 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/tasks.war]
+06-Apr-2024 11:05:55.082 INFORMAÇÕES [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2024 11:05:55.101 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/tasks.war] has finished in [3,023] ms
+06-Apr-2024 11:05:55.102 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+06-Apr-2024 11:06:00.841 GRAVE [localhost-startStop-1] org.apache.catalina.core.ContainerBase.addChildInternal ContainerBase.addChild: start: 
+	org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/tasks-backend]]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:440)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:198)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:743)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:719)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+		at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:970)
+		at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1841)
+		at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+		at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at java.lang.Thread.run(Thread.java:750)
+	Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+		at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+		at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1108)
+		at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+		at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+		at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+		at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+		at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+		at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+		at org.springframework.boot.web.servlet.support.SpringBootServletInitializer.run(SpringBootServletInitializer.java:152)
+		at org.springframework.boot.web.servlet.support.SpringBootServletInitializer.createRootApplicationContext(SpringBootServletInitializer.java:132)
+		at org.springframework.boot.web.servlet.support.SpringBootServletInitializer.onStartup(SpringBootServletInitializer.java:92)
+		at org.springframework.web.SpringServletContainerInitializer.onStartup(SpringServletContainerInitializer.java:172)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5154)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		... 10 more
+	Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+		at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:403)
+		at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:378)
+		at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792)
+		... 29 more
+	Caused by: org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+		at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:112)
+		at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+		at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+		at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99)
+		at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:69)
+		at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.jdbcStatement(GenerationTargetToDatabase.java:77)
+		at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:53)
+		at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375)
+		at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359)
+		at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:241)
+		at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154)
+		at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126)
+		at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112)
+		at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:145)
+		at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+		at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:320)
+		at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462)
+		at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1237)
+		at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+		at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+		at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+		... 33 more
+	Caused by: org.postgresql.util.PSQLException: Connection to 127.0.0.1:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+		at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:280)
+		at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+		at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:211)
+		at org.postgresql.Driver.makeConnection(Driver.java:458)
+		at org.postgresql.Driver.connect(Driver.java:260)
+		at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+		at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:354)
+		at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+		at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:473)
+		at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:554)
+		at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+		at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+		at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+		at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+		at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:43)
+		... 49 more
+	Caused by: java.net.ConnectException: Conexão recusada (Connection refused)
+		at java.net.PlainSocketImpl.socketConnect(Native Method)
+		at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+		at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+		at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+		at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+		at java.net.Socket.connect(Socket.java:607)
+		at org.postgresql.core.PGStream.<init>(PGStream.java:75)
+		at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:91)
+		at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:192)
+		... 63 more
+06-Apr-2024 11:06:00.843 GRAVE [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Error deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+	java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/tasks-backend]]
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:747)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:719)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+		at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:970)
+		at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1841)
+		at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+		at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at java.lang.Thread.run(Thread.java:750)
+06-Apr-2024 11:06:00.843 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war] has finished in [5,741] ms
+06-Apr-2024 11:06:00.844 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/manager]
+06-Apr-2024 11:06:00.861 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/manager] has finished in [17] ms
+06-Apr-2024 11:06:00.862 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/docs]
+06-Apr-2024 11:06:00.871 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/docs] has finished in [9] ms
+06-Apr-2024 11:06:00.872 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/ROOT]
+06-Apr-2024 11:06:00.878 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/ROOT] has finished in [7] ms
+06-Apr-2024 11:06:00.878 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/host-manager]
+06-Apr-2024 11:06:00.886 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/host-manager] has finished in [8] ms
+06-Apr-2024 11:06:00.887 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/examples]
+06-Apr-2024 11:06:00.976 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/examples] has finished in [90] ms
+06-Apr-2024 11:06:00.979 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8001"]
+06-Apr-2024 11:06:00.984 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+06-Apr-2024 11:06:00.986 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.start Server startup in 8946 ms
+06-Apr-2024 11:06:11.313 INFORMAÇÕES [http-nio-8001-exec-2] org.apache.catalina.util.LifecycleBase.stop The stop() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/tasks]] after stop() had already been called. The second call will be ignored.
+06-Apr-2024 11:06:11.818 INFORMAÇÕES [http-nio-8001-exec-2] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks]
+06-Apr-2024 11:06:13.210 ADVERTÊNCIA [http-nio-8001-exec-7] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [tasks-backend] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+06-Apr-2024 11:06:13.727 INFORMAÇÕES [http-nio-8001-exec-7] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+06-Apr-2024 11:07:08.554 INFORMAÇÕES [http-nio-8001-exec-12] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+06-Apr-2024 11:07:09.732 INFORMAÇÕES [http-nio-8001-exec-12] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2024 11:07:09.735 INFORMAÇÕES [http-nio-8001-exec-12] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war] has finished in [1,180] ms
+06-Apr-2024 11:07:32.566 INFORMAÇÕES [http-nio-8001-exec-14] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/tasks.war]
+06-Apr-2024 11:07:33.238 INFORMAÇÕES [http-nio-8001-exec-14] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2024 11:07:33.240 INFORMAÇÕES [http-nio-8001-exec-14] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/tasks.war] has finished in [673] ms
+06-Apr-2024 11:10:37.746 INFORMAÇÕES [http-nio-8001-exec-13] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+06-Apr-2024 11:10:48.033 INFORMAÇÕES [http-nio-8001-exec-14] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+06-Apr-2024 11:10:49.188 INFORMAÇÕES [http-nio-8001-exec-14] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2024 11:10:49.191 INFORMAÇÕES [http-nio-8001-exec-14] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war] has finished in [1,158] ms
+06-Apr-2024 11:12:35.899 INFORMAÇÕES [http-nio-8001-exec-23] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks]
+06-Apr-2024 11:12:55.754 INFORMAÇÕES [http-nio-8001-exec-26] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/tasks.war]
+06-Apr-2024 11:12:58.020 INFORMAÇÕES [http-nio-8001-exec-26] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2024 11:12:58.024 INFORMAÇÕES [http-nio-8001-exec-26] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/tasks.war] has finished in [2,270] ms
+06-Apr-2024 11:13:31.224 INFORMAÇÕES [http-nio-8001-exec-22] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/tasks-backend] has started
+06-Apr-2024 11:13:32.116 INFORMAÇÕES [http-nio-8001-exec-22] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2024 11:13:32.118 INFORMAÇÕES [http-nio-8001-exec-22] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/tasks-backend] is completed
+06-Apr-2024 11:14:55.844 INFORMAÇÕES [http-nio-8001-exec-34] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+06-Apr-2024 11:15:23.919 INFORMAÇÕES [http-nio-8001-exec-35] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+06-Apr-2024 11:15:28.138 INFORMAÇÕES [http-nio-8001-exec-35] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2024 11:15:28.145 INFORMAÇÕES [http-nio-8001-exec-35] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war] has finished in [4,226] ms
+06-Apr-2024 12:10:07.988 ADVERTÊNCIA [http-nio-8001-exec-46] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [tasks-backend] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+06-Apr-2024 12:10:08.503 INFORMAÇÕES [http-nio-8001-exec-46] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+06-Apr-2024 12:10:33.850 INFORMAÇÕES [http-nio-8001-exec-42] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+06-Apr-2024 12:10:38.280 INFORMAÇÕES [http-nio-8001-exec-42] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2024 12:10:38.285 INFORMAÇÕES [http-nio-8001-exec-42] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war] has finished in [4,435] ms
+06-Apr-2024 12:10:44.425 ADVERTÊNCIA [http-nio-8001-exec-44] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [tasks-backend] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+06-Apr-2024 12:10:44.944 INFORMAÇÕES [http-nio-8001-exec-44] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+06-Apr-2024 12:29:17.718 INFORMAÇÕES [http-nio-8001-exec-56] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+06-Apr-2024 12:29:21.851 INFORMAÇÕES [http-nio-8001-exec-56] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2024 12:29:21.856 INFORMAÇÕES [http-nio-8001-exec-56] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war] has finished in [4,138] ms
+06-Apr-2024 12:29:35.325 ADVERTÊNCIA [http-nio-8001-exec-65] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [tasks-backend] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+06-Apr-2024 12:29:35.844 INFORMAÇÕES [http-nio-8001-exec-65] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+06-Apr-2024 12:30:06.326 INFORMAÇÕES [http-nio-8001-exec-61] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+06-Apr-2024 12:30:10.348 INFORMAÇÕES [http-nio-8001-exec-61] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2024 12:30:10.354 INFORMAÇÕES [http-nio-8001-exec-61] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war] has finished in [4,027] ms
+06-Apr-2024 12:30:19.458 ADVERTÊNCIA [http-nio-8001-exec-57] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [tasks-backend] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+06-Apr-2024 12:30:19.976 INFORMAÇÕES [http-nio-8001-exec-57] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+06-Apr-2024 12:49:57.387 INFORMAÇÕES [http-nio-8001-exec-75] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks]
+06-Apr-2024 12:49:57.456 INFORMAÇÕES [http-nio-8001-exec-77] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/tasks.war]
+06-Apr-2024 12:49:59.517 INFORMAÇÕES [http-nio-8001-exec-77] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2024 12:49:59.524 INFORMAÇÕES [http-nio-8001-exec-77] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/tasks.war] has finished in [2,067] ms
+06-Apr-2024 12:50:06.628 INFORMAÇÕES [http-nio-8001-exec-78] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks]
+06-Apr-2024 12:50:16.291 INFORMAÇÕES [http-nio-8001-exec-83] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/tasks.war]
+06-Apr-2024 12:50:18.398 INFORMAÇÕES [http-nio-8001-exec-83] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2024 12:50:18.403 INFORMAÇÕES [http-nio-8001-exec-83] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/tasks.war] has finished in [2,111] ms
+06-Apr-2024 12:51:11.608 INFORMAÇÕES [http-nio-8001-exec-73] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks]
+06-Apr-2024 12:52:05.476 INFORMAÇÕES [http-nio-8001-exec-79] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/tasks.war]
+06-Apr-2024 12:52:07.827 INFORMAÇÕES [http-nio-8001-exec-79] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2024 12:52:07.831 INFORMAÇÕES [http-nio-8001-exec-79] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/tasks.war] has finished in [2,354] ms
+06-Apr-2024 12:52:35.529 INFORMAÇÕES [http-nio-8001-exec-91] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+06-Apr-2024 12:52:39.385 INFORMAÇÕES [http-nio-8001-exec-91] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2024 12:52:39.389 INFORMAÇÕES [http-nio-8001-exec-91] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war] has finished in [3,860] ms
+06-Apr-2024 12:53:20.288 INFORMAÇÕES [Thread-8] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8001"]
+06-Apr-2024 12:53:20.298 INFORMAÇÕES [Thread-8] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+06-Apr-2024 12:53:20.305 INFORMAÇÕES [Thread-8] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+06-Apr-2024 12:53:20.315 ADVERTÊNCIA [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [tasks-backend] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+06-Apr-2024 12:53:20.353 INFORMAÇÕES [Thread-8] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8001"]
+06-Apr-2024 12:53:20.355 INFORMAÇÕES [Thread-8] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+06-Apr-2024 12:53:20.357 INFORMAÇÕES [Thread-8] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8001"]
+06-Apr-2024 12:53:20.358 INFORMAÇÕES [Thread-8] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+06-Apr-2024 14:46:31.253 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.50
+06-Apr-2024 14:46:31.255 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 7 2019 19:19:46 UTC
+06-Apr-2024 14:46:31.255 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.50.0
+06-Apr-2024 14:46:31.255 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+06-Apr-2024 14:46:31.255 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.5.0-26-generic
+06-Apr-2024 14:46:31.255 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+06-Apr-2024 14:46:31.255 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-8-openjdk-amd64/jre
+06-Apr-2024 14:46:31.255 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_402-8u402-ga-2ubuntu1~22.04-b06
+06-Apr-2024 14:46:31.255 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Private Build
+06-Apr-2024 14:46:31.255 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50
+06-Apr-2024 14:46:31.255 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50
+06-Apr-2024 14:46:31.255 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/conf/logging.properties
+06-Apr-2024 14:46:31.255 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Apr-2024 14:46:31.255 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+06-Apr-2024 14:46:31.255 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+06-Apr-2024 14:46:31.256 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+06-Apr-2024 14:46:31.256 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+06-Apr-2024 14:46:31.256 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50
+06-Apr-2024 14:46:31.256 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50
+06-Apr-2024 14:46:31.256 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/temp
+06-Apr-2024 14:46:31.256 INFORMAÇÕES [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+06-Apr-2024 14:46:31.312 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8001"]
+06-Apr-2024 14:46:31.343 INFORMAÇÕES [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+06-Apr-2024 14:46:31.350 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+06-Apr-2024 14:46:31.351 INFORMAÇÕES [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+06-Apr-2024 14:46:31.351 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.load Initialization processed in 456 ms
+06-Apr-2024 14:46:31.373 INFORMAÇÕES [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-Apr-2024 14:46:31.373 INFORMAÇÕES [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.50
+06-Apr-2024 14:46:31.386 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/tasks.war]
+06-Apr-2024 14:46:34.559 INFORMAÇÕES [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2024 14:46:34.640 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/tasks.war] has finished in [3,253] ms
+06-Apr-2024 14:46:34.641 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+06-Apr-2024 14:46:40.355 GRAVE [localhost-startStop-1] org.apache.catalina.core.ContainerBase.addChildInternal ContainerBase.addChild: start: 
+	org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/tasks-backend]]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:440)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:198)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:743)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:719)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+		at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:970)
+		at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1841)
+		at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+		at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at java.lang.Thread.run(Thread.java:750)
+	Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+		at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+		at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1108)
+		at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+		at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+		at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+		at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+		at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+		at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+		at org.springframework.boot.web.servlet.support.SpringBootServletInitializer.run(SpringBootServletInitializer.java:152)
+		at org.springframework.boot.web.servlet.support.SpringBootServletInitializer.createRootApplicationContext(SpringBootServletInitializer.java:132)
+		at org.springframework.boot.web.servlet.support.SpringBootServletInitializer.onStartup(SpringBootServletInitializer.java:92)
+		at org.springframework.web.SpringServletContainerInitializer.onStartup(SpringServletContainerInitializer.java:172)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5154)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+		... 10 more
+	Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+		at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:403)
+		at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:378)
+		at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792)
+		... 29 more
+	Caused by: org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+		at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:112)
+		at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+		at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+		at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99)
+		at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:69)
+		at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:60)
+		at org.hibernate.tool.schema.extract.internal.SequenceInformationExtractorLegacyImpl.extractMetadata(SequenceInformationExtractorLegacyImpl.java:40)
+		at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.initializeSequences(DatabaseInformationImpl.java:65)
+		at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.<init>(DatabaseInformationImpl.java:59)
+		at org.hibernate.tool.schema.internal.Helper.buildDatabaseInformation(Helper.java:155)
+		at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:96)
+		at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:184)
+		at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73)
+		at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:320)
+		at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462)
+		at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1237)
+		at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+		at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+		at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+		... 33 more
+	Caused by: org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+		at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:280)
+		at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+		at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:211)
+		at org.postgresql.Driver.makeConnection(Driver.java:458)
+		at org.postgresql.Driver.connect(Driver.java:260)
+		at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+		at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:354)
+		at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+		at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:473)
+		at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:554)
+		at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+		at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+		at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+		at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+		at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:43)
+		... 47 more
+	Caused by: java.net.ConnectException: Conexão recusada (Connection refused)
+		at java.net.PlainSocketImpl.socketConnect(Native Method)
+		at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+		at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+		at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+		at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+		at java.net.Socket.connect(Socket.java:607)
+		at org.postgresql.core.PGStream.<init>(PGStream.java:75)
+		at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:91)
+		at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:192)
+		... 61 more
+06-Apr-2024 14:46:40.356 GRAVE [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Error deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+	java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/tasks-backend]]
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:747)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:719)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:705)
+		at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:970)
+		at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1841)
+		at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+		at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at java.lang.Thread.run(Thread.java:750)
+06-Apr-2024 14:46:40.357 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war] has finished in [5,716] ms
+06-Apr-2024 14:46:40.357 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/manager]
+06-Apr-2024 14:46:40.395 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/manager] has finished in [37] ms
+06-Apr-2024 14:46:40.395 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/docs]
+06-Apr-2024 14:46:40.402 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/docs] has finished in [7] ms
+06-Apr-2024 14:46:40.402 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/ROOT]
+06-Apr-2024 14:46:40.409 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/ROOT] has finished in [7] ms
+06-Apr-2024 14:46:40.409 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/host-manager]
+06-Apr-2024 14:46:40.417 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/host-manager] has finished in [8] ms
+06-Apr-2024 14:46:40.418 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/examples]
+06-Apr-2024 14:46:40.517 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/examples] has finished in [99] ms
+06-Apr-2024 14:46:40.520 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8001"]
+06-Apr-2024 14:46:40.525 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+06-Apr-2024 14:46:40.526 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.start Server startup in 9174 ms
+06-Apr-2024 14:51:06.326 INFORMAÇÕES [http-nio-8001-exec-9] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks]
+06-Apr-2024 14:51:06.406 INFORMAÇÕES [http-nio-8001-exec-2] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/tasks.war]
+06-Apr-2024 14:51:09.512 INFORMAÇÕES [http-nio-8001-exec-2] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2024 14:51:09.518 INFORMAÇÕES [http-nio-8001-exec-2] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/tasks.war] has finished in [3,112] ms
+06-Apr-2024 14:57:13.853 INFORMAÇÕES [http-nio-8001-exec-13] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks]
+06-Apr-2024 14:57:13.933 INFORMAÇÕES [http-nio-8001-exec-11] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/tasks.war]
+06-Apr-2024 14:57:16.240 INFORMAÇÕES [http-nio-8001-exec-11] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2024 14:57:16.246 INFORMAÇÕES [http-nio-8001-exec-11] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/tasks.war] has finished in [2,313] ms
+06-Apr-2024 14:58:45.810 ADVERTÊNCIA [http-nio-8001-exec-26] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [tasks-backend] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+06-Apr-2024 14:58:46.323 INFORMAÇÕES [http-nio-8001-exec-26] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+06-Apr-2024 14:58:46.470 INFORMAÇÕES [http-nio-8001-exec-24] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+06-Apr-2024 14:58:51.204 INFORMAÇÕES [http-nio-8001-exec-24] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2024 14:58:51.212 INFORMAÇÕES [http-nio-8001-exec-24] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war] has finished in [4,743] ms
+06-Apr-2024 15:03:54.984 INFORMAÇÕES [http-nio-8001-exec-33] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks]
+06-Apr-2024 15:03:56.096 ADVERTÊNCIA [http-nio-8001-exec-31] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [tasks-backend] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+06-Apr-2024 15:03:56.612 INFORMAÇÕES [http-nio-8001-exec-31] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+06-Apr-2024 15:06:00.249 INFORMAÇÕES [http-nio-8001-exec-40] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+06-Apr-2024 15:06:04.393 INFORMAÇÕES [http-nio-8001-exec-40] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2024 15:06:04.398 INFORMAÇÕES [http-nio-8001-exec-40] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war] has finished in [4,149] ms
+06-Apr-2024 15:06:17.672 INFORMAÇÕES [http-nio-8001-exec-42] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/tasks.war]
+06-Apr-2024 15:06:19.588 INFORMAÇÕES [http-nio-8001-exec-42] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2024 15:06:19.594 INFORMAÇÕES [http-nio-8001-exec-42] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/tasks.war] has finished in [1,922] ms
+06-Apr-2024 15:06:26.547 ADVERTÊNCIA [http-nio-8001-exec-34] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [tasks-backend] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+06-Apr-2024 15:06:27.067 INFORMAÇÕES [http-nio-8001-exec-34] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+06-Apr-2024 15:07:30.329 INFORMAÇÕES [http-nio-8001-exec-50] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+06-Apr-2024 15:07:34.644 INFORMAÇÕES [http-nio-8001-exec-50] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2024 15:07:34.654 INFORMAÇÕES [http-nio-8001-exec-50] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war] has finished in [4,325] ms
+06-Apr-2024 15:07:48.404 INFORMAÇÕES [http-nio-8001-exec-53] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks]
+06-Apr-2024 15:07:48.460 INFORMAÇÕES [http-nio-8001-exec-44] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/tasks.war]
+06-Apr-2024 15:07:50.434 INFORMAÇÕES [http-nio-8001-exec-44] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2024 15:07:50.439 INFORMAÇÕES [http-nio-8001-exec-44] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/tasks.war] has finished in [1,978] ms
+06-Apr-2024 15:09:45.614 ADVERTÊNCIA [http-nio-8001-exec-58] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [tasks-backend] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+06-Apr-2024 15:09:46.133 INFORMAÇÕES [http-nio-8001-exec-58] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+06-Apr-2024 15:09:46.238 INFORMAÇÕES [http-nio-8001-exec-61] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+06-Apr-2024 15:09:51.031 INFORMAÇÕES [http-nio-8001-exec-61] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2024 15:09:51.038 INFORMAÇÕES [http-nio-8001-exec-61] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war] has finished in [4,801] ms
+06-Apr-2024 15:10:03.983 INFORMAÇÕES [http-nio-8001-exec-57] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks]
+06-Apr-2024 15:10:04.099 INFORMAÇÕES [http-nio-8001-exec-60] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/tasks.war]
+06-Apr-2024 15:10:06.997 INFORMAÇÕES [http-nio-8001-exec-60] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2024 15:10:07.004 INFORMAÇÕES [http-nio-8001-exec-60] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/tasks.war] has finished in [2,906] ms
+06-Apr-2024 16:14:08.218 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.50
+06-Apr-2024 16:14:08.219 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 7 2019 19:19:46 UTC
+06-Apr-2024 16:14:08.219 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.50.0
+06-Apr-2024 16:14:08.219 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+06-Apr-2024 16:14:08.219 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.5.0-26-generic
+06-Apr-2024 16:14:08.219 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+06-Apr-2024 16:14:08.219 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-8-openjdk-amd64/jre
+06-Apr-2024 16:14:08.219 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_402-8u402-ga-2ubuntu1~22.04-b06
+06-Apr-2024 16:14:08.220 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Private Build
+06-Apr-2024 16:14:08.220 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50
+06-Apr-2024 16:14:08.220 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50
+06-Apr-2024 16:14:08.220 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/conf/logging.properties
+06-Apr-2024 16:14:08.220 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Apr-2024 16:14:08.220 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+06-Apr-2024 16:14:08.220 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+06-Apr-2024 16:14:08.220 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+06-Apr-2024 16:14:08.220 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+06-Apr-2024 16:14:08.220 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50
+06-Apr-2024 16:14:08.221 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50
+06-Apr-2024 16:14:08.221 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/temp
+06-Apr-2024 16:14:08.221 INFORMAÇÕES [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+06-Apr-2024 16:14:08.278 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8001"]
+06-Apr-2024 16:14:08.314 INFORMAÇÕES [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+06-Apr-2024 16:14:08.322 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+06-Apr-2024 16:14:08.323 INFORMAÇÕES [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+06-Apr-2024 16:14:08.323 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.load Initialization processed in 413 ms
+06-Apr-2024 16:14:08.346 INFORMAÇÕES [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-Apr-2024 16:14:08.347 INFORMAÇÕES [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.50
+06-Apr-2024 16:14:08.360 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/tasks.war]
+06-Apr-2024 16:14:11.372 INFORMAÇÕES [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2024 16:14:11.395 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/tasks.war] has finished in [3,034] ms
+06-Apr-2024 16:14:11.396 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war]
+06-Apr-2024 16:14:15.787 INFORMAÇÕES [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Apr-2024 16:14:15.792 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/tasks-backend.war] has finished in [4,396] ms
+06-Apr-2024 16:14:15.793 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/manager]
+06-Apr-2024 16:14:15.813 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/manager] has finished in [20] ms
+06-Apr-2024 16:14:15.813 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/docs]
+06-Apr-2024 16:14:15.822 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/docs] has finished in [9] ms
+06-Apr-2024 16:14:15.822 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/ROOT]
+06-Apr-2024 16:14:15.830 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/ROOT] has finished in [7] ms
+06-Apr-2024 16:14:15.830 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/host-manager]
+06-Apr-2024 16:14:15.840 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/host-manager] has finished in [10] ms
+06-Apr-2024 16:14:15.841 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/examples]
+06-Apr-2024 16:14:15.954 INFORMAÇÕES [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-8.5.50/webapps/examples] has finished in [113] ms
+06-Apr-2024 16:14:15.958 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8001"]
+06-Apr-2024 16:14:15.965 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+06-Apr-2024 16:14:15.966 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.start Server startup in 7642 ms
+06-Apr-2024 17:44:21.067 INFORMAÇÕES [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+06-Apr-2024 17:44:21.067 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8001"]
+06-Apr-2024 17:44:21.073 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+06-Apr-2024 17:44:21.079 INFORMAÇÕES [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+06-Apr-2024 17:44:21.103 ADVERTÊNCIA [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [tasks-backend] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+06-Apr-2024 17:44:21.124 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8001"]
+06-Apr-2024 17:44:21.125 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+06-Apr-2024 17:44:21.127 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8001"]
+06-Apr-2024 17:44:21.127 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]

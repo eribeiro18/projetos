@@ -1,0 +1,225 @@
+07-Apr-2024 18:38:05.136 INFORMAÇÕES [http-nio-8001-exec-3] org.apache.catalina.core.ApplicationContext.log HTMLManager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+07-Apr-2024 18:38:05.136 INFORMAÇÕES [http-nio-8001-exec-3] org.apache.catalina.core.ApplicationContext.log HTMLManager: init: Global resources are available
+07-Apr-2024 18:38:05.142 INFORMAÇÕES [http-nio-8001-exec-3] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2024 18:49:53.750 INFORMAÇÕES [http-nio-8001-exec-8] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2024 18:50:00.766 INFORMAÇÕES [http-nio-8001-exec-9] org.apache.catalina.core.ApplicationContext.log HTMLManager: start: Starting web application '/tasks-backend'
+07-Apr-2024 18:50:04.054 GRAVE [http-nio-8001-exec-9] org.apache.catalina.core.ApplicationContext.log HTMLManager: Error starting [/tasks-backend]
+	org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/tasks-backend]]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:419)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:186)
+		at org.apache.catalina.manager.ManagerServlet.start(ManagerServlet.java:1416)
+		at org.apache.catalina.manager.HTMLManagerServlet.start(HTMLManagerServlet.java:702)
+		at org.apache.catalina.manager.HTMLManagerServlet.doPost(HTMLManagerServlet.java:220)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.filters.CsrfPreventionFilter.doFilter(CsrfPreventionFilter.java:190)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.filters.HttpHeaderSecurityFilter.doFilter(HttpHeaderSecurityFilter.java:129)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:597)
+		at org.apache.catalina.valves.RequestFilterValve.process(RequestFilterValve.java:355)
+		at org.apache.catalina.valves.RemoteAddrValve.invoke(RemoteAddrValve.java:54)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:840)
+	Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to resolve name [org.hibernate.dialect.PostgreSQL9Dialect] as strategy [org.hibernate.dialect.Dialect]
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+		at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+		at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1234)
+		at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:952)
+		at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+		at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+		at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+		at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+		at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+		at org.springframework.boot.web.servlet.support.SpringBootServletInitializer.run(SpringBootServletInitializer.java:174)
+		at org.springframework.boot.web.servlet.support.SpringBootServletInitializer.createRootApplicationContext(SpringBootServletInitializer.java:154)
+		at org.springframework.boot.web.servlet.support.SpringBootServletInitializer.onStartup(SpringBootServletInitializer.java:96)
+		at org.springframework.web.SpringServletContainerInitializer.onStartup(SpringServletContainerInitializer.java:171)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4850)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		... 35 more
+	Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to resolve name [org.hibernate.dialect.PostgreSQL9Dialect] as strategy [org.hibernate.dialect.Dialect]
+		at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:276)
+		at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238)
+		at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+		at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+		at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:223)
+		at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:191)
+		at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:170)
+		at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1432)
+		at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1503)
+		at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+		at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+		at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+		at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+		at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+		... 54 more
+	Caused by: org.hibernate.boot.registry.selector.spi.StrategySelectionException: Unable to resolve name [org.hibernate.dialect.PostgreSQL9Dialect] as strategy [org.hibernate.dialect.Dialect]
+		at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.selectStrategyImplementor(StrategySelectorImpl.java:154)
+		at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.resolveStrategy(StrategySelectorImpl.java:236)
+		at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.resolveStrategy(StrategySelectorImpl.java:189)
+		at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.constructDialect(DialectFactoryImpl.java:123)
+		at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:88)
+		at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentWithDefaults(JdbcEnvironmentInitiator.java:143)
+		at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:348)
+		at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:107)
+		at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+		at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130)
+		at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+		... 69 more
+	Caused by: org.hibernate.boot.registry.classloading.spi.ClassLoadingException: Unable to load class [org.hibernate.dialect.PostgreSQL9Dialect]
+		at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.classForName(ClassLoaderServiceImpl.java:126)
+		at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.selectStrategyImplementor(StrategySelectorImpl.java:150)
+		... 79 more
+	Caused by: java.lang.ClassNotFoundException: Could not load requested class : org.hibernate.dialect.PostgreSQL9Dialect
+		at org.hibernate.boot.registry.classloading.internal.AggregatedClassLoader.findClass(AggregatedClassLoader.java:216)
+		at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:592)
+		at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+		at java.base/java.lang.Class.forName0(Native Method)
+		at java.base/java.lang.Class.forName(Class.java:467)
+		at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.classForName(ClassLoaderServiceImpl.java:123)
+		... 80 more
+	Caused by: java.lang.Throwable
+		at org.hibernate.boot.registry.classloading.internal.AggregatedClassLoader.findClass(AggregatedClassLoader.java:209)
+		... 85 more
+		Suppressed: java.lang.ClassNotFoundException: org.hibernate.dialect.PostgreSQL9Dialect
+			at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1437)
+			at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1245)
+			at org.hibernate.boot.registry.classloading.internal.AggregatedClassLoader.findClass(AggregatedClassLoader.java:206)
+			... 85 more
+		Suppressed: java.lang.ClassNotFoundException: org.hibernate.dialect.PostgreSQL9Dialect
+			at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1437)
+			at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1245)
+			at org.hibernate.boot.registry.classloading.internal.AggregatedClassLoader.findClass(AggregatedClassLoader.java:206)
+			... 85 more
+		Suppressed: java.lang.ClassNotFoundException: org.hibernate.dialect.PostgreSQL9Dialect
+			at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+			at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+			at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+			at org.hibernate.boot.registry.classloading.internal.AggregatedClassLoader.findClass(AggregatedClassLoader.java:206)
+			... 85 more
+07-Apr-2024 18:50:04.054 INFORMAÇÕES [http-nio-8001-exec-9] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2024 18:53:04.828 INFORMAÇÕES [http-nio-8001-exec-11] org.apache.catalina.core.ApplicationContext.log HTMLManager: undeploy: Undeploying web application at '/tasks-backend'
+07-Apr-2024 18:53:05.354 INFORMAÇÕES [http-nio-8001-exec-11] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2024 18:53:19.090 INFORMAÇÕES [http-nio-8001-exec-2] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2024 18:55:59.902 INFORMAÇÕES [http-nio-8001-exec-16] org.apache.catalina.core.ApplicationContext.log HTMLManager: undeploy: Undeploying web application at '/tasks-backend'
+07-Apr-2024 18:56:00.420 INFORMAÇÕES [http-nio-8001-exec-16] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2024 18:56:32.491 INFORMAÇÕES [http-nio-8001-exec-6] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2024 18:57:45.224 INFORMAÇÕES [http-nio-8001-exec-21] org.apache.catalina.core.ApplicationContext.log HTMLManager: undeploy: Undeploying web application at '/tasks-backend'
+07-Apr-2024 18:57:45.748 INFORMAÇÕES [http-nio-8001-exec-21] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2024 18:57:58.954 INFORMAÇÕES [http-nio-8001-exec-19] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2024 18:59:20.897 INFORMAÇÕES [http-nio-8001-exec-26] org.apache.catalina.core.ApplicationContext.log HTMLManager: undeploy: Undeploying web application at '/tasks-backend'
+07-Apr-2024 18:59:21.420 INFORMAÇÕES [http-nio-8001-exec-26] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2024 18:59:35.804 INFORMAÇÕES [http-nio-8001-exec-27] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2024 19:01:07.425 INFORMAÇÕES [http-nio-8001-exec-30] org.apache.catalina.core.ApplicationContext.log HTMLManager: undeploy: Undeploying web application at '/tasks-backend'
+07-Apr-2024 19:01:07.947 INFORMAÇÕES [http-nio-8001-exec-30] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2024 19:01:21.318 INFORMAÇÕES [http-nio-8001-exec-23] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2024 19:05:27.884 INFORMAÇÕES [http-nio-8001-exec-35] org.apache.catalina.core.ApplicationContext.log HTMLManager: undeploy: Undeploying web application at '/tasks-backend'
+07-Apr-2024 19:05:28.407 INFORMAÇÕES [http-nio-8001-exec-35] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2024 19:05:45.830 INFORMAÇÕES [http-nio-8001-exec-31] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2024 19:06:44.028 INFORMAÇÕES [http-nio-8001-exec-42] org.apache.catalina.core.ApplicationContext.log HTMLManager: undeploy: Undeploying web application at '/tasks-backend'
+07-Apr-2024 19:06:44.573 INFORMAÇÕES [http-nio-8001-exec-42] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2024 19:07:31.303 INFORMAÇÕES [http-nio-8001-exec-45] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2024 19:08:26.864 INFORMAÇÕES [http-nio-8001-exec-47] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2024 19:11:51.097 INFORMAÇÕES [http-nio-8001-exec-46] org.apache.catalina.core.ApplicationContext.log HTMLManager: undeploy: Undeploying web application at '/tasks'
+07-Apr-2024 19:11:51.617 INFORMAÇÕES [http-nio-8001-exec-46] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2024 19:12:01.842 INFORMAÇÕES [http-nio-8001-exec-48] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2024 19:12:54.435 INFORMAÇÕES [http-nio-8001-exec-54] org.apache.catalina.core.ApplicationContext.log HTMLManager: undeploy: Undeploying web application at '/tasks'
+07-Apr-2024 19:12:54.953 INFORMAÇÕES [http-nio-8001-exec-54] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2024 19:13:07.101 INFORMAÇÕES [http-nio-8001-exec-51] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2024 19:15:34.356 INFORMAÇÕES [http-nio-8001-exec-58] org.apache.catalina.core.ApplicationContext.log HTMLManager: undeploy: Undeploying web application at '/tasks'
+07-Apr-2024 19:15:34.881 INFORMAÇÕES [http-nio-8001-exec-58] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2024 19:15:49.466 INFORMAÇÕES [http-nio-8001-exec-55] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2024 19:19:24.862 INFORMAÇÕES [http-nio-8001-exec-63] org.apache.catalina.core.ApplicationContext.log HTMLManager: undeploy: Undeploying web application at '/tasks'
+07-Apr-2024 19:19:25.416 INFORMAÇÕES [http-nio-8001-exec-63] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2024 19:19:35.058 INFORMAÇÕES [http-nio-8001-exec-49] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2024 19:26:48.270 INFORMAÇÕES [http-nio-8001-exec-69] org.apache.catalina.core.ApplicationContext.log Manager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+07-Apr-2024 19:26:48.270 INFORMAÇÕES [http-nio-8001-exec-69] org.apache.catalina.core.ApplicationContext.log Manager: init: Global resources are available
+07-Apr-2024 19:26:48.271 INFORMAÇÕES [http-nio-8001-exec-69] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2024 19:26:48.280 INFORMAÇÕES [http-nio-8001-exec-70] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2024 19:26:48.286 INFORMAÇÕES [http-nio-8001-exec-71] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks-backend'
+07-Apr-2024 19:26:48.847 INFORMAÇÕES [http-nio-8001-exec-74] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks-backend'
+07-Apr-2024 19:26:48.847 INFORMAÇÕES [http-nio-8001-exec-74] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks-backend.war
+07-Apr-2024 19:27:06.415 INFORMAÇÕES [http-nio-8001-exec-75] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2024 19:27:06.416 INFORMAÇÕES [http-nio-8001-exec-70] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2024 19:27:06.417 INFORMAÇÕES [http-nio-8001-exec-77] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks'
+07-Apr-2024 19:27:06.942 INFORMAÇÕES [http-nio-8001-exec-78] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks'
+07-Apr-2024 19:27:06.943 INFORMAÇÕES [http-nio-8001-exec-78] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks.war
+07-Apr-2024 19:40:37.671 INFORMAÇÕES [http-nio-8001-exec-82] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2024 19:40:37.681 INFORMAÇÕES [http-nio-8001-exec-83] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2024 19:40:37.689 INFORMAÇÕES [http-nio-8001-exec-83] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks-backend'
+07-Apr-2024 19:40:38.313 INFORMAÇÕES [http-nio-8001-exec-90] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks-backend'
+07-Apr-2024 19:40:38.313 INFORMAÇÕES [http-nio-8001-exec-90] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks-backend.war
+07-Apr-2024 19:40:56.813 INFORMAÇÕES [http-nio-8001-exec-84] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2024 19:40:56.817 INFORMAÇÕES [http-nio-8001-exec-87] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2024 19:40:56.819 INFORMAÇÕES [http-nio-8001-exec-89] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks'
+07-Apr-2024 19:40:57.362 INFORMAÇÕES [http-nio-8001-exec-92] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks'
+07-Apr-2024 19:40:57.363 INFORMAÇÕES [http-nio-8001-exec-92] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks.war
+07-Apr-2024 19:42:39.620 INFORMAÇÕES [http-nio-8001-exec-95] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2024 19:42:39.628 INFORMAÇÕES [http-nio-8001-exec-96] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2024 19:42:39.632 INFORMAÇÕES [http-nio-8001-exec-85] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks-backend'
+07-Apr-2024 19:42:40.247 INFORMAÇÕES [http-nio-8001-exec-86] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks-backend'
+07-Apr-2024 19:42:40.248 INFORMAÇÕES [http-nio-8001-exec-86] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks-backend.war
+07-Apr-2024 19:42:56.680 INFORMAÇÕES [http-nio-8001-exec-93] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2024 19:42:56.681 INFORMAÇÕES [http-nio-8001-exec-87] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2024 19:42:56.682 INFORMAÇÕES [http-nio-8001-exec-95] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks'
+07-Apr-2024 19:42:57.217 INFORMAÇÕES [http-nio-8001-exec-96] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks'
+07-Apr-2024 19:42:57.217 INFORMAÇÕES [http-nio-8001-exec-96] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks.war
+07-Apr-2024 20:18:15.191 INFORMAÇÕES [http-nio-8001-exec-101] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2024 20:18:15.196 INFORMAÇÕES [http-nio-8001-exec-102] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2024 20:18:15.202 INFORMAÇÕES [http-nio-8001-exec-103] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks-backend'
+07-Apr-2024 20:18:15.759 INFORMAÇÕES [http-nio-8001-exec-101] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks-backend'
+07-Apr-2024 20:18:15.759 INFORMAÇÕES [http-nio-8001-exec-101] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks-backend.war
+07-Apr-2024 20:18:36.947 INFORMAÇÕES [http-nio-8001-exec-102] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2024 20:18:36.950 INFORMAÇÕES [http-nio-8001-exec-106] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2024 20:18:36.959 INFORMAÇÕES [http-nio-8001-exec-108] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks'
+07-Apr-2024 20:18:37.521 INFORMAÇÕES [http-nio-8001-exec-104] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks'
+07-Apr-2024 20:18:37.522 INFORMAÇÕES [http-nio-8001-exec-104] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks.war
+07-Apr-2024 20:19:18.852 INFORMAÇÕES [http-nio-8001-exec-113] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2024 20:19:18.854 INFORMAÇÕES [http-nio-8001-exec-106] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2024 20:19:18.855 INFORMAÇÕES [http-nio-8001-exec-112] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks-backend'
+07-Apr-2024 20:19:19.394 INFORMAÇÕES [http-nio-8001-exec-110] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks-backend'
+07-Apr-2024 20:19:19.394 INFORMAÇÕES [http-nio-8001-exec-110] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks-backend.war
+07-Apr-2024 20:19:36.156 INFORMAÇÕES [http-nio-8001-exec-109] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2024 20:19:36.158 INFORMAÇÕES [http-nio-8001-exec-107] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2024 20:19:36.159 INFORMAÇÕES [http-nio-8001-exec-116] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks'
+07-Apr-2024 20:19:36.691 INFORMAÇÕES [http-nio-8001-exec-117] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks'
+07-Apr-2024 20:19:36.691 INFORMAÇÕES [http-nio-8001-exec-117] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks.war
+07-Apr-2024 20:45:02.132 INFORMAÇÕES [http-nio-8001-exec-119] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2024 20:45:02.137 INFORMAÇÕES [http-nio-8001-exec-120] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2024 20:45:02.139 INFORMAÇÕES [http-nio-8001-exec-121] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks-backend'
+07-Apr-2024 20:45:02.680 INFORMAÇÕES [http-nio-8001-exec-119] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks-backend'
+07-Apr-2024 20:45:02.680 INFORMAÇÕES [http-nio-8001-exec-119] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks-backend.war
+07-Apr-2024 20:45:20.786 INFORMAÇÕES [http-nio-8001-exec-127] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2024 20:45:20.787 INFORMAÇÕES [http-nio-8001-exec-120] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+07-Apr-2024 20:45:20.788 INFORMAÇÕES [http-nio-8001-exec-125] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/tasks'
+07-Apr-2024 20:45:21.316 INFORMAÇÕES [http-nio-8001-exec-126] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/tasks'
+07-Apr-2024 20:45:21.316 INFORMAÇÕES [http-nio-8001-exec-126] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks.war

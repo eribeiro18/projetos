@@ -1,0 +1,438 @@
+14-Apr-2024 16:32:09.843 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.13
+14-Apr-2024 16:32:09.847 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 23 2023 21:34:59 UTC
+14-Apr-2024 16:32:09.847 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.13.0
+14-Apr-2024 16:32:09.847 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+14-Apr-2024 16:32:09.847 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.5.0-27-generic
+14-Apr-2024 16:32:09.847 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+14-Apr-2024 16:32:09.847 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-17-openjdk-amd64
+14-Apr-2024 16:32:09.847 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.10+7-Ubuntu-122.04.1
+14-Apr-2024 16:32:09.847 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Private Build
+14-Apr-2024 16:32:09.847 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13
+14-Apr-2024 16:32:09.848 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13
+14-Apr-2024 16:32:09.857 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/conf/logging.properties
+14-Apr-2024 16:32:09.857 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+14-Apr-2024 16:32:09.857 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+14-Apr-2024 16:32:09.857 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+14-Apr-2024 16:32:09.857 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+14-Apr-2024 16:32:09.857 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+14-Apr-2024 16:32:09.857 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+14-Apr-2024 16:32:09.857 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+14-Apr-2024 16:32:09.857 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+14-Apr-2024 16:32:09.857 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+14-Apr-2024 16:32:09.857 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13
+14-Apr-2024 16:32:09.857 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13
+14-Apr-2024 16:32:09.858 INFORMAÇÕES [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/temp
+14-Apr-2024 16:32:09.858 INFORMAÇÕES [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+14-Apr-2024 16:32:10.036 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8001"]
+14-Apr-2024 16:32:10.054 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.load Server initialization in [343] milliseconds
+14-Apr-2024 16:32:10.086 INFORMAÇÕES [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+14-Apr-2024 16:32:10.087 INFORMAÇÕES [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.13]
+14-Apr-2024 16:32:10.103 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks.war]
+14-Apr-2024 16:32:11.268 INFORMAÇÕES [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+14-Apr-2024 16:32:12.901 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks.war] has finished in [2.797] ms
+14-Apr-2024 16:32:12.902 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks-backend.war]
+14-Apr-2024 16:32:14.408 INFORMAÇÕES [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+14-Apr-2024 16:32:18.027 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks-backend.war] has finished in [5.125] ms
+14-Apr-2024 16:32:18.041 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/manager]
+14-Apr-2024 16:32:18.071 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/manager] has finished in [30] ms
+14-Apr-2024 16:32:18.071 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/docs]
+14-Apr-2024 16:32:18.086 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/docs] has finished in [14] ms
+14-Apr-2024 16:32:18.086 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/host-manager]
+14-Apr-2024 16:32:18.101 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/host-manager] has finished in [15] ms
+14-Apr-2024 16:32:18.102 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Diretório de instalação da aplicação web [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/examples]
+14-Apr-2024 16:32:18.211 INFORMAÇÕES [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/examples] has finished in [109] ms
+14-Apr-2024 16:32:18.213 INFORMAÇÕES [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8001"]
+14-Apr-2024 16:32:18.220 INFORMAÇÕES [main] org.apache.catalina.startup.Catalina.start Server startup in [8166] milliseconds
+14-Apr-2024 17:25:00.400 INFORMAÇÕES [http-nio-8001-exec-3] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+14-Apr-2024 17:25:00.532 INFORMAÇÕES [http-nio-8001-exec-4] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks-backend.war]
+14-Apr-2024 17:25:02.304 INFORMAÇÕES [http-nio-8001-exec-4] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+14-Apr-2024 17:25:06.609 INFORMAÇÕES [http-nio-8001-exec-4] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks-backend.war] has finished in [6.077] ms
+14-Apr-2024 17:25:16.710 INFORMAÇÕES [http-nio-8001-exec-12] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks]
+14-Apr-2024 17:25:16.761 INFORMAÇÕES [http-nio-8001-exec-7] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks.war]
+14-Apr-2024 17:25:17.619 INFORMAÇÕES [http-nio-8001-exec-7] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+14-Apr-2024 17:25:19.049 INFORMAÇÕES [http-nio-8001-exec-7] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks.war] has finished in [2.288] ms
+14-Apr-2024 17:26:35.513 INFORMAÇÕES [http-nio-8001-exec-18] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+14-Apr-2024 17:26:35.659 INFORMAÇÕES [http-nio-8001-exec-12] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks-backend.war]
+14-Apr-2024 17:26:37.666 INFORMAÇÕES [http-nio-8001-exec-12] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+14-Apr-2024 17:26:43.303 INFORMAÇÕES [http-nio-8001-exec-12] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks-backend.war] has finished in [7.644] ms
+14-Apr-2024 17:26:58.187 INFORMAÇÕES [http-nio-8001-exec-22] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks]
+14-Apr-2024 17:26:58.237 INFORMAÇÕES [http-nio-8001-exec-23] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks.war]
+14-Apr-2024 17:26:59.206 INFORMAÇÕES [http-nio-8001-exec-23] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+14-Apr-2024 17:27:01.920 INFORMAÇÕES [http-nio-8001-exec-23] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks.war] has finished in [3.682] ms
+14-Apr-2024 17:29:26.949 INFORMAÇÕES [http-nio-8001-exec-29] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+14-Apr-2024 17:29:27.054 INFORMAÇÕES [http-nio-8001-exec-27] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks-backend.war]
+14-Apr-2024 17:29:28.715 INFORMAÇÕES [http-nio-8001-exec-27] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+14-Apr-2024 17:29:32.682 INFORMAÇÕES [http-nio-8001-exec-27] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks-backend.war] has finished in [5.628] ms
+14-Apr-2024 17:29:43.809 INFORMAÇÕES [http-nio-8001-exec-36] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks]
+14-Apr-2024 17:29:43.848 INFORMAÇÕES [http-nio-8001-exec-39] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks.war]
+14-Apr-2024 17:29:44.690 INFORMAÇÕES [http-nio-8001-exec-39] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+14-Apr-2024 17:29:46.388 INFORMAÇÕES [http-nio-8001-exec-39] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks.war] has finished in [2.540] ms
+14-Apr-2024 17:40:03.787 INFORMAÇÕES [http-nio-8001-exec-41] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+14-Apr-2024 17:40:03.927 INFORMAÇÕES [http-nio-8001-exec-42] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks-backend.war]
+14-Apr-2024 17:40:06.009 INFORMAÇÕES [http-nio-8001-exec-42] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+14-Apr-2024 17:40:12.864 GRAVE [http-nio-8001-exec-42] org.apache.catalina.startup.HostConfig.deployWAR Error deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks-backend.war]
+	java.lang.IllegalStateException: Error starting child
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:686)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:658)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:713)
+		at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:975)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:495)
+		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1728)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:294)
+		at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:814)
+		at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+		at org.apache.catalina.manager.ManagerServlet.check(ManagerServlet.java:1593)
+		at org.apache.catalina.manager.ManagerServlet.deploy(ManagerServlet.java:857)
+		at org.apache.catalina.manager.ManagerServlet.doPut(ManagerServlet.java:459)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:593)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.filters.HttpHeaderSecurityFilter.doFilter(HttpHeaderSecurityFilter.java:129)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:597)
+		at org.apache.catalina.valves.RequestFilterValve.process(RequestFilterValve.java:355)
+		at org.apache.catalina.valves.RemoteAddrValve.invoke(RemoteAddrValve.java:54)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:840)
+	Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/tasks-backend]]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:419)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:186)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:683)
+		... 44 more
+	Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.] [n/a]
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+		at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+		at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1234)
+		at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:952)
+		at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+		at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+		at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+		at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+		at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+		at org.springframework.boot.web.servlet.support.SpringBootServletInitializer.run(SpringBootServletInitializer.java:174)
+		at org.springframework.boot.web.servlet.support.SpringBootServletInitializer.createRootApplicationContext(SpringBootServletInitializer.java:154)
+		at org.springframework.boot.web.servlet.support.SpringBootServletInitializer.onStartup(SpringBootServletInitializer.java:96)
+		at org.springframework.web.SpringServletContainerInitializer.onStartup(SpringServletContainerInitializer.java:171)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4850)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		... 45 more
+	Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.] [n/a]
+		at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421)
+		at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+		at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+		... 64 more
+	Caused by: org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.] [n/a]
+		at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:100)
+		at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+		at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+		at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94)
+		at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:74)
+		at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:39)
+		at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:63)
+		at org.hibernate.tool.schema.extract.spi.ExtractionContext.getQueryResults(ExtractionContext.java:43)
+		at org.hibernate.tool.schema.extract.internal.SequenceInformationExtractorLegacyImpl.extractMetadata(SequenceInformationExtractorLegacyImpl.java:39)
+		at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.initializeSequences(DatabaseInformationImpl.java:66)
+		at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.<init>(DatabaseInformationImpl.java:60)
+		at org.hibernate.tool.schema.internal.Helper.buildDatabaseInformation(Helper.java:185)
+		at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:98)
+		at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:286)
+		at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:145)
+		at java.base/java.util.HashMap.forEach(HashMap.java:1421)
+		at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:142)
+		at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+		at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+		at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:315)
+		at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:450)
+		at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1507)
+		at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+		at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+		at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+		... 68 more
+	Caused by: org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+		at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:342)
+		at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+		at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263)
+		at org.postgresql.Driver.makeConnection(Driver.java:443)
+		at org.postgresql.Driver.connect(Driver.java:297)
+		at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+		at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+		at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+		at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+		at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+		at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+		at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+		at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+		at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:428)
+		at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:46)
+		... 88 more
+	Caused by: java.net.ConnectException: Conexão recusada
+		at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+		at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+		at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+		at java.base/java.net.Socket.connect(Socket.java:633)
+		at org.postgresql.core.PGStream.createSocket(PGStream.java:243)
+		at org.postgresql.core.PGStream.<init>(PGStream.java:98)
+		at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:132)
+		at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:258)
+		... 102 more
+14-Apr-2024 17:40:12.866 INFORMAÇÕES [http-nio-8001-exec-42] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks-backend.war] has finished in [8.938] ms
+14-Apr-2024 17:43:09.373 ADVERTÊNCIA [http-nio-8001-exec-52] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [tasks-backend] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+14-Apr-2024 17:43:09.913 INFORMAÇÕES [http-nio-8001-exec-52] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+14-Apr-2024 17:43:10.091 INFORMAÇÕES [http-nio-8001-exec-50] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks-backend.war]
+14-Apr-2024 17:43:12.519 INFORMAÇÕES [http-nio-8001-exec-50] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+14-Apr-2024 17:43:20.988 GRAVE [http-nio-8001-exec-50] org.apache.catalina.startup.HostConfig.deployWAR Error deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks-backend.war]
+	java.lang.IllegalStateException: Error starting child
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:686)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:658)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:713)
+		at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:975)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:495)
+		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1728)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:294)
+		at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:814)
+		at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+		at org.apache.catalina.manager.ManagerServlet.check(ManagerServlet.java:1593)
+		at org.apache.catalina.manager.ManagerServlet.deploy(ManagerServlet.java:857)
+		at org.apache.catalina.manager.ManagerServlet.doPut(ManagerServlet.java:459)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:593)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.filters.HttpHeaderSecurityFilter.doFilter(HttpHeaderSecurityFilter.java:129)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:597)
+		at org.apache.catalina.valves.RequestFilterValve.process(RequestFilterValve.java:355)
+		at org.apache.catalina.valves.RemoteAddrValve.invoke(RemoteAddrValve.java:54)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:840)
+	Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/tasks-backend]]
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:419)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:186)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:683)
+		... 44 more
+	Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.] [n/a]
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+		at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+		at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+		at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1234)
+		at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:952)
+		at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+		at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+		at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+		at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+		at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+		at org.springframework.boot.web.servlet.support.SpringBootServletInitializer.run(SpringBootServletInitializer.java:174)
+		at org.springframework.boot.web.servlet.support.SpringBootServletInitializer.createRootApplicationContext(SpringBootServletInitializer.java:154)
+		at org.springframework.boot.web.servlet.support.SpringBootServletInitializer.onStartup(SpringBootServletInitializer.java:96)
+		at org.springframework.web.SpringServletContainerInitializer.onStartup(SpringServletContainerInitializer.java:171)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4850)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+		... 45 more
+	Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.] [n/a]
+		at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421)
+		at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+		at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833)
+		at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+		... 64 more
+	Caused by: org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.] [n/a]
+		at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:100)
+		at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+		at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+		at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94)
+		at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:74)
+		at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:39)
+		at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:63)
+		at org.hibernate.tool.schema.extract.spi.ExtractionContext.getQueryResults(ExtractionContext.java:43)
+		at org.hibernate.tool.schema.extract.internal.SequenceInformationExtractorLegacyImpl.extractMetadata(SequenceInformationExtractorLegacyImpl.java:39)
+		at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.initializeSequences(DatabaseInformationImpl.java:66)
+		at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.<init>(DatabaseInformationImpl.java:60)
+		at org.hibernate.tool.schema.internal.Helper.buildDatabaseInformation(Helper.java:185)
+		at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:98)
+		at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:286)
+		at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:145)
+		at java.base/java.util.HashMap.forEach(HashMap.java:1421)
+		at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:142)
+		at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+		at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+		at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:315)
+		at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:450)
+		at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1507)
+		at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+		at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+		at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+		... 68 more
+	Caused by: org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+		at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:342)
+		at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+		at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263)
+		at org.postgresql.Driver.makeConnection(Driver.java:443)
+		at org.postgresql.Driver.connect(Driver.java:297)
+		at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+		at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+		at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+		at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+		at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+		at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+		at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+		at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+		at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:428)
+		at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:46)
+		... 88 more
+	Caused by: java.net.ConnectException: Conexão recusada
+		at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+		at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+		at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+		at java.base/java.net.Socket.connect(Socket.java:633)
+		at org.postgresql.core.PGStream.createSocket(PGStream.java:243)
+		at org.postgresql.core.PGStream.<init>(PGStream.java:98)
+		at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:132)
+		at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:258)
+		... 102 more
+14-Apr-2024 17:43:20.989 INFORMAÇÕES [http-nio-8001-exec-50] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks-backend.war] has finished in [10.899] ms
+14-Apr-2024 17:50:14.652 ADVERTÊNCIA [http-nio-8001-exec-58] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [tasks-backend] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+14-Apr-2024 17:50:15.196 INFORMAÇÕES [http-nio-8001-exec-58] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+14-Apr-2024 17:50:15.393 INFORMAÇÕES [http-nio-8001-exec-61] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks-backend.war]
+14-Apr-2024 17:50:17.749 INFORMAÇÕES [http-nio-8001-exec-61] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+14-Apr-2024 17:50:25.557 INFORMAÇÕES [http-nio-8001-exec-61] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks-backend.war] has finished in [10.163] ms
+14-Apr-2024 17:50:44.047 INFORMAÇÕES [http-nio-8001-exec-67] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks]
+14-Apr-2024 17:50:44.103 INFORMAÇÕES [http-nio-8001-exec-70] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks.war]
+14-Apr-2024 17:50:45.135 INFORMAÇÕES [http-nio-8001-exec-70] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+14-Apr-2024 17:50:48.050 INFORMAÇÕES [http-nio-8001-exec-70] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks.war] has finished in [3.946] ms
+14-Apr-2024 17:52:05.869 INFORMAÇÕES [http-nio-8001-exec-76] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+14-Apr-2024 17:52:06.011 INFORMAÇÕES [http-nio-8001-exec-62] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks-backend.war]
+14-Apr-2024 17:52:07.682 INFORMAÇÕES [http-nio-8001-exec-62] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+14-Apr-2024 17:52:12.633 INFORMAÇÕES [http-nio-8001-exec-62] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks-backend.war] has finished in [6.622] ms
+14-Apr-2024 17:52:30.278 INFORMAÇÕES [http-nio-8001-exec-80] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks]
+14-Apr-2024 17:52:30.343 INFORMAÇÕES [http-nio-8001-exec-78] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks.war]
+14-Apr-2024 17:52:31.589 INFORMAÇÕES [http-nio-8001-exec-78] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+14-Apr-2024 17:52:34.978 INFORMAÇÕES [http-nio-8001-exec-78] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks.war] has finished in [4.634] ms
+14-Apr-2024 17:55:57.973 INFORMAÇÕES [http-nio-8001-exec-90] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+14-Apr-2024 17:55:58.148 INFORMAÇÕES [http-nio-8001-exec-87] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks-backend.war]
+14-Apr-2024 17:56:00.076 INFORMAÇÕES [http-nio-8001-exec-87] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+14-Apr-2024 17:56:07.691 INFORMAÇÕES [http-nio-8001-exec-87] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks-backend.war] has finished in [9.543] ms
+14-Apr-2024 17:56:26.746 INFORMAÇÕES [http-nio-8001-exec-95] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks]
+14-Apr-2024 17:56:26.808 INFORMAÇÕES [http-nio-8001-exec-86] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks.war]
+14-Apr-2024 17:56:27.843 INFORMAÇÕES [http-nio-8001-exec-86] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+14-Apr-2024 17:56:30.831 INFORMAÇÕES [http-nio-8001-exec-86] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks.war] has finished in [4.023] ms
+14-Apr-2024 18:01:54.099 INFORMAÇÕES [http-nio-8001-exec-105] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+14-Apr-2024 18:01:54.330 INFORMAÇÕES [http-nio-8001-exec-108] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks-backend.war]
+14-Apr-2024 18:01:56.543 INFORMAÇÕES [http-nio-8001-exec-108] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+14-Apr-2024 18:02:03.522 INFORMAÇÕES [http-nio-8001-exec-108] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks-backend.war] has finished in [9.192] ms
+14-Apr-2024 18:02:16.346 INFORMAÇÕES [http-nio-8001-exec-110] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks]
+14-Apr-2024 18:02:16.398 INFORMAÇÕES [http-nio-8001-exec-109] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks.war]
+14-Apr-2024 18:02:17.245 INFORMAÇÕES [http-nio-8001-exec-109] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+14-Apr-2024 18:02:19.297 INFORMAÇÕES [http-nio-8001-exec-109] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks.war] has finished in [2.899] ms
+14-Apr-2024 18:03:52.577 INFORMAÇÕES [http-nio-8001-exec-117] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+14-Apr-2024 18:03:52.757 INFORMAÇÕES [http-nio-8001-exec-118] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks-backend.war]
+14-Apr-2024 18:03:54.832 INFORMAÇÕES [http-nio-8001-exec-118] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+14-Apr-2024 18:04:01.761 INFORMAÇÕES [http-nio-8001-exec-118] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks-backend.war] has finished in [9.003] ms
+14-Apr-2024 18:04:18.992 INFORMAÇÕES [http-nio-8001-exec-123] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks]
+14-Apr-2024 18:04:19.494 INFORMAÇÕES [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks]
+14-Apr-2024 18:05:38.123 INFORMAÇÕES [http-nio-8001-exec-124] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+14-Apr-2024 18:05:38.255 INFORMAÇÕES [http-nio-8001-exec-126] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks-backend.war]
+14-Apr-2024 18:05:39.822 INFORMAÇÕES [http-nio-8001-exec-126] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+14-Apr-2024 18:05:43.653 INFORMAÇÕES [http-nio-8001-exec-126] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks-backend.war] has finished in [5.398] ms
+14-Apr-2024 18:05:53.251 INFORMAÇÕES [http-nio-8001-exec-131] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks.war]
+14-Apr-2024 18:05:54.043 INFORMAÇÕES [http-nio-8001-exec-131] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+14-Apr-2024 18:05:55.603 INFORMAÇÕES [http-nio-8001-exec-131] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks.war] has finished in [2.351] ms
+14-Apr-2024 18:07:07.939 INFORMAÇÕES [http-nio-8001-exec-131] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+14-Apr-2024 18:07:08.029 INFORMAÇÕES [http-nio-8001-exec-135] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks-backend.war]
+14-Apr-2024 18:07:09.404 INFORMAÇÕES [http-nio-8001-exec-135] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+14-Apr-2024 18:07:12.343 INFORMAÇÕES [http-nio-8001-exec-135] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks-backend.war] has finished in [4.314] ms
+14-Apr-2024 18:07:20.477 INFORMAÇÕES [http-nio-8001-exec-139] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks]
+14-Apr-2024 18:07:20.514 INFORMAÇÕES [http-nio-8001-exec-138] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks.war]
+14-Apr-2024 18:07:21.189 INFORMAÇÕES [http-nio-8001-exec-138] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+14-Apr-2024 18:07:22.579 INFORMAÇÕES [http-nio-8001-exec-138] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks.war] has finished in [2.065] ms
+14-Apr-2024 18:08:45.250 INFORMAÇÕES [http-nio-8001-exec-142] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+14-Apr-2024 18:08:45.400 INFORMAÇÕES [http-nio-8001-exec-144] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks-backend.war]
+14-Apr-2024 18:08:47.495 INFORMAÇÕES [http-nio-8001-exec-144] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+14-Apr-2024 18:08:53.514 INFORMAÇÕES [http-nio-8001-exec-144] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks-backend.war] has finished in [8.113] ms
+14-Apr-2024 18:09:08.817 INFORMAÇÕES [http-nio-8001-exec-150] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks]
+14-Apr-2024 18:09:08.887 INFORMAÇÕES [http-nio-8001-exec-152] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks.war]
+14-Apr-2024 18:09:09.920 INFORMAÇÕES [http-nio-8001-exec-152] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+14-Apr-2024 18:09:12.314 INFORMAÇÕES [http-nio-8001-exec-152] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks.war] has finished in [3.426] ms
+14-Apr-2024 18:14:13.232 INFORMAÇÕES [http-nio-8001-exec-159] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+14-Apr-2024 18:14:13.450 INFORMAÇÕES [http-nio-8001-exec-163] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks-backend.war]
+14-Apr-2024 18:14:15.778 INFORMAÇÕES [http-nio-8001-exec-163] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+14-Apr-2024 18:14:20.928 INFORMAÇÕES [http-nio-8001-exec-163] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks-backend.war] has finished in [7.479] ms
+14-Apr-2024 18:14:39.284 INFORMAÇÕES [http-nio-8001-exec-165] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks]
+14-Apr-2024 18:14:39.369 INFORMAÇÕES [http-nio-8001-exec-167] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks.war]
+14-Apr-2024 18:14:40.543 INFORMAÇÕES [http-nio-8001-exec-167] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+14-Apr-2024 18:14:43.744 INFORMAÇÕES [http-nio-8001-exec-167] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks.war] has finished in [4.375] ms
+14-Apr-2024 18:16:21.158 INFORMAÇÕES [http-nio-8001-exec-169] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+14-Apr-2024 18:16:21.346 INFORMAÇÕES [http-nio-8001-exec-172] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks-backend.war]
+14-Apr-2024 18:16:23.530 INFORMAÇÕES [http-nio-8001-exec-172] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+14-Apr-2024 18:16:30.783 INFORMAÇÕES [http-nio-8001-exec-172] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks-backend.war] has finished in [9.437] ms
+14-Apr-2024 18:16:45.889 INFORMAÇÕES [http-nio-8001-exec-177] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks]
+14-Apr-2024 18:16:45.961 INFORMAÇÕES [http-nio-8001-exec-176] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks.war]
+14-Apr-2024 18:16:47.009 INFORMAÇÕES [http-nio-8001-exec-176] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+14-Apr-2024 18:16:49.366 INFORMAÇÕES [http-nio-8001-exec-176] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks.war] has finished in [3.404] ms
+14-Apr-2024 18:23:27.141 INFORMAÇÕES [http-nio-8001-exec-185] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks-backend]
+14-Apr-2024 18:23:27.375 INFORMAÇÕES [http-nio-8001-exec-190] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks-backend.war]
+14-Apr-2024 18:23:29.609 INFORMAÇÕES [http-nio-8001-exec-190] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+14-Apr-2024 18:23:35.014 INFORMAÇÕES [http-nio-8001-exec-190] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks-backend.war] has finished in [7.638] ms
+14-Apr-2024 18:23:44.838 INFORMAÇÕES [http-nio-8001-exec-192] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/tasks]
+14-Apr-2024 18:23:44.909 INFORMAÇÕES [http-nio-8001-exec-181] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks.war]
+14-Apr-2024 18:23:45.639 INFORMAÇÕES [http-nio-8001-exec-181] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+14-Apr-2024 18:23:47.213 INFORMAÇÕES [http-nio-8001-exec-181] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/evandro/workspace/projetos_pessoal/git/projetos/jenkins/apache-tomcat-10.1.13/webapps/tasks.war] has finished in [2.303] ms
