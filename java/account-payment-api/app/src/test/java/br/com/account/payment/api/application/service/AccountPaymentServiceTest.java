@@ -16,6 +16,7 @@ import org.mockito.MockitoAnnotations;
 
 import br.com.account.payment.api.application.dto.AccountPaymentDto;
 import br.com.account.payment.api.builder.AccountPaymentBuilder;
+import br.com.account.payment.api.infraestructure.config.SecurityUtil;
 import br.com.account.payment.api.infraestructure.entity.AccountPayment;
 import br.com.account.payment.api.infraestructure.repository.AccountPaymentRepository;
 import jakarta.validation.ValidationException;
@@ -82,5 +83,12 @@ public class AccountPaymentServiceTest {
 
         Optional<String> msg = accountPaymentService.importCsv(request);
         assertEquals(msg.get(), "Importação de contas processado com sucesso!");
+    }
+    
+    @Test
+    void cryptPassword() {
+    	String pass = "validar@123";
+    	String passCrypt = SecurityUtil.cryptPassword(pass);
+    	System.out.println(passCrypt);
     }
 }

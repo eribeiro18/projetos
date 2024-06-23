@@ -11,7 +11,7 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 
 @Entity
-@Table
+@Table(name = "account_payment")
 @Data
 @Builder
 @AllArgsConstructor

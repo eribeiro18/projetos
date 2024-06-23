@@ -46,7 +46,7 @@ public class AccountPaymentController extends CommonsController{
 	@PostMapping
 	public ResponseEntity<Response> create(@Validated @RequestBody AccountPaymentDto request,
 										   @RequestHeader("Authorization") String authorization) {
-//		addAuthor(ControllerType.POST, request, authorization);
+		addAuthor(ControllerType.POST, request, authorization);
 		return buildResponse(HttpStatus.OK, Optional.of(accountPaymentSerialize.apply(accountPaymentService.save(request))));
 	}
 	
