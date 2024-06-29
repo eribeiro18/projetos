@@ -1,0 +1,37 @@
+version: "3"
+
+services:
+  postgresdb:
+    container_name: postgresdb
+    image: postgres:10.23-alpine
+    ports:
+      - 5432:5432
+    networks:
+      - validacao
+    environment:
+      - POSTGRES_DB=accountpayment
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=accountpaymentvalidacao
+    volumes:
+      - db_data:/var/lib/postgresql/data
+  account-payment-api:
+    container_name: account-payment-api-21
+    image: account-payment-api-21:latest
+    ports:
+      - "8080:8080"
+    networks:
+      - validacao
+    environment:
+      - JDBC_DRIVER=org.postgresql.Driver
+      - DB_URL=jdbc:postgresql://postgresdb:5432/accountpayment
+      - DB_USERNAME=postgres
+      - DB_PASSWORD=accountpaymentvalidacao
+      - PORT=8080
+    depends_on:
+      - postgresdb
+
+networks:
+  validacao:
+
+volumes:
+  db_data:
