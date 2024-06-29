@@ -2,7 +2,7 @@ package br.com.account.payment.api.infraestructure.config;
 
 import com.google.gson.Gson;
 
-import br.com.account.payment.api.application.dto.UserContextDto;
+import br.com.account.payment.api.application.dto.UserJwtDto;
 import io.jsonwebtoken.Jwts;
 import jakarta.validation.ValidationException;
 
@@ -15,7 +15,7 @@ import static java.util.Collections.emptyList;
 
 public class TokenAuthenticationService {
     static final String SECRET = "ThisIsASecret";
-    static final String TOKEN_PREFIX = "Bearer";
+    static final String TOKEN_PREFIX = "Bearer ";
     static final String HEADER_STRING = "Authorization";
 
 
@@ -31,7 +31,7 @@ public class TokenAuthenticationService {
                                   .getBody()
                                   .getSubject();
 
-            UserContextDto userContext = new Gson().fromJson(userPayload, UserContextDto.class);
+            UserJwtDto userContext = new Gson().fromJson(userPayload, UserJwtDto.class);
             return userContext != null ? new UsernamePasswordAuthenticationToken(userContext.getUsername(), null, emptyList()) : null;
 		} catch (Exception e) {
 			throw new ValidationException("Token invalid or expired");

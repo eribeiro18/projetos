@@ -26,6 +26,7 @@ import org.springframework.web.bind.annotation.RestController;
 import br.com.account.payment.api.application.dto.AccountPaymentDto;
 import br.com.account.payment.api.application.dto.Response;
 import br.com.account.payment.api.application.service.AccountPaymentService;
+import br.com.account.payment.api.application.service.UserService;
 import br.com.account.payment.api.infraestructure.controller.commons.CommonsController;
 import br.com.account.payment.api.infraestructure.controller.filter.AccountPaymentFilterBuilder;
 import br.com.account.payment.api.infraestructure.entity.AccountPayment;
@@ -39,21 +40,23 @@ public class AccountPaymentController extends CommonsController{
 
 	private final AccountPaymentService accountPaymentService;
 
-	public AccountPaymentController(AccountPaymentService accountPaymentService) {
+	public AccountPaymentController(AccountPaymentService accountPaymentService,
+									UserService userService) {
+		super(userService);
 		this.accountPaymentService = accountPaymentService;
 	}
 
 	@PostMapping
 	public ResponseEntity<Response> create(@Validated @RequestBody AccountPaymentDto request,
 										   @RequestHeader("Authorization") String authorization) {
-		addAuthor(ControllerType.POST, request, authorization);
+		validateAuthor(authorization);
 		return buildResponse(HttpStatus.OK, Optional.of(accountPaymentSerialize.apply(accountPaymentService.save(request))));
 	}
 	
 	@PostMapping(path = "/import-csv", produces = { "application/json" }, consumes = MediaType.TEXT_PLAIN_VALUE)
 	public ResponseEntity<Response> importCsv(@RequestHeader("Authorization") String authorization,
  										      @RequestBody String request) {
-//		addAuthor(ControllerType.POST, request, authorization);
+		validateAuthor(authorization);
 		Optional<String> opt = this.accountPaymentService.importCsv(request);
 		if(opt.isPresent()) {
 			return buildResponse(HttpStatus.OK, opt);
@@ -64,26 +67,29 @@ public class AccountPaymentController extends CommonsController{
 	@PutMapping
 	public ResponseEntity<Response> update(@Validated @RequestBody AccountPaymentDto request,
 										   @RequestHeader("Authorization") String authorization) {
-//		addAuthor(ControllerType.PUT, request, authorization);
+		validateAuthor(authorization);
 		return buildResponse(HttpStatus.OK, Optional.of(accountPaymentSerialize.apply(accountPaymentService.update(request))));
 	}
 
 	@PatchMapping
 	public ResponseEntity<Response> status(@RequestBody AccountPaymentDto request,
 										   @RequestHeader("Authorization") String authorization) {
-//		addAuthor(ControllerType.PUT, request, authorization);
+		validateAuthor(authorization);
 		return buildResponse(HttpStatus.OK, Optional.of(accountPaymentSerialize.apply(accountPaymentService.update(request))));
 	}
 
 	@DeleteMapping("/{id}")
 	public ResponseEntity<Response> delete(@PathVariable Long id,
 								    @RequestHeader("Authorization") String authorization) {
+		validateAuthor(authorization);
 		accountPaymentService.delete(id);
 		return buildResponse(HttpStatus.OK, Optional.of(id));
 	}
 
 	@GetMapping("/{id}")
-	public ResponseEntity<Response> findBy(@PathVariable("id") Long id) {
+	public ResponseEntity<Response> findBy(@RequestHeader("Authorization") String authorization,
+										   @PathVariable("id") Long id) {
+		validateAuthor(authorization);
 		Optional<AccountPayment> accountPayment = accountPaymentService.findBy(id);
 		if (accountPayment.isPresent()) {
 			return buildResponse(HttpStatus.OK, Optional.of(accountPaymentSerialize.apply(accountPayment.get())));
@@ -92,7 +98,9 @@ public class AccountPaymentController extends CommonsController{
 	}
 
 	@GetMapping("/all")
-	public ResponseEntity<Response> findAll(HttpServletRequest request, Pageable pageable) {
+	public ResponseEntity<Response> findAll(@RequestHeader("Authorization") String authorization, 
+											HttpServletRequest request, Pageable pageable) {
+		validateAuthor(authorization);
 		AccountPaymentFilter filters = AccountPaymentFilterBuilder.create(request);
 		Page<AccountPayment> accountPaymentList = accountPaymentService.findAllByFilter(filters, pageable);
 		if (accountPaymentList.hasContent()) {

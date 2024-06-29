@@ -1,7 +1,9 @@
 package br.com.account.payment.api.application.dto;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.RequiredArgsConstructor;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -17,6 +19,8 @@ import jakarta.validation.constraints.Size;
 
 @Data
 @Builder
+@RequiredArgsConstructor
+@AllArgsConstructor
 public class AccountPaymentDto implements Serializable {
 	
     private static final long serialVersionUID = 1L;

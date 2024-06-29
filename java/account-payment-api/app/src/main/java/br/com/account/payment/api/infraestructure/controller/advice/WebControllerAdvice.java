@@ -16,6 +16,7 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 
 import br.com.account.payment.api.application.dto.ErrorDto;
 import br.com.account.payment.api.application.dto.Response;
+import br.com.account.payment.api.exception.UnauthorizedException;
 import br.com.account.payment.api.exception.ValidationException;
 
 @RestControllerAdvice
@@ -44,5 +45,14 @@ public class WebControllerAdvice extends ResponseEntityExceptionHandler{
 			erros.add(new ErrorDto(messageInterface));
 		});
 		return erros;
+	}
+	
+	@ExceptionHandler(UnauthorizedException.class)
+	public ResponseEntity<Response> handleUnauthorizedException(UnauthorizedException ex) {
+		ErrorDto error = ErrorDto.builder().error(ex.getMessage())
+						   			       .build();
+		return new ResponseEntity<>(Response.builder()
+											.errors(List.of(error))
+											.build(), HttpStatus.UNAUTHORIZED);
 	}
 }

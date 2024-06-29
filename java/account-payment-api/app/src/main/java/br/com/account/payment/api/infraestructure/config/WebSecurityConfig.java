@@ -33,7 +33,7 @@ public class WebSecurityConfig {
             .authorizeHttpRequests(authorizeRequests -> authorizeRequests
                 .requestMatchers("/").permitAll()
                 .requestMatchers(HttpMethod.POST, "/v1/login").permitAll()
-                .requestMatchers("public/static/**/**").permitAll()
+                .requestMatchers("public/**").permitAll()
                 .requestMatchers("/v1/**").authenticated()
             )
             .addFilterBefore(jwtLoginFilter, UsernamePasswordAuthenticationFilter.class)

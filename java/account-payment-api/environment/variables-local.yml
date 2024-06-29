@@ -1,5 +1,5 @@
 JDBC_DRIVER: org.postgresql.Driver
 DB_URL: jdbc:postgresql://localhost:5432/teste3
 DB_USERNAME: postgres
-DB_PASSWORD: PostG0B0
+DB_PASSWORD: <pass>
 PORT: 8080

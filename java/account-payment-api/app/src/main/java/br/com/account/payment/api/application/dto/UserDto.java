@@ -31,24 +31,4 @@ public class UserDto implements Serializable {
 	private String passwordAffirm;
 	private boolean active;
 	private boolean isTempPassword;
-
-//	public void validateUpdate() {
-//		validatePassword();
-//	}
-//
-//	public void validateCreate() {
-//		if (password != null) {
-//			validatePassword();
-//		}
-//	}
-//
-//	private void validatePassword() {
-//		if (!password.equals(passwordAffirm)) {
-//			throw new ValidationException("As senhas não conferem! favor verificar!");
-//		}
-//		if (password.length() < 8) {
-//			throw new ValidationException("O mínimo são 8 caracteres para a senha!");
-//		}
-//	}
-
 }
