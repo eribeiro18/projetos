@@ -67,6 +67,7 @@ Body:
     "username": "validacao",
     "password": "validar@123"
 }
+```
 
 Nota: Este usuário é criado pelo Flyway como usuário padrão para testes.
 
@@ -75,10 +76,11 @@ Recebendo o token devolvido pela requisição acima, poderá ser usado os endpoi
 Headers
 Authorization: Bearer {token}
 
-Criar Conta a Pagar (POST)
+### Criar Conta a Pagar (POST)
 http://localhost:8080/v1/account-payment
 
 Body: 
+```json
 {
     "expirationDate": "2024-10-29",
     "paymentDate": "2024-12-30",
@@ -86,11 +88,13 @@ Body:
     "description": "teste do testes",
     "situation": "AWAITING_RECEIPT"
 }
+```
 
-Atualizar Conta a Pagar (PUT)
+### Atualizar Conta a Pagar (PUT)
 http://localhost:8080/v1/account-payment
 
 Body:
+```json
 {
     "id": 1,
     "expirationDate": "2024-12-31",
@@ -99,11 +103,13 @@ Body:
     "description": "descrição do contas 1",
     "situation": "AWAITING_PAYMENT"
 }
+```
 
-Atualizar Parcialmente Conta a Pagar (PATCH)
+### Atualizar Parcialmente Conta a Pagar (PATCH)
 http://localhost:8080/v1/account-payment
 
 body:
+```json
 {
     "id": 1,
     "expirationDate": "2024-12-31",
@@ -112,17 +118,18 @@ body:
     "description": "descrição do contas 1",
     "situation": "PAYMENT_MADE"
 }
+```
 
-Buscar Conta por ID (GET)
+### Buscar Conta por ID (GET)
 http://localhost:8080/v1/account-payment/4
 
-Buscar Todas as Contas com Filtros (GET)
+### Buscar Todas as Contas com Filtros (GET)
 http://localhost:8080/v1/account-payment/all?page=0&size=20&expirationDateStart=2024-04-30&description=teste
 
-Deletar Conta por ID (DELETE)
+### Deletar Conta por ID (DELETE)
 http://localhost:8080/v1/account-payment/3
 
-Importar Contas via CSV (POST)
+### Importar Contas via CSV (POST)
 http://localhost:8080/v1/account-payment/import-csv
 
 Body exemplo (use application/text):
