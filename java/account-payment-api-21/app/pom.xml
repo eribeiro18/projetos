@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.3.0</version>
+		<version>3.3.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>br.com.account.payment.api</groupId>
@@ -16,6 +16,9 @@
 	<properties>
 		<java.version>21</java.version>
 		<java.target>21</java.target>
+		<revision>v1</revision>
+		<docker.image.prefix>eribeiro18</docker.image.prefix>
+		<docker.image.name>validacao-teste</docker.image.name>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -111,6 +114,7 @@
 	</dependencies>
 
 	<build>
+		<finalName>account-payment-api-21-${revision}</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
@@ -125,5 +129,53 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>io.fabric8</groupId>
+					<artifactId>docker-maven-plugin</artifactId>
+					<version>0.31.0</version>
+					<configuration>
+						<dockerHost>unix:///var/run/docker.sock</dockerHost>
+						<verbose>true</verbose>
+						<images>
+							<image>
+								<name>${docker.image.prefix}/${docker.image.name}</name>
+								<build>
+									<args>
+										<VERSION>${revision}</VERSION>
+									</args>
+									<contextDir>${project.basedir}/src/main/docker</contextDir>
+									<assembly>
+										<mode>dir</mode>
+										<descriptor>${project.basedir}/src/main/docker/release.xml</descriptor>
+									</assembly>
+									<tags>
+										<tag>${project.build.finalName}</tag>
+									</tags>
+								</build>
+							</image>
+						</images>
+					</configuration>
+					<executions>
+						<execution>
+							<id>start</id>
+							<phase>pre-integration-test</phase>
+							<goals>
+								<goal>build</goal>
+								<goal>start</goal>
+							</goals>
+						</execution>
+						<execution>
+							<id>stop</id>
+							<phase>post-integration-test</phase>
+							<goals>
+								<goal>stop</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>
+			</plugins>
+		</pluginManagement>
 	</build>
 </project>
