@@ -6,6 +6,7 @@ class WebAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      backgroundColor: Colors.lightBlue,
       title: Row(
         children: [
           Image.asset(
@@ -29,7 +30,8 @@ class WebAppBar extends StatelessWidget {
               child: Text("Cadastrar"),
               style: OutlinedButton.styleFrom(
                 backgroundColor: Colors.lightBlueAccent,
-                primary: Colors.white
+                foregroundColor: Colors.white,
+                side: BorderSide.none
               ),
           ),
           SizedBox(width: 10,),
@@ -38,7 +40,8 @@ class WebAppBar extends StatelessWidget {
             child: Text("Entrar"),
             style: OutlinedButton.styleFrom(
                 backgroundColor: Colors.orange,
-                primary: Colors.white
+                foregroundColor: Colors.white,
+                side: BorderSide.none
             ),
           ),
         ],

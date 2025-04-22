@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.layout.StackPane?>
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="br.com.arsel.pdvfx.controller.MainViewController">
+  <children>
+    <MenuBar VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="Cadastro">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Item" onAction="#handleItemClick" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Vendas">
+          <items>
+            <MenuItem mnemonicParsing="false" text="PDV" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Sobre">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <StackPane fx:id="contentArea" />
+  </children>
+</VBox>

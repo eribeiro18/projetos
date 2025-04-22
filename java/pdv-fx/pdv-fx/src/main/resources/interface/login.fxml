@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+
+<StackPane xmlns:fx="http://javafx.com/fxml" fx:controller="br.com.arsel.pdvfx.controller.LoginController">
+    <VBox alignment="CENTER" spacing="20" maxWidth="300">
+    <padding>
+        <Insets top="40" right="40" bottom="40" left="40"/>
+    </padding>
+    <Label text="Acesso ao Sistema"
+               style="-fx-font-size: 22px; -fx-font-weight: bold;" />
+
+        <JFXTextField fx:id="usuarioField"
+                      promptText="Usuário"
+                      labelFloat="true"
+                      style="-fx-pref-width: 100%;" />
+
+        <JFXPasswordField fx:id="senhaField"
+                          promptText="Senha"
+                          labelFloat="true"
+                          style="-fx-pref-width: 100%;" />
+
+        <JFXButton text="Entrar"
+                   fx:id="entrarButton"
+                   style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-size: 14px;"
+                   ripplerFill="WHITE"
+                   onAction="#onEntrar"
+                   maxWidth="Infinity" />
+
+        <Label fx:id="mensagemErro"
+               text=""
+               visible="false"
+               style="-fx-text-fill: red; -fx-font-size: 12px;" />
+    </VBox>
+</StackPane>

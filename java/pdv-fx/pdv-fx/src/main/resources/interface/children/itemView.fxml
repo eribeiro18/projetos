@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="462.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="446.0" prefWidth="640.0">
+         <children>
+            <Pane prefHeight="103.0" prefWidth="640.0">
+               <children>
+                  <Button layoutX="555.0" layoutY="68.0" mnemonicParsing="false" text="Pesquisar" />
+                  <Button layoutX="488.0" layoutY="68.0" mnemonicParsing="false" text="Limpar" />
+                  <TextField layoutX="23.0" layoutY="33.0" />
+                  <Label layoutX="23.0" layoutY="14.0" text="Codigo" />
+                  <TextField layoutX="194.0" layoutY="33.0" prefHeight="26.0" prefWidth="430.0" />
+                  <Label layoutX="194.0" layoutY="14.0" text="Label" />
+               </children>
+            </Pane>
+            <TableView layoutY="108.0" prefHeight="247.0" prefWidth="640.0">
+              <columns>
+                <TableColumn prefWidth="104.0" text="Codigo" />
+                <TableColumn prefWidth="364.0" text="Descriçao" />
+                  <TableColumn prefWidth="171.0" text="Data do Cadastro" />
+              </columns>
+            </TableView>
+            <Pagination layoutX="8.0" layoutY="356.0" prefHeight="59.0" prefWidth="631.0" />
+         </children>
+      </Pane>
+   </children>
+</VBox>

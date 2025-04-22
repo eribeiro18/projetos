@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Pagination?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="br.com.arsel.pdvfx.controller.ItemViewController" spacing="20" padding="20">
+    <GridPane hgap="10" vgap="10">
+        <Label text="Código:"/>
+        <TextField fx:id="codigoField" GridPane.columnIndex="1"/>
+
+        <Label text="Descrição:" GridPane.rowIndex="1"/>
+        <TextField fx:id="descricaoField" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+        <Button text="Cadastrar" fx:id="cadastrarButton" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+    </GridPane>
+
+    <TableView fx:id="itemTable" VBox.vgrow="ALWAYS">
+        <TableColumn fx:id="codigoColumn" text="Código" prefWidth="100"/>
+        <TableColumn fx:id="descricaoColumn" text="Descrição" prefWidth="200"/>
+        <TableColumn fx:id="dataCriacaoColumn" text="Data de Criação" prefWidth="150"/>
+    </TableView>
+
+    <Pagination fx:id="pagination" pageCount="10" VBox.vgrow="NEVER"/>
+</VBox>

@@ -6,6 +6,7 @@ class MobileAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      backgroundColor: Colors.lightBlue,
       title: Image.asset(
           "imagens/logo.png",
           fit: BoxFit.contain,
