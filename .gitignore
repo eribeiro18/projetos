@@ -4,3 +4,4 @@
 /java/meuprimeiroprojetojsf/target/
 Servidores/
 *.jar
+.env

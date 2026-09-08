@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Meu Portfólio{% endblock%}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <header>
+        <h1><a href="{% url 'home' %}" style="color: inherit; text-decoration: none;">Portfólio<span style="color: var(--accent-color)">.</span></a></h1>
+        <nav class="nav-links">
+            <a href="{% url 'home' %}">Sobre mim</a>
+            <a href="{% url 'lista_projetos' %}">Projetos</a>
+        </nav>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    <footer>
+        <p>&copy 2026 - Desenvolvido por Evandro Ribeiro</p>
+    </footer>
+</body>
+
+</html>

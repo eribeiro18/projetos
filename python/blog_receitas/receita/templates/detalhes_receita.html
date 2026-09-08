@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}Receita: {{ receita.titulo }} | Blog de Receitas{% endblock %}
+
+{% block content %}
+<div class="recipe-header">
+    <h1>{{ receita.titulo }}</h1>
+    <a href="{% url 'editar_receita' receita.id %}" class="btn-edit" style="display: inline-block; margin-top: 1rem;">✎ Editar Receita</a>
+</div>
+
+<div class="recipe-content">
+    <section class="recipe-section">
+        <h3>Ingredientes</h3>
+        <p style="white-space: pre-wrap;">{{ receita.ingredientes }}</p>
+    </section>
+
+    <section class="recipe-section">
+        <h3>Modo de Preparo</h3>
+        <p style="white-space: pre-wrap;">{{ receita.modo_preparo }}</p>
+    </section>
+</div>
+{% endblock %}

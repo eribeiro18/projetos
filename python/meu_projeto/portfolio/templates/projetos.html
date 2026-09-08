@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}Projetos | Meu Portfólio{% endblock %}
+
+{% block content %}
+<section class="animate-fade-in delay-1">
+    <h1 style="text-align: center;">Meus Projetos</h1>
+    <p style="text-align: center; margin-bottom: 2rem;">Confira alguns dos trabalhos incríveis que desenvolvi
+        recentemente.</p>
+
+    <div class="projects-grid">
+        {% for projeto in projetos %}
+        <div class="glass-card" style="display: flex; flex-direction: column; height: 100%;">
+            <h3>{{ projeto.titulo }}</h3>
+            <p style="flex: 1;">{{ projeto.descricao|truncatechars:100 }}</p>
+            <a href="{% url 'projeto' id=projeto.id %}" class="btn" style="text-align: center; margin-top: 1rem;">Ver
+                Detalhes</a>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}

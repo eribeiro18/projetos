@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ projeto.titulo }} | Meu Portfólio{% endblock %}
+
+{% block content %}
+<div class="animate-fade-in delay-1" style="max-width: 800px; margin: 0 auto;">
+    <a href="{% url 'lista_projetos' %}" style="display: inline-block; margin-bottom: 2rem;">&larr; Voltar para Projetos</a>
+    
+    <div class="glass-card" style="padding: 3rem;">
+        <h1 style="margin-bottom: 2rem;">{{ projeto.titulo }}</h1>
+        
+        <div style="margin-bottom: 2rem;">
+            <h3>Detalhes do projeto</h3>
+            <p style="font-size: 1.1rem; line-height: 1.8;">{{ projeto.descricao }}</p>
+        </div>
+        
+        <div style="margin-bottom: 2.5rem;">
+            <h3>Tecnologias Utilizadas</h3>
+            <div style="margin-top: 1rem;">
+                <span class="badge" style="font-size: 1rem; padding: 0.8rem 1.5rem;">{{ projeto.tecnologia }}</span>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="{{ projeto.github }}" target="_blank" class="btn" style="padding: 1rem 3rem; font-size: 1.1rem;">
+                Acessar Repositório no GitHub
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}

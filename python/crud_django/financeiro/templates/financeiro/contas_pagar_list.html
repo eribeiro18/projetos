@@ -1,0 +1,72 @@
+{% extends 'cadastros/base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="row mb-3">
+    <div class="col-md-12 d-flex justify-content-between align-items-center">
+        <h2>Contas a Pagar</h2>
+        <a href="{% url 'conta_pagar_create' %}" class="btn btn-danger"><i class="bi bi-plus-circle"></i> Nova Conta a Pagar</a>
+    </div>
+</div>
+
+<div class="card mb-4">
+    <div class="card-body bg-light">
+        <form method="get" class="row gx-3 gy-2 align-items-end">
+            {{ filter.form|crispy }}
+            <div class="col-auto">
+                <button type="submit" class="btn btn-secondary"><i class="bi bi-search"></i> Filtrar</button>
+                <a href="{% url 'conta_pagar_list' %}" class="btn btn-outline-secondary">Limpar</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="table-responsive">
+    <table class="table table-striped table-hover">
+        <thead class="table-dark">
+            <tr>
+                <th>Descrição</th>
+                <th>Fornecedor</th>
+                <th>Vencimento</th>
+                <th>Valor</th>
+                <th>Status</th>
+                <th class="text-end">Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for conta in object_list %}
+            <tr>
+                <td>{{ conta.descricao }}</td>
+                <td>
+                    {% if conta.fornecedor_empresa %}
+                        {{ conta.fornecedor_empresa.razao_social }} (PJ)
+                    {% elif conta.fornecedor_pessoa %}
+                        {{ conta.fornecedor_pessoa.nome }} (PF)
+                    {% else %}
+                        -
+                    {% endif %}
+                </td>
+                <td>{{ conta.data_vencimento|date:"d/m/Y" }}</td>
+                <td>R$ {{ conta.valor }}</td>
+                <td>
+                    {% if conta.status == 'P' %}<span class="badge bg-warning text-dark">Pendente</span>{% endif %}
+                    {% if conta.status == 'G' %}<span class="badge bg-success">Pago</span>{% endif %}
+                    {% if conta.status == 'C' %}<span class="badge bg-secondary">Cancelado</span>{% endif %}
+                </td>
+                <td class="text-end">
+                    <a href="{% url 'conta_pagar_update' conta.pk %}" class="btn btn-sm btn-warning" title="Editar">
+                        <i class="bi bi-pencil"></i> Editar
+                    </a>
+                </td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="6" class="text-center">Nenhum registro encontrado.</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{% include 'cadastros/pagination.html' %}
+{% endblock %}

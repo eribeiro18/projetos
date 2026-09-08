@@ -1,0 +1,177 @@
+{% extends 'cadastros/base.html' %}
+
+{% block content %}
+<style>
+    .dashboard-header {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    
+    .dashboard-header h1 {
+        font-size: 2.8rem;
+        background: linear-gradient(135deg, var(--primary-accent), var(--secondary-accent));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 1rem;
+        font-weight: 800;
+    }
+    
+    .dashboard-header p {
+        color: var(--text-light);
+        font-size: 1.15rem;
+    }
+
+    .dashboard-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 2rem;
+        padding: 0.5rem;
+    }
+    
+    .dashboard-card {
+        background: rgba(255, 255, 255, 0.6);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.8);
+        border-radius: 24px;
+        padding: 3rem 1.5rem;
+        text-align: center;
+        text-decoration: none;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .dashboard-card::before {
+        content: '';
+        position: absolute;
+        top: 0; left: 0; width: 100%; height: 100%;
+        background: linear-gradient(135deg, rgba(255,255,255,0.4), rgba(255,255,255,0));
+        z-index: -1;
+        transition: opacity 0.3s ease;
+        opacity: 0;
+    }
+
+    .dashboard-card:hover {
+        transform: translateY(-15px);
+        box-shadow: 0 25px 50px rgba(0, 0, 0, 0.06);
+    }
+    
+    .dashboard-card:hover::before {
+        opacity: 1;
+    }
+    
+    .dashboard-card i {
+        font-size: 4rem;
+        margin-bottom: 1.5rem;
+        transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    
+    .dashboard-card:hover i {
+        transform: scale(1.15) rotate(5deg);
+    }
+    
+    .dashboard-card h3 {
+        font-size: 1.5rem;
+        color: var(--text-main);
+        margin-bottom: 0.5rem;
+        font-weight: 700;
+    }
+    
+    .dashboard-card p {
+        color: var(--text-light);
+        font-size: 0.95rem;
+        margin-bottom: 0;
+        font-weight: 500;
+    }
+
+    /* Specific Card Colors */
+    .card-users i { color: #3b82f6; }
+    .card-users:hover { border-color: rgba(59, 130, 246, 0.4); box-shadow: 0 25px 50px rgba(59, 130, 246, 0.15); }
+
+    .card-pessoas i { color: #10b981; }
+    .card-pessoas:hover { border-color: rgba(16, 185, 129, 0.4); box-shadow: 0 25px 50px rgba(16, 185, 129, 0.15); }
+
+    .card-empresas i { color: #8b5cf6; }
+    .card-empresas:hover { border-color: rgba(139, 92, 246, 0.4); box-shadow: 0 25px 50px rgba(139, 92, 246, 0.15); }
+
+    .card-pagar i { color: #ef4444; }
+    .card-pagar:hover { border-color: rgba(239, 68, 68, 0.4); box-shadow: 0 25px 50px rgba(239, 68, 68, 0.15); }
+
+    .card-receber i { color: #14b8a6; }
+    .card-receber:hover { border-color: rgba(20, 184, 166, 0.4); box-shadow: 0 25px 50px rgba(20, 184, 166, 0.15); }
+    
+    .section-title {
+        font-size: 1.1rem;
+        color: var(--text-light);
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+        font-weight: 700;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        opacity: 0.8;
+    }
+    
+    .section-title::before, .section-title::after {
+        content: '';
+        height: 2px;
+        background: var(--text-light);
+        flex-grow: 1;
+        max-width: 60px;
+        opacity: 0.2;
+    }
+
+</style>
+
+<div class="dashboard-header mt-2">
+    <h1>Bem-vindo ao Sistema</h1>
+    <p>Escolha um dos módulos abaixo para gerenciar os dados da sua empresa.</p>
+</div>
+
+<div class="section-title">Cadastros Básicos</div>
+<div class="dashboard-grid mb-5">
+    <a href="{% url 'user_list' %}" class="dashboard-card card-users">
+        <i class="bi bi-people-fill"></i>
+        <h3>Usuários</h3>
+        <p>Gerencie quem tem acesso</p>
+    </a>
+    
+    <a href="{% url 'pessoa_list' %}" class="dashboard-card card-pessoas">
+        <i class="bi bi-person-badge-fill"></i>
+        <h3>Pessoas Físicas</h3>
+        <p>Cadastro de clientes e fornecedores</p>
+    </a>
+    
+    <a href="{% url 'empresa_list' %}" class="dashboard-card card-empresas">
+        <i class="bi bi-building-fill"></i>
+        <h3>Empresas</h3>
+        <p>Cadastro de PJs relacionadas</p>
+    </a>
+</div>
+
+<div class="section-title">Financeiro</div>
+<div class="dashboard-grid mb-2">
+    <a href="{% url 'conta_pagar_list' %}" class="dashboard-card card-pagar">
+        <i class="bi bi-arrow-down-circle-fill"></i>
+        <h3>Contas a Pagar</h3>
+        <p>Gerencie suas despesas</p>
+    </a>
+    
+    <a href="{% url 'conta_receber_list' %}" class="dashboard-card card-receber">
+        <i class="bi bi-cash-coin"></i>
+        <h3>Contas a Receber</h3>
+        <p>Acompanhe seus recebimentos</p>
+    </a>
+</div>
+{% endblock %}

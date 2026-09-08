@@ -85,18 +85,29 @@ class _HomeState extends State<Home> {
               ),
               Padding(
                 padding: EdgeInsets.only(top: 10),
-                child: RaisedButton(
-                    color: Colors.blue,
-                    textColor: Colors.white,
-                    padding: EdgeInsets.all(15),
-                    child: Text(
-                      "Calcular",
-                      style: TextStyle(
-                          fontSize: 20
-                      ),
+                child: ElevatedButton(
+                  // Estilo personalizado para cores, padding e fonte
+                  style: ElevatedButton.styleFrom(
+                    // Cor de fundo do botão (substitui 'color')
+                    backgroundColor: Colors.blue,
+
+                    // Estilo do texto (substitui 'textColor')
+                    foregroundColor: Colors.white,
+
+                    // Padding interno (substitui 'padding')
+                    padding: const EdgeInsets.all(15),
+
+                    // Estilo do texto (para o 'Text' widget dentro do botão)
+                    textStyle: const TextStyle(
+                        fontSize: 20
                     ),
-                    onPressed: _calcular
-                ),
+                  ),
+                  // A ação a ser executada ao pressionar
+                  onPressed: _calcular,
+
+                  // O conteúdo do botão
+                  child: const Text("Calcular"),
+                )
               ),
               Padding(
                 padding: EdgeInsets.only(top: 20),

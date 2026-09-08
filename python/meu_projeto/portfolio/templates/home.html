@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Home | Meu Portfólio{% endblock %}
+
+{% block content %}
+<section class="glass-card animate-fade-in delay-1" style="display: flex; align-items: center; gap: 2rem;">
+    <img src="{% static 'images/profile.png' %}" alt="Foto de Evandro"
+        style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 3px solid var(--accent-color); box-shadow: 0 0 20px var(--accent-glow);">
+    <div>
+        <h1>Sobre mim</h1>
+        <p style="font-size: 1.1rem;">Olá, eu sou <strong>Evandro</strong>, desenvolvedor Java e Python. Sou apaixonado
+            por criar soluções inovadoras para problemas complexos. Estou sempre aprendendo novas tecnologias e
+            aprimorando minhas habilidades na área de desenvolvimento.</p>
+    </div>
+</section>
+
+<section class="glass-card animate-fade-in delay-2">
+    <h2>Habilidades</h2>
+    <p>Principais tecnologias com as quais trabalho:</p>
+    <div style="margin-top: 1rem;">
+        {% for habilidade in habilidades %}
+        <span class="badge">{{ habilidade.nome }}</span>
+        {% endfor %}
+    </div>
+</section>
+{% if messages %}
+{% for message in messages %}
+<div class="alert-success">✓ {{ message }}</div>
+{% endfor %}
+{% endif %}
+<section class="glass-card animate-fade-in delay-3">
+    <h2>Contato</h2>
+    <p>Gostou do meu trabalho? Entre em contato comigo:</p>
+    <div>
+        {% if messages %}
+        {% for message in messages %}
+        <div class="alert-success">✓ {{ message }}</div>
+        {% endfor %}
+        {% endif %}
+        <form method="post" class="contact-form">
+            {% csrf_token %}
+
+            <div class="form-group">
+                <label for="{{ form.nome.id_for_label }}">Seu Nome</label>
+                {{ form.nome }}
+            </div>
+
+            <div class="form-group">
+                <label for="{{ form.email.id_for_label }}">Seu E-mail</label>
+                {{ form.email }}
+            </div>
+
+            <div class="form-group">
+                <label for="{{ form.assunto.id_for_label }}">Assunto</label>
+                {{ form.assunto }}
+            </div>
+
+            <div class="form-group">
+                <label for="{{ form.mensagem.id_for_label }}">Mensagem</label>
+                {{ form.mensagem }}
+            </div>
+
+            <button type="submit" class="btn"
+                style="width: 100%; margin-top: 0.5rem; text-transform: uppercase; letter-spacing: 1px; padding: 1rem;">
+                Enviar Mensagem
+            </button>
+        </form>
+    </div>
+</section>
+{% endblock %}

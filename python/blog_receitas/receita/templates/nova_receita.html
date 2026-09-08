@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {% if editar %}Editar{% else %}Nova{% endif %} Receita | Blog de Receitas
+{% endblock %}
+
+{% block content %}
+<div class="recipe-header">
+    <h1>{% if editar %}Editar{% else %}Nova{% endif %} Receita</h1>
+    <p style="color: var(--text-muted);">
+        {% if editar %}Modifique os detalhes da sua receita abaixo.{% else %}Preencha os detalhes para adicionar uma nova receita.{% endif %}
+    </p>
+</div>
+
+<div class="form-container">
+    <!-- Django form will render with inputs, but we want our CSS classes.
+         We can let Django render as p and style the p tags, or manually render.
+         For simplicity, we'll style the p tags via CSS targeting .form-container p -->
+    <style>
+        .form-container p { margin-bottom: 1.5rem; font-weight: 600; color: var(--text-main); }
+        .form-container input[type="text"], 
+        .form-container textarea {
+            width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); 
+            border-radius: 6px; font-family: inherit; font-size: 1rem; 
+            margin-top: 0.5rem; transition: border-color 0.2s;
+        }
+        .form-container input[type="text"]:focus, 
+        .form-container textarea:focus {
+            outline: none; border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.2);
+        }
+        .form-container textarea { min-height: 150px; resize: vertical; }
+    </style>
+    
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        
+        <div style="margin-top: 2rem; display: flex; gap: 1rem; align-items: center;">
+            <button type="submit" class="btn-submit">
+                {% if editar %}Atualizar Receita{% else %}Salvar Receita{% endif %}
+            </button>
+            <a href="{% if editar %}{% url 'detalhes_receita' receita.id %}{% else %}{% url 'receitas' %}{% endif %}" class="btn-edit" style="border: none; text-decoration: underline;">
+                Cancelar
+            </a>
+        </div>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Mini Chat</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+        .chat-box {
+            width: 400px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .message {
+            padding: 8px 12px;
+            margin: 8px 0;
+            border-radius: 15px;
+        }
+        .message:nth-child(odd) {
+            background: #e1f5fe;
+            text-align: left;
+        }
+        .message:nth-child(even) {
+            background: #dcedc8;
+            text-align: right;
+        }
+        .input-box {
+            margin-top: 15px;
+            display: flex;
+        }
+        .input-box input {
+            flex: 1;
+            padding: 8px;
+            border-radius: 20px;
+            border: 1px solid #ccc;
+        }
+        .input-box button {
+            margin-left: 8px;
+            padding: 8px 16px;
+            border: none;
+            background: #4caf50;
+            color: white;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        .input-box button:hover {
+            background: #43a047;
+        }
+    </style>
+</head>
+<body>
+<div class="chat-box">
+    <h2>💬 Mini Chat</h2>
+
+    <div th:each="msg : ${mensagens}" class="message">
+        <span th:text="${msg}"></span>
+    </div>
+
+    <!-- Formulário envia via POST -->
+    <form th:action="@{/chat}" method="post" class="input-box">
+        <input type="text" name="mensagem" placeholder="Digite sua mensagem..." required />
+        <button type="submit">Enviar</button>
+    </form>
+</div>
+</body>
+</html>

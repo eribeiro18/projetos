@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Olá {{nome}}! Bem-vindo ao meu app.</h1>
+{% if mensagem == 'Bom dia'%}
+<p>Que tal um café?</p>
+{% elif mensagem == 'Boa tarde'%}
+<p>Que tal um suco?</p>
+{% else %}
+<p>Que tal um chá?</p>
+{% endif %}
+<h2>{{ mensagem }}</h2>
+{% endblock %}
