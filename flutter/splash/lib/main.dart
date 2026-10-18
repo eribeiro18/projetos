@@ -5,6 +5,11 @@ Future main() async {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
     home: const SplashScreen(),
+    routes: {
+      '/home': (context) => const MyHomePage(
+        title: 'Flutter Demo Home Page',
+      ),
+    },
   ));
 
 }
